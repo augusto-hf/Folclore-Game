@@ -178,7 +178,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 1
+  moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -4920,8 +4920,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 340552739
-  m_SortingLayer: 5
+  m_SortingLayerID: 1703231555
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_RenderMode: 5
   m_SortMode: 0
