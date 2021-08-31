@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1365254930756897952}
   - component: {fileID: 1365254930756897959}
   - component: {fileID: 1365254930756897958}
+  - component: {fileID: -7300475248858846937}
   m_Layer: 0
   m_Name: shoot
   m_TagString: Untagged
@@ -131,3 +132,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.395869, y: 1.9354482}
   m_EdgeRadius: 0
+--- !u!114 &-7300475248858846937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365254930756897955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59a9c2d6747e964f8146fd8eeee9452, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect: {fileID: 6505338092035888528, guid: d7d0a59752dab5d4a98f2b0d5882ce3f,
+    type: 3}
