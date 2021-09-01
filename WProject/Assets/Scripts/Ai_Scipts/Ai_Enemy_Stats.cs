@@ -12,5 +12,8 @@ public class Ai_Enemy_Stats : MonoBehaviour
                             */
     public float ViewDistance;
     public int Speed;
-    public int StopDistance;
+    public float StopDistance;
+    public float Aggro;
+
+    public float força;
 }
