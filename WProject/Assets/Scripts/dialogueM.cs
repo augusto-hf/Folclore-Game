@@ -7,7 +7,9 @@ public class dialogueM : MonoBehaviour
 {
 
     public Text nameText;
-    public Text dialogueText;
+    [SerializeField] Text dialogueText;
+    [SerializeField] GameObject DialogBox;
+
 
     public Animator animator;
 
@@ -21,7 +23,9 @@ public class dialogueM : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        animator.SetBool("IsOpen", true);
+        //animator.SetBool("IsOpen", true);
+        DialogBox.SetActive(true);
+
 
         nameText.text = dialogue.name;
 
@@ -61,7 +65,8 @@ public class dialogueM : MonoBehaviour
 
     void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        //animator.SetBool("IsOpen", false);
+        DialogBox.SetActive(false);
     }
 
 }

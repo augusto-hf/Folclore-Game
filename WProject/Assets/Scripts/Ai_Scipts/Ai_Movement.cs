@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ai_Movement : MonoBehaviour
 {
     [SerializeField] internal Ai_Enemy_Stats ai_enemy_stats;
+
     [SerializeField] internal Transform Player;
     [SerializeField] Transform _EnemyHead;
     [SerializeField] internal Transform _Enemy;
@@ -21,6 +22,7 @@ public class Ai_Movement : MonoBehaviour
                 break;
 
             case 1:
+                EnemyBehaviorRange();
                 break;
 
             
@@ -68,7 +70,7 @@ public class Ai_Movement : MonoBehaviour
     void EnemyBehaviorRange()
     {
         RaycastHit2D hit = Physics2D.Raycast(_EnemyHead.position, _EnemyHead.TransformDirection(Vector2.left), ai_enemy_stats.ViewDistance, mask);
-
+        Ai_ShootingAttack ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
         if (hit.collider != null)
         {
             Player = hit.transform;
