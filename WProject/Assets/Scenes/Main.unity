@@ -1912,6 +1912,9 @@ MonoBehaviour:
   moveSpeed: 2
   rb: {fileID: 1372119696}
   anim: {fileID: 8193856}
+  dashSpeed: 4
+  dashEnd: 0.02
+  startDashTime: 1
 --- !u!50 &1372119696
 Rigidbody2D:
   serializedVersion: 4
@@ -1931,7 +1934,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!4 &1372119697
 Transform:
