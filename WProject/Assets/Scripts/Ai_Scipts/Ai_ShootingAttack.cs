@@ -26,7 +26,7 @@ public class Ai_ShootingAttack : MonoBehaviour
 
     }
 
-    void FireBallAttack()
+   public void FireBallAttack()
     {
         BulletGrup[index].SetActive(true);
         BulletGrup[index].transform.position = _GunBarrel.position;

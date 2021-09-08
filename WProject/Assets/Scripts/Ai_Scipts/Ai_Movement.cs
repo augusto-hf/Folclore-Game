@@ -84,6 +84,11 @@ public class Ai_Movement : MonoBehaviour
                 _Enemy.position = Vector2.MoveTowards(_Enemy.position, Player.position, ai_enemy_stats.Speed * Time.deltaTime);
 
             }
+            if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
+            {
+
+                ai_shootingattack.FireBallAttack();
+            }
             _AgroCountDown -= Time.deltaTime;
         }
 
