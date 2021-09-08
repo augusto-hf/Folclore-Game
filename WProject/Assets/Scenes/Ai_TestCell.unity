@@ -13847,13 +13847,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810201577}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.945286, y: -2.4015296, z: 2.0647378}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -3.2, y: 0.8, z: 2.0647378}
   m_LocalScale: {x: 9.088236, y: 9.088236, z: 9.088236}
   m_Children: []
   m_Father: {fileID: 5466418063443959208}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &2047510235
 GameObject:
   m_ObjectHideFlags: 0
@@ -14115,9 +14115,9 @@ MonoBehaviour:
   TypeOfEnemy: 1
   ViewDistance: 300
   Speed: 2
-  StopDistance: 0.5
+  StopDistance: 2
   Aggro: 50
-  "for\xE7a": 1000
+  "for\xE7a": 50
 --- !u!114 &5466418063443959214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14134,3 +14134,21 @@ MonoBehaviour:
   _ParentItem: {fileID: 329409350}
   FireBall: {fileID: 5085292453515843253, guid: ae34cd6b260b0f449a45cb5f1fcf3460,
     type: 3}
+  BulletGrup:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _GunBarrel: {fileID: 1810201578}

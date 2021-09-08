@@ -8,11 +8,11 @@ public class Ai_ShootingAttack : MonoBehaviour
     [SerializeField] Transform _ParentItem;
     public GameObject FireBall;
 
-    
-    GameObject[] BulletGrup = new GameObject[16];
-    Transform _GunBarrel;
-    int index;
 
+    [SerializeField] GameObject[] BulletGrup = new GameObject[16];
+    [SerializeField] Transform _GunBarrel;
+    int index;
+    bool beginShoot;
 
     void Start()
     {
@@ -25,12 +25,14 @@ public class Ai_ShootingAttack : MonoBehaviour
         StartCoroutine(Disebleaitem());
 
     }
-
+   
+   
    public void FireBallAttack()
     {
-        BulletGrup[index].SetActive(true);
-        BulletGrup[index].transform.position = _GunBarrel.position;
-        BulletGrup[index].GetComponent<Rigidbody2D>().AddForce(transform.right * ai_Movement.ai_enemy_stats.força, ForceMode2D.Force);
+            GameObject bullet = Instantiate(FireBall, _GunBarrel.position, _GunBarrel.rotation);
+            Rigidbody2D rb = FireBall.GetComponent<Rigidbody2D>();
+            rb.AddForce(_GunBarrel.up * ai_Movement.ai_enemy_stats.força, ForceMode2D.Impulse);
+        
     }
 
     IEnumerator Disebleaitem()
@@ -43,6 +45,8 @@ public class Ai_ShootingAttack : MonoBehaviour
         }
         yield return new WaitForSeconds(0.1f);
     }
+    
+ 
 
 
 

@@ -12,7 +12,15 @@ public class Ai_Movement : MonoBehaviour
     [SerializeField] LayerMask mask;
 
     float _AgroCountDown;
-   
+    float fireRate;
+    float TimetoFire;
+
+    void Start()
+    {
+        fireRate = 1f;
+        TimetoFire = Time.time;
+    }
+
     void Update()
     {
         switch (ai_enemy_stats.TypeOfEnemy)
@@ -23,6 +31,7 @@ public class Ai_Movement : MonoBehaviour
 
             case 1:
                 EnemyBehaviorRange();
+                
                 break;
 
             
@@ -69,6 +78,8 @@ public class Ai_Movement : MonoBehaviour
 
     void EnemyBehaviorRange()
     {
+      
+        
         RaycastHit2D hit = Physics2D.Raycast(_EnemyHead.position, _EnemyHead.TransformDirection(Vector2.left), ai_enemy_stats.ViewDistance, mask);
         Ai_ShootingAttack ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
         if (hit.collider != null)
@@ -86,8 +97,13 @@ public class Ai_Movement : MonoBehaviour
             }
             if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
             {
+                if (Time.time > TimetoFire)
+                {
+                    ai_shootingattack.FireBallAttack();
+                    TimetoFire = Time.time + fireRate;
+                }
 
-                ai_shootingattack.FireBallAttack();
+
             }
             _AgroCountDown -= Time.deltaTime;
         }
