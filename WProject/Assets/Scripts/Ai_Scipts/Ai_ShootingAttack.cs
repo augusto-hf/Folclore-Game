@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ai_ShootingAttack : MonoBehaviour
 {
     [SerializeField] internal Ai_Movement ai_Movement;
+    [SerializeField] internal Ai_RangeAttackDamaeg ai_rangeAttackDamaeg;
     [SerializeField] Transform _ParentItem;
     public GameObject FireBall;
 
@@ -30,9 +31,7 @@ public class Ai_ShootingAttack : MonoBehaviour
    public void FireBallAttack()
     {
             GameObject bullet = Instantiate(FireBall, _GunBarrel.position, _GunBarrel.rotation);
-            Rigidbody2D rb = FireBall.GetComponent<Rigidbody2D>();
-            rb.AddForce(_GunBarrel.up * ai_Movement.ai_enemy_stats.força, ForceMode2D.Impulse);
-        
+
     }
 
     IEnumerator Disebleaitem()
