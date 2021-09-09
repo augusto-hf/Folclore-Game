@@ -14023,7 +14023,7 @@ GameObject:
   - component: {fileID: 5466418063443959213}
   m_Layer: 0
   m_Name: npc
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14117,7 +14117,7 @@ MonoBehaviour:
   Speed: 2
   StopDistance: 2
   Aggro: 50
-  "for\xE7a": 50
+  "for\xE7a": 10
 --- !u!114 &5466418063443959214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14131,6 +14131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ai_Movement: {fileID: 5466418063443959212}
+  ai_rangeAttackDamaeg: {fileID: 0}
   _ParentItem: {fileID: 329409350}
   FireBall: {fileID: 5085292453515843253, guid: ae34cd6b260b0f449a45cb5f1fcf3460,
     type: 3}
