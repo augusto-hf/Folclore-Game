@@ -9,15 +9,28 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
     [SerializeField] Rigidbody2D Bullet;
     GameObject Enemy;
     Transform _GunBarrel;
+    internal bool FollwoPlayer;
 
     void Start()
     {
         Enemy = GameObject.FindGameObjectWithTag("Enemy");
         ai_Movement = Enemy.GetComponent<Ai_Movement>();
         Bullet = gameObject.GetComponent<Rigidbody2D>();
-        Debug.Log("20");
-        Debug.Log(Bullet);
         Bullet.AddForce(Enemy.transform.right * ai_Movement.ai_enemy_stats.força * -1, ForceMode2D.Impulse);
+        if (FollwoPlayer == true)
+        {
+            FlowPlayer();
+        }
+    }
+
+
+    void FlowPlayer()
+    {
+
+        GameObject Player = GameObject.FindGameObjectWithTag("Player");
+        Vector2 MoveDi = (Player.transform.position - transform.position).normalized * ai_Movement.ai_enemy_stats.força;
+        Bullet.velocity = new Vector2(MoveDi.x, MoveDi.y);
+        transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, ai_Movement.ai_enemy_stats.força * Time.deltaTime);
     }
 
 

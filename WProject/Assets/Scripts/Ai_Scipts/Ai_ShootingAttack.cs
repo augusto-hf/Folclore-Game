@@ -10,20 +10,13 @@ public class Ai_ShootingAttack : MonoBehaviour
     public GameObject FireBall;
 
 
-    [SerializeField] GameObject[] BulletGrup = new GameObject[16];
     [SerializeField] Transform _GunBarrel;
     int index;
     bool beginShoot;
 
     void Start()
     {
-        for (int i = 0; i < 16; i++)
-        {
-            BulletGrup[i] = Instantiate(FireBall);
-            BulletGrup[i].transform.SetParent(_ParentItem);
-            BulletGrup[i].transform.SetPositionAndRotation(_ParentItem.position, _ParentItem.rotation);
-        }
-        StartCoroutine(Disebleaitem());
+   
 
     }
    
@@ -31,21 +24,16 @@ public class Ai_ShootingAttack : MonoBehaviour
    public void FireBallAttack()
     {
             GameObject bullet = Instantiate(FireBall, _GunBarrel.position, _GunBarrel.rotation);
-
-    }
-
-    IEnumerator Disebleaitem()
-    {
-        for (int i = 0; i < 16; i++)
+        if (Random.Range(0,50f) == 1)
         {
-            BulletGrup[i].SetActive(false);
-            Debug.Log("s");
-
+            bullet.GetComponent<Ai_RangeAttackDamaeg>().FollwoPlayer = true;
         }
-        yield return new WaitForSeconds(0.1f);
-    }
-    
  
+
+
+    }
+
+
 
 
 
