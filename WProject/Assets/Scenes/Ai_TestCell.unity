@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5f02531b1135840b93fe4f44237883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ai_movement: {fileID: 5466418063443959212}
+  Ai_MelleType: {fileID: 0}
   Attack: {fileID: 201655771}
   time: 5
   waitTime: 5
@@ -11298,7 +11298,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.028123617, y: 0.010546327}
@@ -14088,7 +14088,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5466418063443959210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d69d05e1f885b445a7836db88d74240, type: 3}
+  m_Script: {fileID: 11500000, guid: ab118dd23f780984b95e1e5fcf2cc60c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ai_enemy_stats: {fileID: 5466418063443959213}
@@ -14130,26 +14130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2c2bb846b6eae48a70854b2ead680d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ai_Movement: {fileID: 5466418063443959212}
+  ai_shottype: {fileID: 5466418063443959212}
   ai_rangeAttackDamaeg: {fileID: 0}
   _ParentItem: {fileID: 329409350}
   FireBall: {fileID: 5085292453515843253, guid: ae34cd6b260b0f449a45cb5f1fcf3460,
     type: 3}
-  BulletGrup:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   _GunBarrel: {fileID: 1810201578}

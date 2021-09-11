@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ai_MelleAtack : MonoBehaviour
 {
-    [SerializeField] internal Ai_Movement ai_movement;
+    [SerializeField] internal Ai_MelleType Ai_MelleType;
     public GameObject Attack;
     bool starCoumt;
     public float time;
@@ -36,10 +36,10 @@ public class Ai_MelleAtack : MonoBehaviour
     void danoAmdknockback(Rigidbody2D RbPlayer)
     {
       
-        Vector2 Direcao = ai_movement.Player.position - ai_movement._Enemy.transform.position;
+        Vector2 Direcao = Ai_MelleType.Player.position - Ai_MelleType._Enemy.transform.position;
         Direcao.y = 0;
-        Debug.Log(Direcao.normalized * ai_movement.ai_enemy_stats.força);
-        RbPlayer.AddForce(Direcao.normalized * ai_movement.ai_enemy_stats.força,ForceMode2D.Force);
+        Debug.Log(Direcao.normalized * Ai_MelleType.ai_enemy_stats.força);
+        RbPlayer.AddForce(Direcao.normalized * Ai_MelleType.ai_enemy_stats.força,ForceMode2D.Force);
 
         reset();
 
