@@ -10,6 +10,8 @@ public class Ai_ShotType : MonoBehaviour
     [SerializeField] internal Transform _Enemy;
     [SerializeField] LayerMask mask;
 
+    Vector2 EnemyCorrentPosition;
+
     float _AgroCountDown;
     float fireRate;
     float TimetoFire;
@@ -38,12 +40,15 @@ public class Ai_ShotType : MonoBehaviour
         }
         if (_AgroCountDown > 0)
         {
-            _EnemyHead.LookAt(Player);
+            EnemyCorrentPosition = _Enemy.position;
+            //_EnemyHead.LookAt(Player);
             if (Vector2.Distance(_Enemy.position, Player.position) > ai_enemy_stats.StopDistance)
             {
                 _Enemy.position = Vector2.MoveTowards(_Enemy.position, Player.position, ai_enemy_stats.Speed * Time.deltaTime);
-
+                
             }
+
+
             if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
             {
                 if (Time.time > TimetoFire)
@@ -55,6 +60,8 @@ public class Ai_ShotType : MonoBehaviour
 
             }
             _AgroCountDown -= Time.deltaTime;
+
+
         }
         if (_AgroCountDown <= 0)
         {
