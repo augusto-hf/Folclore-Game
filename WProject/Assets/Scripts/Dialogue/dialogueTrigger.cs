@@ -11,7 +11,7 @@ public class dialogueTrigger : MonoBehaviour
     [SerializeField]GameObject _IconShow;
     void Update()
     {
-        if (Input.GetKeyDown("i") && _PlayerHasEnter == true)
+        if (Input.GetButtonDown("Interact") && _PlayerHasEnter == true)
         {
             Debug.Log("Enter");
             TriggerDialogue();
