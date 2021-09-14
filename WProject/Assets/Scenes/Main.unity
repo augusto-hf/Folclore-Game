@@ -1728,7 +1728,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000236c4c14ff50de5543408565
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -14314,6 +14314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dashSpeed
       value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8273871549928899491, guid: 4791d13c3062f6a4da94daebdd78e22a,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 8273871549928899517, guid: 4791d13c3062f6a4da94daebdd78e22a,
         type: 3}
