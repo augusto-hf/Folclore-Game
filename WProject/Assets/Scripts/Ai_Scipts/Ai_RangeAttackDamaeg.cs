@@ -6,19 +6,17 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
 {
     [SerializeField] GameObject Effect;
     [SerializeField] internal Ai_ShotType Ai_shotType;
+    [SerializeField] internal Ai_ShootingAttack ai_shootingattack;
     [SerializeField] Rigidbody2D Bullet;
     GameObject Enemy;
-    Transform _GunBarrel;
     internal bool FollwoPlayer;
-    Vector2 V;
     void Start()
     {
         Enemy = GameObject.FindGameObjectWithTag("Enemy");
         Ai_shotType = Enemy.GetComponent<Ai_ShotType>();
+        ai_shootingattack = Enemy.GetComponent<Ai_ShootingAttack>();
         Bullet = gameObject.GetComponent<Rigidbody2D>();
-        Bullet.AddForce(Enemy.transform.right * Ai_shotType.ai_enemy_stats.força * -1, ForceMode2D.Impulse);
-        FlowPlayer();
-        Bullet.velocity = V;
+        Bullet.AddForce(ai_shootingattack._GunBarrel.transform.up * Ai_shotType.ai_enemy_stats.força, ForceMode2D.Impulse);
         if (FollwoPlayer == true)
         {
             FlowPlayer();
@@ -28,7 +26,6 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
 
     void FlowPlayer()
     {
-        V = Bullet.velocity;
         GameObject Player = GameObject.FindGameObjectWithTag("Player");
         Vector2 MoveDi = (Player.transform.position - transform.position).normalized * Ai_shotType.ai_enemy_stats.força;
         Bullet.velocity = new Vector2(MoveDi.x, MoveDi.y);

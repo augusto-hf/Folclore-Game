@@ -10,14 +10,15 @@ public class Ai_ShootingAttack : MonoBehaviour
     public GameObject FireBall;
     int ShootTime = 0;
 
-    [SerializeField] Transform _GunBarrel;
+    [SerializeField] internal Transform _GunBarrel;
+    [SerializeField] internal Rigidbody2D _Rb_GunBarrel;
     int index;
     bool beginShoot;
 
  
    public void FireBallAttack()
     {
-        
+
         GameObject bullet = Instantiate(FireBall, _GunBarrel.position, _GunBarrel.rotation);
         ShootTime++;
         if (ShootTime >= 5)
