@@ -17,7 +17,7 @@ public class shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && _PlayerStardDialogue == false && Time.time > nextAttack)
+        if (Input.GetButtonDown("Fire") && _PlayerStardDialogue == false && Time.time > nextAttack)
         {
             Shoot();
         }

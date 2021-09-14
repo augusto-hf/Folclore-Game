@@ -9,11 +9,11 @@ public class shield : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Shield"))
         {
             _shield.SetActive(true);
         }
-        if (Input.GetButtonUp("Fire2"))
+        if (Input.GetButtonUp("Shield"))
         {
             _shield.SetActive(false);
         }
