@@ -11,7 +11,6 @@ public class Ai_ShotType : MonoBehaviour
     [SerializeField] internal Transform _Enemy;
     [SerializeField] LayerMask mask;
 
-    Vector2 EnemyCorrentPosition;
 
     float _AgroCountDown;
     float fireRate;
@@ -45,16 +44,15 @@ public class Ai_ShotType : MonoBehaviour
         
         if (_AgroCountDown > 0)
         {
+            
             Vector2 look = Player.position - ai_shootingattack._GunBarrel.position;
             float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
             ai_shootingattack._Rb_GunBarrel.rotation = Angulo;
-            EnemyCorrentPosition = _Enemy.position;
+  
             if (Vector2.Distance(_Enemy.position, Player.position) > ai_enemy_stats.StopDistance)
             {
                 _Enemy.position = Vector2.MoveTowards(_Enemy.position, Player.position, ai_enemy_stats.Speed * Time.deltaTime);
-                
             }
-
 
             if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
             {

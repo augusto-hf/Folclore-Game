@@ -52,6 +52,12 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
             danoAndknockback(collision.gameObject.GetComponent<Rigidbody2D>());
         }
         GameObject effect = Instantiate(Effect, transform.position, Quaternion.identity);
+        for (int i = 0; i < 3; i++)
+        {
+            GameObject Bulets = Instantiate(ai_shootingattack.FireBall, transform.position, Quaternion.identity);
+            Bullet.AddForce(ai_shootingattack._GunBarrel.transform.up * Ai_shotType.ai_enemy_stats.força * -1, ForceMode2D.Impulse);
+        }
+
         Destroy(effect, 5f);
         Destroy(gameObject);
     }

@@ -11,6 +11,7 @@ public class Ai_ShootingAttack : MonoBehaviour
     int ShootTime = 0;
 
     [SerializeField] internal Transform _GunBarrel;
+
     [SerializeField] internal Rigidbody2D _Rb_GunBarrel;
     int index;
     bool beginShoot;
