@@ -6,21 +6,18 @@ public class tornado : MonoBehaviour
 {
     shooting shooting;
     private GameObject enemyObject;
-    private float distance, pullForce;
+    private float distance;
     public float minimumDistance = 2f;
-    public float pullForceReference = 1f, pullForceMultplier;
+    public float pullForce = 0.1f;
     public float tornadoLifeTime = 6f;
 
     void Start()
     {
         enemyObject = GameObject.FindWithTag("Enemy");
-        pullForce = pullForceReference;
         tornadoLifeTime = 5f;
     }
     void Update()
     {
-        tornadoMove();
-        tornadoPullForce();
         tornadoVaccun();
         tornadoLifeCounter();
     }
@@ -32,23 +29,13 @@ public class tornado : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void tornadoMove()
-    {
-
-    }
-    void tornadoPullForce()
-    {
-        if (pullForce <= pullForceReference * 2)
-        {//aumenta o pullforce, mas não pode ser mais doque o dobro da original
-            pullForce += Time.deltaTime + pullForce;
-        }
-    }
     void tornadoVaccun()
     {
         distance = Vector2.Distance(enemyObject.transform.position, transform.position);
         if (distance <= minimumDistance)
-        {
-            enemyObject.GetComponent<Rigidbody2D>().AddForce((transform.position - enemyObject.transform.position) * pullForce);
+        {//puxa inimigos, na direção do tornado de acordo com a massa*tempo*força do puxão
+            enemyObject.transform.position = Vector2.MoveTowards(enemyObject.transform.position, transform.position, enemyObject.GetComponent<Rigidbody2D>().mass * Time.deltaTime * pullForce);
+            //buraco negro: enemyObject.GetComponent<Rigidbody2D>().AddForce((transform.position - enemyObject.transform.position) * pullForce);
         }
     }
 }

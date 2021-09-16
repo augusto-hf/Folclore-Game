@@ -128,8 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minimumDistance: 2
-  pullForceReference: 0.2
-  pullForceMultplier: 0
+  pullForce: 0.2
   tornadoLifeTime: 6
 --- !u!50 &-2493363878675931966
 Rigidbody2D:
