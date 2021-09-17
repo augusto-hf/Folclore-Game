@@ -62,10 +62,10 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
         {
             danoAndknockback(collision.gameObject.GetComponent<Rigidbody2D>());
         }
-       // GameObject effect = Instantiate(Effect, transform.position, Quaternion.identity);
+        GameObject effect = Instantiate(Effect, transform.position, Quaternion.identity);
        
 
-      //  Destroy(effect, 5f);
-        //Destroy(gameObject);
+        Destroy(effect, 5f);
+        Destroy(gameObject);
     }
 }

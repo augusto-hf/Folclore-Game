@@ -10,7 +10,15 @@ public class Ai_ShotType : MonoBehaviour
     [SerializeField] Transform _EnemyHead;
     [SerializeField] internal Transform _Enemy;
     [SerializeField] LayerMask mask;
-
+   
+    private Vector3 startingPosition;
+    public Transform followTarget;
+    private Vector3 targetPos;
+    public float moveSpeed;
+    public float offSetX;
+    public float offSetY;
+    public float offSetZ;
+    public bool smoothMovement;
 
     float _AgroCountDown;
     float fireRate;
@@ -21,6 +29,7 @@ public class Ai_ShotType : MonoBehaviour
     {
         fireRate = 1f;
         TimetoFire = Time.time;
+        startingPosition = transform.position;
     }
 
     void Update()
@@ -31,17 +40,24 @@ public class Ai_ShotType : MonoBehaviour
     void EnemyBehaviorRange()
     {
 
-
-        
-        RaycastHit2D hit = Physics2D.Raycast(_EnemyHead.position, _EnemyHead.TransformDirection(Vector2.left), ai_enemy_stats.ViewDistance, mask);
-        Ai_ShootingAttack ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
-        
-        if (hit.collider != null)
+        if (_Enemy != null)
         {
-            Player = hit.transform;
-            _AgroCountDown = ai_enemy_stats.Aggro;
+            targetPos = new Vector3(_Enemy.position.x + offSetX, _Enemy.position.y + offSetY, transform.position.z + offSetZ);
+            Vector3 velocity = (targetPos - transform.position) * moveSpeed;
+            if (smoothMovement)
+            {
+                transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, 1.0f, Time.deltaTime);
+            }
+            else
+            {
+                transform.position = targetPos;
+            }
         }
-        
+        RaycastHit2D hit = Physics2D.Raycast(_EnemyHead.position, _EnemyHead.TransformDirection(Vector2.left), ai_enemy_stats.ViewDistance);
+        Ai_ShootingAttack ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
+        Debug.Log(hit.collider.gameObject.tag == "Player");
+
+        Debug.DrawRay(_EnemyHead.position, _EnemyHead.TransformDirection(Vector2.left), Color.green);
         if (_AgroCountDown > 0)
         {
             
@@ -73,4 +89,16 @@ public class Ai_ShotType : MonoBehaviour
             Player = null;
         }
     }
+
+    void GetPlayer()
+    {
+        //Player = hit.transform;
+        _AgroCountDown = ai_enemy_stats.Aggro;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        GetPlayer();
+    }
+
 }
