@@ -9,6 +9,7 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
     [SerializeField] internal Ai_ShootingAttack ai_shootingattack;
     [SerializeField] Rigidbody2D Bullet;
     GameObject Enemy;
+    internal bool Clone;
     internal bool FollwoPlayer;
     void Start()
     {
@@ -17,6 +18,15 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
         ai_shootingattack = Enemy.GetComponent<Ai_ShootingAttack>();
         Bullet = gameObject.GetComponent<Rigidbody2D>();
         Bullet.AddForce(ai_shootingattack._GunBarrel.transform.up * Ai_shotType.ai_enemy_stats.força, ForceMode2D.Impulse);
+
+        if (Clone == false)
+        {
+            ai_shootingattack.CreateBullet(new Vector2(1f, 0));
+            ai_shootingattack.CreateBullet(new Vector2(-1f, 0));
+        }
+      
+
+
         if (FollwoPlayer == true)
         {
             FlowPlayer();
@@ -44,6 +54,7 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
 
         //dar dano
     }
+    
     void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -51,14 +62,10 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
         {
             danoAndknockback(collision.gameObject.GetComponent<Rigidbody2D>());
         }
-        GameObject effect = Instantiate(Effect, transform.position, Quaternion.identity);
-        for (int i = 0; i < 3; i++)
-        {
-            GameObject Bulets = Instantiate(ai_shootingattack.FireBall, transform.position, Quaternion.identity);
-            Bullet.AddForce(ai_shootingattack._GunBarrel.transform.up * Ai_shotType.ai_enemy_stats.força * -1, ForceMode2D.Impulse);
-        }
+       // GameObject effect = Instantiate(Effect, transform.position, Quaternion.identity);
+       
 
-        Destroy(effect, 5f);
-        Destroy(gameObject);
+      //  Destroy(effect, 5f);
+        //Destroy(gameObject);
     }
 }

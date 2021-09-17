@@ -39,6 +39,13 @@ public class Ai_ShootingAttack : MonoBehaviour
 
 
 
+    public void CreateBullet(Vector2 BulletRoate)
+    {
+        GameObject Bulets = Instantiate(FireBall, _GunBarrel.position, _GunBarrel.rotation);
+        Bulets.GetComponent<Ai_RangeAttackDamaeg>().Clone = true;
+        Bulets.transform.Translate(BulletRoate);
+        Debug.Log(BulletRoate);
 
+    }
 
 }
