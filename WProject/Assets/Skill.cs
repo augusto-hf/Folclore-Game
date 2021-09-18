@@ -23,8 +23,10 @@ public class Skill : MonoBehaviour
     public GameObject Shield;
 
     [Header("Generic Ability")]
-    
+    public Image imageRenderer;
+    public Sprite[] spriteArray;
     public Image abilityImageBW;
+    public Sprite[] spriteArrayBW;
     public float cooldown = 8;
     bool isCooldown = false;
     public KeyCode abilityBW;
@@ -75,16 +77,22 @@ public class Skill : MonoBehaviour
         }
     }
 
+   
+
     public void loadoutSelect()
     {
         if (Input.GetButtonDown("Power Select 1"))
         {
             currentLoadout = 1;
+            imageRenderer.sprite = spriteArray[0];
+            abilityImageBW.sprite = spriteArray[0];
             Debug.Log("Power 1 Selected");
         }
         if (Input.GetButtonDown("Power Select 2"))
         {
             currentLoadout = 2;
+            imageRenderer.sprite = spriteArray[1];
+            abilityImageBW.sprite = spriteArray[1];
             Debug.Log("Power 2 Selected");
         }
     }
