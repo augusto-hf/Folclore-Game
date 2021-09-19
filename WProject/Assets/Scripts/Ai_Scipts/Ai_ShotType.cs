@@ -10,7 +10,8 @@ public class Ai_ShotType : MonoBehaviour
     [SerializeField] Transform _EnemyHead;
     [SerializeField] internal Transform _Enemy;
     [SerializeField] LayerMask mask;
-
+    Ai_ShootingAttack ai_shootingattack;
+    [SerializeField] Rigidbody2D _Barrel;
 
     float _AgroCountDown;
     float fireRate;
@@ -23,27 +24,32 @@ public class Ai_ShotType : MonoBehaviour
         TimetoFire = Time.time;
         Player = GameObject.FindWithTag("Player").transform;
         _AgroCountDown = 100f;
+        ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
     }
 
     void Update()
     {
         EnemyBehaviorRange();
+        Aim();
+    }
+
+    void Aim()
+    {
+
+        Vector2 look = Player.position - ai_shootingattack._GunBarrel.position;
+        float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
+        _Barrel.rotation = Angulo;
     }
 
     void EnemyBehaviorRange()
     {
-        Ai_ShootingAttack ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
 
-
-      
         RaycastHit2D hit = Physics2D.Raycast(_EnemyHead.position, _EnemyHead.TransformDirection(Vector2.left), ai_enemy_stats.ViewDistance);
 
         if (_AgroCountDown > 0)
         {
             
-            Vector2 look = Player.position - ai_shootingattack._GunBarrel.position;
-            float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
-            ai_shootingattack._Rb_GunBarrel.rotation = Angulo;
+           
   
             if (Vector2.Distance(_Enemy.position, Player.position) > ai_enemy_stats.StopDistance)
             {

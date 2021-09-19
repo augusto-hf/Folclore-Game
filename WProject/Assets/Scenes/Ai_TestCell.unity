@@ -178,6 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 288580569}
   - component: {fileID: 288580570}
+  - component: {fileID: 288580571}
   m_Layer: 0
   m_Name: CirculeColiderAgro
   m_TagString: Untagged
@@ -215,6 +216,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!114 &288580571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288580568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5b3745adc96ca4686c397177c048f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followTarget: {fileID: 1810201578}
+  moveSpeed: 0
+  offSetX: 0
+  offSetY: 0
+  offSetZ: 0
+  smoothMovement: 0
 --- !u!1 &329409349
 GameObject:
   m_ObjectHideFlags: 0
@@ -11148,6 +11167,78 @@ CompositeCollider2D:
       - {x: -7.515633, y: -4.0000043}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
+--- !u!1 &1079331502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1079331504}
+  - component: {fileID: 1079331503}
+  - component: {fileID: 1079331505}
+  m_Layer: 0
+  m_Name: Bullet_Barrel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!50 &1079331503
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079331502}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 3
+--- !u!4 &1079331504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079331502}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 9.088235, y: 9.088235, z: 9.088235}
+  m_Children:
+  - {fileID: 1810201578}
+  m_Father: {fileID: 5466418063443959208}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1079331505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079331502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5b3745adc96ca4686c397177c048f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followTarget: {fileID: 5466418063443959208}
+  moveSpeed: 1
+  offSetX: 0
+  offSetY: 0
+  offSetZ: 0
+  smoothMovement: 0
 --- !u!1 &1313690894
 GameObject:
   m_ObjectHideFlags: 0
@@ -13070,10 +13161,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810201577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.4999986, y: 0.7999998, z: 2.0647376}
-  m_LocalScale: {x: 9.088235, y: 9.088235, z: 9.088235}
+  m_LocalPosition: {x: -0.93, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5466418063443959208}
+  m_Father: {fileID: 1079331504}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1810201579
@@ -13309,6 +13400,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 512
+  _Barrel: {fileID: 0}
 --- !u!114 &4620797704522283170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13515,7 +13607,7 @@ Transform:
   m_LocalPosition: {x: 1.11, y: -0.05, z: 0.13999999}
   m_LocalScale: {x: 0.11003235, y: 0.11003235, z: 0.11003235}
   m_Children:
-  - {fileID: 1810201578}
+  - {fileID: 1079331504}
   - {fileID: 288580569}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -13627,6 +13719,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8
+  _Barrel: {fileID: 1079331503}
 --- !u!114 &5466418063443959213
 MonoBehaviour:
   m_ObjectHideFlags: 0
