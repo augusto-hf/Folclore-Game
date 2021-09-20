@@ -2774,11 +2774,12 @@ MonoBehaviour:
   tornadoForce: 0.6
   isTornadoGoing: 0
   Shield: {fileID: 912373854}
-  spriteRenderer: {fileID: 1613970576}
+  imageRenderer: {fileID: 1613970574}
   spriteArray:
   - {fileID: 21300000, guid: fe54b949b4516854ca9b085fd0b7eb45, type: 3}
   - {fileID: 21300000, guid: 45e61739fa85644448e0d4c0e3543317, type: 3}
   abilityImageBW: {fileID: 571382505}
+  spriteArrayBW: []
   cooldown: 8
   abilityBW: 324
 --- !u!1 &680769316
