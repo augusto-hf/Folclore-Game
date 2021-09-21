@@ -30,12 +30,22 @@ public class Player : MonoBehaviour
         {
             TakeDamage(20);
         }
+        if (currentHealth <=0)
+        {
+            Debug.Log("Morri");
+        }
     }
 
-    void TakeDamage(int damage)
+   public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         currentBlindness -= damage;
+        if (currentBlindness <= 0)
+        {
+            currentBlindness = 0;
+        }
+
+
         healthBar.SetHealth(currentHealth);
         blindnessBar.SetBlindness(currentBlindness);
     }

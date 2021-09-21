@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 824104171591519393}
   - component: {fileID: 824104171591519392}
   - component: {fileID: 824104171591519423}
+  - component: {fileID: 2299313591965023266}
   - component: {fileID: 824104171591519394}
   m_Layer: 0
   m_Name: player test
@@ -70,6 +71,27 @@ MonoBehaviour:
   moveSpeed: 2
   rb: {fileID: 824104171591519392}
   anim: {fileID: 824104172370831728}
+  dashSpeed: 0
+  dashEnd: 0
+  startDashTime: 0
+--- !u!114 &2299313591965023266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824104171591519422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7f55d91e525094a9b304a9884133fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  maxBlindness: 100
+  currentBlindness: 0
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  blindnessBar: {fileID: 0}
 --- !u!70 &824104171591519394
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

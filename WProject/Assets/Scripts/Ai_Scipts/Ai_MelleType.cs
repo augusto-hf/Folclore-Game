@@ -24,7 +24,8 @@ public class Ai_MelleType : MonoBehaviour
     {
         Ai_MelleAtack ai_melleatack = GetComponentInChildren<Ai_MelleAtack>();
         RaycastHit2D hit = Physics2D.Raycast(_EnemyHead.position, _EnemyHead.TransformDirection(Vector2.left), ai_enemy_stats.ViewDistance, mask);
-        Debug.Log(ai_melleatack != null);
+       
+
         if (hit.collider != null)
         {
             Player = hit.transform;

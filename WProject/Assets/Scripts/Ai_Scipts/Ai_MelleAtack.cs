@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ai_MelleAtack : MonoBehaviour
 {
     [SerializeField] internal Ai_MelleType Ai_MelleType;
+    [SerializeField] Player Healt;
     public GameObject Attack;
     bool starCoumt;
     public float time;
@@ -33,15 +34,26 @@ public class Ai_MelleAtack : MonoBehaviour
        
     }
 
-    void danoAmdknockback(Rigidbody2D RbPlayer)
-    {
+    void danoAmdknockback()
+    {/*
       
         Vector2 Direcao = Ai_MelleType.Player.position - Ai_MelleType._Enemy.transform.position;
         Direcao.y = 0;
         Debug.Log(Direcao.normalized * Ai_MelleType.ai_enemy_stats.força);
         RbPlayer.AddForce(Direcao.normalized * Ai_MelleType.ai_enemy_stats.força,ForceMode2D.Force);
+        */
+        Healt.TakeDamage(Ai_MelleType.ai_enemy_stats.Damage);
+        float TimeExtra = 1f;
 
-        reset();
+        TimeExtra -= Time.deltaTime;
+
+        if (TimeExtra <=0)
+        {
+
+
+            reset();
+        }
+
 
     }
 
@@ -50,6 +62,7 @@ public class Ai_MelleAtack : MonoBehaviour
         Attack.GetComponent<SpriteRenderer>().enabled = false;
         Attack.GetComponent<BoxCollider2D>().enabled = false;
         starCoumt = false;
+        Healt = null;
         time = 5f;
         waitTime = 3f;
         //playstop
@@ -60,7 +73,9 @@ public class Ai_MelleAtack : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            danoAmdknockback(other.gameObject.GetComponent<Rigidbody2D>());
+            Healt = other.gameObject.GetComponentInParent<Player>();
+            //other.gameObject.GetComponent<Rigidbody2D>()
+            danoAmdknockback();
         }
 
     }

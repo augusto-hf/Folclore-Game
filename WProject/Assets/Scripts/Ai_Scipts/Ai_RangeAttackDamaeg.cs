@@ -7,7 +7,8 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
     [SerializeField] GameObject Effect;
     [SerializeField] internal Ai_ShotType Ai_shotType;
     [SerializeField] internal Ai_ShootingAttack ai_shootingattack;
-    [SerializeField] Rigidbody2D Bullet;
+    [SerializeField] Player Healt;
+     [SerializeField] Rigidbody2D Bullet;
     GameObject Enemy;
     internal bool Clone;
     internal bool FollwoPlayer;
@@ -51,8 +52,8 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
         Vector2 Direcao = Ai_shotType.Player.position - Ai_shotType._Enemy.transform.position;
         Direcao.y = 0;
         RbPlayer.AddForce(Direcao.normalized * Ai_shotType.ai_enemy_stats.força, ForceMode2D.Force);
-
-        //dar dano
+        Healt.TakeDamage(Ai_shotType.ai_enemy_stats.Damage);
+        Healt = null;
     }
     
     void OnCollisionEnter2D(Collision2D collision)
@@ -60,7 +61,9 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
 
         if (collision.collider.tag == "Player")
         {
+            Healt = collision.gameObject.GetComponent<Player>();
             danoAndknockback(collision.gameObject.GetComponent<Rigidbody2D>());
+            
         }
         GameObject effect = Instantiate(Effect, transform.position, Quaternion.identity);
        
