@@ -6,7 +6,7 @@ public class tornado : MonoBehaviour
 {
     shooting shooting;
     private float distance;
-    public float minimumDistance = 6f, tornadoLifeTime = 6f, pullForce = 0.2f;
+    public float minimumDistance = 6f, tornadoLifeTime = 6f, pullForce = 2f, rotateSpeed = 90f;
     private float nextDamageTick;
     public int DamagePerTick = 10;
 
@@ -37,6 +37,8 @@ public class tornado : MonoBehaviour
             {
                 //puxa inimigos, na direção do tornado de acordo com a massa*tempo*força do puxão
                 enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, transform.position, enemy.GetComponent<Rigidbody2D>().mass * Time.deltaTime * pullForce);
+                //gira inimigos
+                //enemy.transform.RotateAround(Vector2.zero, transform.position, enemy.GetComponent<Rigidbody2D>().mass * rotateSpeed * Time.deltaTime);
                 if (Time.time >= nextDamageTick)
                 {
                     enemy.GetComponent<Ai_Enemy_Stats>().TakeDamage(DamagePerTick);
