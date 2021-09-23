@@ -22,7 +22,7 @@ public class bullet : MonoBehaviour
     {
        if (collision.gameObject.CompareTag("Enemy"))
        {
-            collision.gameObject.GetComponent<Ai_Enemy_Stats>().TomarDamage(Damage);
+            collision.gameObject.GetComponent<Ai_Enemy_Stats>().TakeDamage(Damage);
        }
         Destroy(gameObject);
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);

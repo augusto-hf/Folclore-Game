@@ -13,7 +13,7 @@ public class dialogueTrigger : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact") && _PlayerHasEnter == true)
         {
-            Debug.Log("Enter");
+            //Debug.Log("Enter");
             TriggerDialogue();
             _PlayerHasEnter = false;
         }
@@ -27,7 +27,7 @@ public class dialogueTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Enter");
+        //Debug.Log("Enter");
         if (other.tag == "Player")
         {
             _PlayerHasEnter = true;
@@ -39,7 +39,7 @@ public class dialogueTrigger : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Enter");
+        //Debug.Log("Enter");
         if (other.tag == "Player")
         {
             _PlayerHasEnter = false;

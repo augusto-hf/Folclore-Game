@@ -22,7 +22,7 @@ public class Ai_Enemy_Stats : MonoBehaviour
         VidaAtual = Health;
     }
 
-    public void TomarDamage(int Dano)
+    public void TakeDamage(int Dano)
     {
         VidaAtual -= Dano;
         Health = VidaAtual;
