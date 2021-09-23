@@ -7,9 +7,10 @@ public class tornado : MonoBehaviour
     shooting shooting;
     private GameObject enemyObject;
     private float distance;
-    public float minimumDistance = 2f;
+    public float minimumDistance = 6f;
     public float pullForce = 0.1f;
     public float tornadoLifeTime = 6f;
+    public int Damage;
 
     void Start()
     {
@@ -31,11 +32,14 @@ public class tornado : MonoBehaviour
     }
     void tornadoVaccun()
     {
-        distance = Vector2.Distance(enemyObject.transform.position, transform.position);
+        Collider[] enemysToPull = Physics.OverlapSphere(GetComponent<Collider>().bounds.center, minimumDistance);
+        //distance = Vector2.Distance(enemyObject.transform.position, transform.position);
         if (distance <= minimumDistance)
         {//puxa inimigos, na direção do tornado de acordo com a massa*tempo*força do puxão
             enemyObject.transform.position = Vector2.MoveTowards(enemyObject.transform.position, transform.position, enemyObject.GetComponent<Rigidbody2D>().mass * Time.deltaTime * pullForce);
             //buraco negro: enemyObject.GetComponent<Rigidbody2D>().AddForce((transform.position - enemyObject.transform.position) * pullForce);
+            //Dano:
+            
         }
     }
 }

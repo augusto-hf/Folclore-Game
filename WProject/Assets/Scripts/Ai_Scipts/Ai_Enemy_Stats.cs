@@ -24,8 +24,17 @@ public class Ai_Enemy_Stats : MonoBehaviour
 
     public void TomarDamage(int Dano)
     {
-        Dano -= VidaAtual;
+        VidaAtual -= Dano;
         Health = VidaAtual;
+        Debug.Log("Vida atual:" + Health);
+        if (Health <= 0)
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 
 

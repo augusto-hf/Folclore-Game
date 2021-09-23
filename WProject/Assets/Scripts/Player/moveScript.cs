@@ -30,8 +30,8 @@ public class moveScript : MonoBehaviour
     {
         move();
         dash();
-        Debug.Log("H: " + movement.x);
-        Debug.Log("Y: " + movement.y);
+        //Debug.Log("H: " + movement.x);
+        //Debug.Log("Y: " + movement.y);
 
         if (isDashing == false)
         {

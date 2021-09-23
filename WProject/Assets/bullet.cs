@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
+    public int Damage = 25;
     public float bulletLifetime;
     public GameObject hitEffect;
 
@@ -19,6 +20,10 @@ public class bullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+       if (collision.gameObject.CompareTag("Enemy"))
+       {
+            collision.gameObject.GetComponent<Ai_Enemy_Stats>().TomarDamage(Damage);
+       }
         Destroy(gameObject);
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 5f);
