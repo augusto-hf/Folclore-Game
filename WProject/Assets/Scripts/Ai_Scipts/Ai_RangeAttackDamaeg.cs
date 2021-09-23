@@ -20,14 +20,6 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
         Bullet = gameObject.GetComponent<Rigidbody2D>();
         Bullet.AddForce(ai_shootingattack._GunBarrel.transform.up * Ai_shotType.ai_enemy_stats.força, ForceMode2D.Impulse);
 
-        if (Clone == false)
-        {
-            ai_shootingattack.CreateBullet(new Vector2(1f, 0));
-            ai_shootingattack.CreateBullet(new Vector2(-1f, 0));
-        }
-      
-
-
         if (FollwoPlayer == true)
         {
             FlowPlayer();
