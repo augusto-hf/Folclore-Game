@@ -12,6 +12,7 @@ public class QuestGiver : MonoBehaviour
     public GameObject questWindow;
     public Text titleText;
     public Text descriptionText;
+    public Text goldText;
     public Text itemText;
 
     public void OpenQuestWindow()
@@ -19,6 +20,7 @@ public class QuestGiver : MonoBehaviour
         questWindow.SetActive(true);
         titleText.text = quest.title;
         descriptionText.text = quest.description;
+        goldText.text = quest.goldReward.ToString();
         itemText.text = quest.itemName;
     }
 
@@ -26,6 +28,6 @@ public class QuestGiver : MonoBehaviour
     {
         questWindow.SetActive(false);
         quest.isActive = true;
-        //give to player
+        player.quest = quest;
     }
 }

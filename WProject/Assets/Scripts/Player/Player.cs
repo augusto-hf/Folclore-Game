@@ -13,6 +13,10 @@ public class Player : MonoBehaviour
     public HealthBar healthBar;
     public BlindnessBar blindnessBar;
 
+    public int gold = 0;
+
+    public Quest quest;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +25,16 @@ public class Player : MonoBehaviour
 
         currentBlindness = maxBlindness;
         blindnessBar.SetMaxBlindness(maxBlindness);
+
+        if (quest.isActive)
+        {
+            quest.goal.EnemyKilled();
+            if (quest.goal.IsReached())
+            {
+                gold += quest.goldReward;
+                quest.Complete();
+            }
+        }
     }
 
     // Update is called once per frame
