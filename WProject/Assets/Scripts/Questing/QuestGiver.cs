@@ -21,4 +21,11 @@ public class QuestGiver : MonoBehaviour
         descriptionText.text = quest.description;
         itemText.text = quest.itemName;
     }
+
+    public void AcceptQuest()
+    {
+        questWindow.SetActive(false);
+        quest.isActive = true;
+        //give to player
+    }
 }
