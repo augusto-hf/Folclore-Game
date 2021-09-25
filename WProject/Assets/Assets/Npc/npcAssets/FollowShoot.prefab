@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2350786472717503583}
   - component: {fileID: 5085292453515843248}
   m_Layer: 0
-  m_Name: TriShoot
+  m_Name: FollowShoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

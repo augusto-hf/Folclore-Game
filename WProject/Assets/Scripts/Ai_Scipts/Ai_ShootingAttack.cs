@@ -8,6 +8,7 @@ public class Ai_ShootingAttack : MonoBehaviour
     [SerializeField] internal Ai_RangeAttackDamaeg ai_rangeAttackDamaeg;
     [SerializeField] Transform _ParentItem;
     public GameObject FireBall;
+    public GameObject FollowFireBall;
     int ShootTime = 0;
 
     [SerializeField] internal Transform _GunBarrel;
@@ -24,6 +25,8 @@ public class Ai_ShootingAttack : MonoBehaviour
         ShootTime++;
         if (ShootTime >= 5)
         {
+            Destroy(bullet);
+            bullet = Instantiate(FollowFireBall, _GunBarrel.position, _GunBarrel.rotation);
             bullet.GetComponent<Ai_RangeAttackDamaeg>().FollwoPlayer = true;
             ShootTime = 0;
         }
