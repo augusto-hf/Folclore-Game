@@ -828,20 +828,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 53195360266333697, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.096835636
+      objectReference: {fileID: 0}
+    - target: {fileID: 53195360266333697, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.014886808
+      objectReference: {fileID: 0}
+    - target: {fileID: 53195360266333697, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0016522564
+      objectReference: {fileID: 0}
+    - target: {fileID: 53195360266333697, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.057443444
+      objectReference: {fileID: 0}
+    - target: {fileID: 53195360266333697, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_Direction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 53195360266333698, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
       propertyPath: m_Name
       value: npcshoottype
       objectReference: {fileID: 0}
+    - target: {fileID: 53195360266333702, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: FollowFireBall
+      value: 
+      objectReference: {fileID: 5085292453515843253, guid: c44336691cf554d46880a285f9fea923,
+        type: 3}
+    - target: {fileID: 5431449596541925639, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431449596970780738, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.141
+      value: -0.1621
       objectReference: {fileID: 0}
     - target: {fileID: 5431449597865611378, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
       propertyPath: m_Radius
       value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431449597865611378, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf264600e8100314fa8c780cc364e7d9, type: 3}
@@ -14114,6 +14155,7 @@ MonoBehaviour:
   _ParentItem: {fileID: 1842607327}
   FireBall: {fileID: 5085292453515843253, guid: ae34cd6b260b0f449a45cb5f1fcf3460,
     type: 3}
+  FollowFireBall: {fileID: 0}
   _GunBarrel: {fileID: 1842607327}
   _Rb_GunBarrel: {fileID: 1842607328}
 --- !u!70 &4620797704522283196

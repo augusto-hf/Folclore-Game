@@ -10,7 +10,7 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
     [SerializeField] Player Healt;
      [SerializeField] Rigidbody2D Bullet;
     GameObject Enemy;
-    internal bool Clone;
+    
     internal bool FollwoPlayer;
     void Start()
     {
