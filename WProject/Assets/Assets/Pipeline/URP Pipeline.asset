@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf2edee5c58d82540a51f03df9d42094, type: 3}
-  m_Name: URP Pipeline Asset
+  m_Name: URP Pipeline
   m_EditorClassIdentifier: 
   k_AssetVersion: 6
   k_AssetPreviousVersion: 5
   m_RendererType: 1
   m_RendererData: {fileID: 0}
   m_RendererDataList:
-  - {fileID: 11400000, guid: a6e583dee9077704e80e0839befc23fd, type: 2}
+  - {fileID: 11400000, guid: 60bd8da1caf5475438afcee2f4c7be99, type: 2}
   m_DefaultRendererIndex: 0
   m_RequireDepthTexture: 0
   m_RequireOpaqueTexture: 0
