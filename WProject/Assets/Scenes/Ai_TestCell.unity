@@ -271,6 +271,31 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &320639480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 53195360266333698, guid: bf264600e8100314fa8c780cc364e7d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 851804363}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &320639481
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320639480}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3850bb755dea25d4bbc4d4a7cbba01bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &329409349
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,21 +883,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: npcshoottype
       objectReference: {fileID: 0}
+    - target: {fileID: 53195360266333698, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 53195360266333702, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
       propertyPath: FollowFireBall
       value: 
       objectReference: {fileID: 5085292453515843253, guid: c44336691cf554d46880a285f9fea923,
         type: 3}
+    - target: {fileID: 5431449596541925638, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5431449596541925639, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
       propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5431449596970780737, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5431449596970780738, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1621
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431449597865611376, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5431449597865611378, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}

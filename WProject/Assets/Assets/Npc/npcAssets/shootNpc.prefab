@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5085292453515843249}
   - component: {fileID: 2350786472717503583}
   - component: {fileID: 5085292453515843248}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shootNpc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Effect: {fileID: 6505338092035888528, guid: d7d0a59752dab5d4a98f2b0d5882ce3f, type: 3}
-  ai_Movement: {fileID: 0}
+  Ai_shotType: {fileID: 0}
+  ai_shootingattack: {fileID: 0}
+  Healt: {fileID: 0}
   Bullet: {fileID: 0}
 --- !u!61 &5085292453515843248
 BoxCollider2D:

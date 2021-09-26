@@ -26,7 +26,10 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
         }
     }
 
-
+    void FixedUpdate()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7, true);
+    }
     void FlowPlayer()
     {
         GameObject Player = GameObject.FindGameObjectWithTag("Player");

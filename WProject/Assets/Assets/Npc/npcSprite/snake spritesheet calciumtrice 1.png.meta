@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 9b1ce09b3bd2f064299811116b6719b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -18913648399782356
+    second: snake spritesheet calciumtrice_0
+  - first:
+      213: -1637635416031055761
+    second: snake spritesheet calciumtrice_1
+  - first:
+      213: 4416596138007910040
+    second: snake spritesheet calciumtrice_2
+  - first:
+      213: 4142094830490456752
+    second: snake spritesheet calciumtrice_3
+  - first:
+      213: 2567645537867401188
+    second: snake spritesheet calciumtrice_4
+  - first:
+      213: 6957800171901695086
+    second: snake spritesheet calciumtrice_5
+  - first:
+      213: 9004068576822773050
+    second: snake spritesheet calciumtrice_6
+  - first:
+      213: -5992538783116401908
+    second: snake spritesheet calciumtrice_7
+  - first:
+      213: 2820907843681381711
+    second: snake spritesheet calciumtrice_8
+  - first:
+      213: 219539728405520112
+    second: snake spritesheet calciumtrice_9
+  - first:
+      213: 3566181344118533207
+    second: snake spritesheet calciumtrice_10
+  - first:
+      213: -1978771966634770154
+    second: snake spritesheet calciumtrice_11
+  - first:
+      213: 2674946965170624681
+    second: snake spritesheet calciumtrice_12
+  - first:
+      213: 7048463899336880005
+    second: snake spritesheet calciumtrice_13
+  - first:
+      213: 2920391714871657908
+    second: snake spritesheet calciumtrice_14
+  - first:
+      213: 3804052678423231482
+    second: snake spritesheet calciumtrice_15
+  - first:
+      213: -3973038564247910362
+    second: snake spritesheet calciumtrice_16
+  - first:
+      213: -8909536647372641256
+    second: snake spritesheet calciumtrice_17
+  - first:
+      213: 8023037818814869106
+    second: snake spritesheet calciumtrice_18
+  - first:
+      213: -8471336293439694158
+    second: snake spritesheet calciumtrice_19
+  - first:
+      213: -8317268470106924780
+    second: snake spritesheet calciumtrice_20
+  - first:
+      213: 7164509822205697614
+    second: snake spritesheet calciumtrice_21
+  - first:
+      213: -7049826628030367265
+    second: snake spritesheet calciumtrice_22
+  - first:
+      213: -6649408598175253046
+    second: snake spritesheet calciumtrice_23
+  - first:
+      213: 6407391170500785418
+    second: snake spritesheet calciumtrice_24
+  - first:
+      213: 5662479409206589637
+    second: snake spritesheet calciumtrice_25
+  - first:
+      213: -1013794620977108466
+    second: snake spritesheet calciumtrice_26
+  - first:
+      213: 5259873580072467020
+    second: snake spritesheet calciumtrice_27
+  - first:
+      213: 6131193795299835872
+    second: snake spritesheet calciumtrice_28
+  - first:
+      213: 1849501969600251822
+    second: snake spritesheet calciumtrice_29
+  - first:
+      213: -9015789471093207602
+    second: snake spritesheet calciumtrice_30
+  - first:
+      213: -1392773452098506534
+    second: snake spritesheet calciumtrice_31
+  - first:
+      213: 5779753712976751054
+    second: snake spritesheet calciumtrice_32
+  - first:
+      213: -8791769407554028934
+    second: snake spritesheet calciumtrice_33
+  - first:
+      213: 5734868676646267540
+    second: snake spritesheet calciumtrice_34
+  - first:
+      213: 5875992603140788190
+    second: snake spritesheet calciumtrice_35
+  - first:
+      213: -2412783145901595986
+    second: snake spritesheet calciumtrice_36
+  - first:
+      213: -2807659698977368033
+    second: snake spritesheet calciumtrice_37
+  - first:
+      213: 7566318957551192243
+    second: snake spritesheet calciumtrice_38
+  - first:
+      213: 6574414873780217420
+    second: snake spritesheet calciumtrice_39
+  - first:
+      213: -753803023500326261
+    second: snake spritesheet calciumtrice_40
+  - first:
+      213: 4812084907049097301
+    second: snake spritesheet calciumtrice_41
+  - first:
+      213: 4778415387151873945
+    second: snake spritesheet calciumtrice_42
+  - first:
+      213: 109184382025989977
+    second: snake spritesheet calciumtrice_43
+  - first:
+      213: 9001887308804721422
+    second: snake spritesheet calciumtrice_44
+  - first:
+      213: 3255086016578026951
+    second: snake spritesheet calciumtrice_45
+  - first:
+      213: 2892005820472734388
+    second: snake spritesheet calciumtrice_46
+  - first:
+      213: 5475396712502909929
+    second: snake spritesheet calciumtrice_47
+  - first:
+      213: 6615226701025148424
+    second: snake spritesheet calciumtrice_48
+  - first:
+      213: -1264244382317569073
+    second: snake spritesheet calciumtrice_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: snake spritesheet calciumtrice_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 128
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e69b1132eccbff0800000000000000
+      internalID: -18913648399782356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake spritesheet calciumtrice_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 128
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60bed30443f549e0800000000000000
+      internalID: -1637635416031055761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake spritesheet calciumtrice_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 128
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896d25299c6ea4d30800000000000000
+      internalID: 4416596138007910040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake spritesheet calciumtrice_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 128
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b29d557d4dab7930800000000000000
+      internalID: 4142094830490456752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake spritesheet calciumtrice_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 128
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e704b1430c12a320800000000000000
+      internalID: 2567645537867401188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake spritesheet calciumtrice_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 128
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e643a5074621f8060800000000000000
+      internalID: 6957800171901695086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake spritesheet calciumtrice_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 128
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3547ce3aa0e4fc70800000000000000
+      internalID: 9004068576822773050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake spritesheet calciumtrice_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 128
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0368910ab936dca0800000000000000
+      internalID: -5992538783116401908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake spritesheet calciumtrice_8
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 128
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4dedbeecb0e52720800000000000000
+      internalID: 2820907843681381711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake spritesheet calciumtrice_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 128
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe52b54836fb0300800000000000000
+      internalID: 219539728405520112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
