@@ -53,7 +53,4 @@ public class Ai_MelleType : MonoBehaviour
         }
     }
 
-
-
-
 }

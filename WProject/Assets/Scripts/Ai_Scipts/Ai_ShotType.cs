@@ -5,14 +5,14 @@ using UnityEngine;
 public class Ai_ShotType : MonoBehaviour
 {
     [SerializeField] internal Ai_Enemy_Stats ai_enemy_stats;
-
     [SerializeField] internal Transform Player;
     [SerializeField] Transform _EnemyHead;
     [SerializeField] internal Transform _Enemy;
     [SerializeField] LayerMask mask;
-    Ai_ShootingAttack ai_shootingattack;
     [SerializeField] Rigidbody2D _Barrel;
-
+ 
+    
+    Ai_ShootingAttack ai_shootingattack;
     float _AgroCountDown;
     float fireRate;
     float TimetoFire;
@@ -22,8 +22,6 @@ public class Ai_ShotType : MonoBehaviour
     {
         fireRate = 1f;
         TimetoFire = Time.time;
-        Player = GameObject.FindWithTag("Player").transform;
-        _AgroCountDown = 100f;
         ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
     }
 
@@ -64,19 +62,23 @@ public class Ai_ShotType : MonoBehaviour
         }
         if (_AgroCountDown <= 0)
         {
-            //Player = null;
+            Player = null;
         }
     }
 
-    void GetPlayer()
+    void GetPlayer(Transform player)
     {
-        //Player = hit.transform;
+        Player = player;
         _AgroCountDown = ai_enemy_stats.Aggro;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        GetPlayer();
+        if (other.tag == "Player")
+        {
+            GetPlayer(other.transform);
+
+        }
     }
 
 }

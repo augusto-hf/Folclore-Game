@@ -6,20 +6,24 @@ public class Ai_MelleAtack : MonoBehaviour
 {
     [SerializeField] internal Ai_MelleType Ai_MelleType;
     [SerializeField] Player Healt;
-    public GameObject Attack;
+    Rigidbody2D RbPlayer;
     bool starCoumt;
+
+    public GameObject Attack;
     public float time;
     public float waitTime;
-  public void MelleAttack()
+    public Animator Enemy;
+
+    public void MelleAttack()
     {
         starCoumt = true;
         waitTime -= Time.deltaTime;
         if (waitTime <= 0)
         {
-            Attack.GetComponent<SpriteRenderer>().enabled = true;
+            //Attack.GetComponent<SpriteRenderer>().enabled = true;
             Attack.GetComponent<BoxCollider2D>().enabled = true;
+            StartCoroutine(Anim());
         }
-        
         if (starCoumt == true && waitTime <= 0)
         {
             time -= Time.deltaTime;
@@ -27,8 +31,7 @@ public class Ai_MelleAtack : MonoBehaviour
 
         if (time <= 0)
         {
-            Attack.GetComponent<SpriteRenderer>().enabled = false;
-            Attack.GetComponent<BoxCollider2D>().enabled = false;
+            reset();
             starCoumt = false;
         }
        
@@ -36,35 +39,25 @@ public class Ai_MelleAtack : MonoBehaviour
 
     void danoAmdknockback()
     {/*
-      
         Vector2 Direcao = Ai_MelleType.Player.position - Ai_MelleType._Enemy.transform.position;
         Direcao.y = 0;
         Debug.Log(Direcao.normalized * Ai_MelleType.ai_enemy_stats.força);
         RbPlayer.AddForce(Direcao.normalized * Ai_MelleType.ai_enemy_stats.força,ForceMode2D.Force);
         */
         Healt.TakeDamage(Ai_MelleType.ai_enemy_stats.Damage);
-        float TimeExtra = 1f;
-
-        TimeExtra -= Time.deltaTime;
-
-        if (TimeExtra <=0)
-        {
-
-
-            reset();
-        }
+        
 
 
     }
 
     void reset()
     {
-        Attack.GetComponent<SpriteRenderer>().enabled = false;
+        //Attack.GetComponent<SpriteRenderer>().enabled = false;
         Attack.GetComponent<BoxCollider2D>().enabled = false;
         starCoumt = false;
         Healt = null;
-        time = 5f;
-        waitTime = 3f;
+        time = 1f;
+        waitTime = 2f;
         //playstop
         //combatmode
     }
@@ -74,16 +67,20 @@ public class Ai_MelleAtack : MonoBehaviour
         if (other.tag == "Player")
         {
             Healt = other.gameObject.GetComponentInParent<Player>();
-            //other.gameObject.GetComponent<Rigidbody2D>()
+           //RbPlayer = other.gameObject.GetComponent<Rigidbody2D>();
             danoAmdknockback();
         }
 
     }
-
-
-    void OnTriggerExit2D(Collider2D other)
+    IEnumerator Anim()
     {
-     
-        //Reseta o attaque e dar um cooldown para o attque
+        Enemy.SetBool("MelleAttack", true);
+
+        yield return new WaitForSeconds(1f);
+        Enemy.SetBool("MelleAttack", false);
+
     }
+
+
+
 }

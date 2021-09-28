@@ -8,10 +8,11 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
     [SerializeField] internal Ai_ShotType Ai_shotType;
     [SerializeField] internal Ai_ShootingAttack ai_shootingattack;
     [SerializeField] Player Healt;
-     [SerializeField] Rigidbody2D Bullet;
+    [SerializeField] Rigidbody2D Bullet;
+
     GameObject Enemy;
-    
     internal bool FollwoPlayer;
+
     void Start()
     {
         Enemy = GameObject.FindGameObjectWithTag("Enemy");
@@ -24,14 +25,18 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
         {
             FlowPlayer();
         }
+
     }
 
     void FixedUpdate()
     {
         Physics2D.IgnoreLayerCollision(6, 7, true);
     }
+
+
     void FlowPlayer()
     {
+
         GameObject Player = GameObject.FindGameObjectWithTag("Player");
         Vector2 MoveDi = (Player.transform.position - transform.position).normalized * Ai_shotType.ai_enemy_stats.força;
         Bullet.velocity = new Vector2(MoveDi.x, MoveDi.y);
