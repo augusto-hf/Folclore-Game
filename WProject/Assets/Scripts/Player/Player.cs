@@ -5,8 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public int maxHealth = 100;
-    public int maxBlindness = 100;
+    public int maxHealth;
+    public int maxBlindness;
     public int currentBlindness;
     public int currentHealth;
 
