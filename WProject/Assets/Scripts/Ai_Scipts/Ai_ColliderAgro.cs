@@ -11,23 +11,28 @@ public class Ai_ColliderAgro : MonoBehaviour
     float  _AgroCountDown;
     void Start()
     {
-        switch (ai_enemy_stats.TypeOfEnemy)
-        {
-            case 0:
-                //Ai_ShotType ai_shottype;
-                break;
-            case 1:
-                break;
+        ai_enemy_stats = gameObject.GetComponentInParent<Ai_Enemy_Stats>();
 
-            default:
-                break;
-        }
     }
 
     void GetPlayer(Transform player)
     {
         Player = player;
         _AgroCountDown = ai_enemy_stats.Aggro;
+        switch (ai_enemy_stats.TypeOfEnemy)
+        {
+            case 0:
+                Ai_ShotType ai_shottype = gameObject.GetComponentInParent<Ai_ShotType>();
+                break;
+            case 1:
+                Ai_MelleType ai_melletype = gameObject.GetComponentInParent<Ai_MelleType>();
+                ai_melletype.Player = Player;
+                ai_melletype._AgroCountDown = _AgroCountDown;
+                break;
+
+            default:
+                break;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)

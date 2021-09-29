@@ -11,7 +11,7 @@ public class Ai_MelleType : MonoBehaviour
     [SerializeField] internal Transform _Enemy;
     [SerializeField] LayerMask mask;
 
-    float _AgroCountDown;
+    internal float _AgroCountDown;
   
 
 
