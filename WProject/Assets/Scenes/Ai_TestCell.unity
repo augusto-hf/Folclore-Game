@@ -940,6 +940,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9006471606693961980, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf264600e8100314fa8c780cc364e7d9, type: 3}
 --- !u!1 &970017300
@@ -11811,6 +11816,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &1106293576 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5559337894521852985, guid: ce7821888bac92247828a8f08e060ce2,
+    type: 3}
+  m_PrefabInstance: {fileID: 502751796826786193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1171874977
 GameObject:
   m_ObjectHideFlags: 0
@@ -11886,6 +11897,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171874977}
   m_CullTransparentMesh: 1
+--- !u!50 &1195530114 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 824104171591519392, guid: 3516871fa660b9e44bfd4efadcd22985,
+    type: 3}
+  m_PrefabInstance: {fileID: 2132159882}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1313690894
 GameObject:
   m_ObjectHideFlags: 0
@@ -14188,6 +14205,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 502751796578462281, guid: ce7821888bac92247828a8f08e060ce2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428349563751646844, guid: ce7821888bac92247828a8f08e060ce2,
+        type: 3}
+      propertyPath: Enemy
+      value: 
+      objectReference: {fileID: 1106293576}
+    - target: {fileID: 4428349563751646844, guid: ce7821888bac92247828a8f08e060ce2,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 2132159883}
+    - target: {fileID: 4428349563751646844, guid: ce7821888bac92247828a8f08e060ce2,
+        type: 3}
+      propertyPath: RbPlayer
+      value: 
+      objectReference: {fileID: 1195530114}
     - target: {fileID: 5559337894521852985, guid: ce7821888bac92247828a8f08e060ce2,
         type: 3}
       propertyPath: m_RootOrder
@@ -14312,6 +14349,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   _EnemyHead: {fileID: 1774680684}
   _Enemy: {fileID: 4620797704522283199}
+  _WalkBackpoint: {fileID: 0}
   mask:
     serializedVersion: 2
     m_Bits: 512

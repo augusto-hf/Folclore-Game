@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public int gold = 0;
 
     public Quest quest;
+    public bool IVframe;
 
     // Start is called before the first frame update
     void Start()
@@ -48,19 +49,27 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Morri");
         }
+        if (IVframe == true)
+        {
+            Physics2D.IgnoreLayerCollision(6, 7, true);
+        }
     }
 
    public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        currentBlindness -= damage;
-        if (currentBlindness <= 0)
+        if (IVframe == false)
         {
-            currentBlindness = 0;
+            currentHealth -= damage;
+            currentBlindness -= damage;
+            if (currentBlindness <= 0)
+            {
+                currentBlindness = 0;
+            }
+
+
+            healthBar.SetHealth(currentHealth);
+            blindnessBar.SetBlindness(currentBlindness);
         }
-
-
-        healthBar.SetHealth(currentHealth);
-        blindnessBar.SetBlindness(currentBlindness);
+       
     }
 }

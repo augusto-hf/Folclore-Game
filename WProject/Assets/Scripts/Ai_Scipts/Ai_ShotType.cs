@@ -8,6 +8,7 @@ public class Ai_ShotType : MonoBehaviour
     [SerializeField] internal Transform Player;
     [SerializeField] Transform _EnemyHead;
     [SerializeField] internal Transform _Enemy;
+    [SerializeField] internal Transform _WalkBackpoint;
     [SerializeField] LayerMask mask;
     [SerializeField] Rigidbody2D _Barrel;
  
@@ -58,9 +59,12 @@ public class Ai_ShotType : MonoBehaviour
                     TimetoFire = Time.time + fireRate;
                 }
             }
-            if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance / 2)
+            if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
             {
-                
+
+                _Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
+
+
             }
 
             _AgroCountDown -= Time.deltaTime;
