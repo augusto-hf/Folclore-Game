@@ -16,7 +16,7 @@ public class Ai_ShotType : MonoBehaviour
     float _AgroCountDown;
     float fireRate;
     float TimetoFire;
-
+    // fazer um sistema para que o inimigo se aveste do jogador quando ele esta muito dele e que ele ande em zique sague
 
     void Start()
     {
@@ -50,7 +50,7 @@ public class Ai_ShotType : MonoBehaviour
             {
                 _Enemy.position = Vector2.MoveTowards(_Enemy.position, Player.position, ai_enemy_stats.Speed * Time.deltaTime);
             }
-            if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
+            if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance / 2)
             {
                 if (Time.time > TimetoFire)
                 {
@@ -58,6 +58,11 @@ public class Ai_ShotType : MonoBehaviour
                     TimetoFire = Time.time + fireRate;
                 }
             }
+            if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance / 2)
+            {
+                
+            }
+
             _AgroCountDown -= Time.deltaTime;
         }
         if (_AgroCountDown <= 0)
