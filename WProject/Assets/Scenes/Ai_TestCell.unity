@@ -14175,6 +14175,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 502751795115450133, guid: ce7821888bac92247828a8f08e060ce2,
         type: 3}
+      propertyPath: time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 502751795115450133, guid: ce7821888bac92247828a8f08e060ce2,
+        type: 3}
       propertyPath: Enemy
       value: 
       objectReference: {fileID: 1106293575}
