@@ -14,10 +14,11 @@ public class Ai_ShotType : MonoBehaviour
  
     
     Ai_ShootingAttack ai_shootingattack;
-    float _AgroCountDown;
+    internal float _AgroCountDown;
     float fireRate;
     float TimetoFire;
     // fazer um sistema para que o inimigo se aveste do jogador quando ele esta muito dele e que ele ande em zique sague
+
 
     void Start()
     {
@@ -34,10 +35,13 @@ public class Ai_ShotType : MonoBehaviour
 
     void Aim()
     {
-
-        Vector2 look = Player.position - ai_shootingattack._GunBarrel.position;
-        float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
-        _Barrel.rotation = Angulo;
+        if (Player != null)
+        {
+            Vector2 look = Player.position - ai_shootingattack._GunBarrel.position;
+            float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
+            _Barrel.rotation = Angulo;
+        }
+     
     }
 
     void EnemyBehaviorRange()
@@ -51,19 +55,16 @@ public class Ai_ShotType : MonoBehaviour
             {
                 _Enemy.position = Vector2.MoveTowards(_Enemy.position, Player.position, ai_enemy_stats.Speed * Time.deltaTime);
             }
-            if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance / 2)
+           
+            if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
             {
+
+                _Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
                 if (Time.time > TimetoFire)
                 {
                     ai_shootingattack.FireBallAttack();
                     TimetoFire = Time.time + fireRate;
                 }
-            }
-            if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
-            {
-
-                _Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
-
 
             }
 
@@ -75,19 +76,8 @@ public class Ai_ShotType : MonoBehaviour
         }
     }
 
-    void GetPlayer(Transform player)
-    {
-        Player = player;
-        _AgroCountDown = ai_enemy_stats.Aggro;
-    }
+   
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            GetPlayer(other.transform);
-
-        }
-    }
+  
 
 }

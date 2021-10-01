@@ -12,7 +12,7 @@ public class Ai_Enemy_Stats : MonoBehaviour
                             * 1 = range
                             */
     public float ViewDistance;
-    public int Speed;
+    public float Speed;
     public float StopDistance;
     public float Aggro;
 
