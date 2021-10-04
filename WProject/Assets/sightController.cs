@@ -9,6 +9,7 @@ public class sightController : MonoBehaviour
     public Player playerScript;
     public float currentSightPercent, targetSightPercent, outerRadiusBase;
     private float maxBlindness, currentBlindness;
+    private bool secondTimeRunning;
 
     void Start()
     {
@@ -20,9 +21,8 @@ public class sightController : MonoBehaviour
         //converte pra uma variavel local, ja que a original é int
         currentBlindness = playerScript.currentBlindness;
         //primeiro descobre a porcentagem da visão atual em relação ao maximo
-        targetSightPercent = (currentBlindness / maxBlindness);
-        sight.pointLightOuterRadius = outerRadiusBase * targetSightPercent;
-        currentSightPercent = sight.pointLightOuterRadius;
-        Debug.Log(targetSightPercent);
+        currentSightPercent = (currentBlindness / maxBlindness);
+        sight.pointLightOuterRadius = outerRadiusBase * currentSightPercent;
+        Debug.Log(currentSightPercent);
     }
 }
