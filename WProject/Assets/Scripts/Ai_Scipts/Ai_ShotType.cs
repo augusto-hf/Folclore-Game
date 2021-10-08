@@ -25,6 +25,8 @@ public class Ai_ShotType : MonoBehaviour
         fireRate = 1f;
         TimetoFire = Time.time;
         ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
+        _AgroCountDown = 100;
     }
 
     void Update()
@@ -40,6 +42,11 @@ public class Ai_ShotType : MonoBehaviour
             Vector2 look = Player.position - ai_shootingattack._GunBarrel.position;
             float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
             _Barrel.rotation = Angulo;
+
+            //Enemy
+            Vector2 lookE = Player.position - _Enemy.position;
+            float AnguloE = Mathf.Atan2(lookE.y, lookE.x) * Mathf.Rad2Deg - 90f;
+            _Enemy.GetComponent<Rigidbody2D>().rotation = AnguloE;
         }
      
     }
@@ -59,7 +66,7 @@ public class Ai_ShotType : MonoBehaviour
             if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
             {
 
-                _Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
+               // _Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
                 if (Time.time > TimetoFire)
                 {
                     ai_shootingattack.FireBallAttack();

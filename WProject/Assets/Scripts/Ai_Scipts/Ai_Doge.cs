@@ -12,7 +12,7 @@ public class Ai_Doge : MonoBehaviour
     public float startDashTime;
     private int direction;
     private bool isDashing;
-    private bool _BeginDash;
+    [SerializeField] private bool _BeginDash;
     Vector2 movementRef;
     private Transform _PBullet;
 
@@ -36,12 +36,12 @@ public class Ai_Doge : MonoBehaviour
 
     }
 
-
+   
 
     void Dash()
     {
         //recebe o comando de dar dash caso as variaveis do dash estejam zeradas
-        if (_BeginDash == true || Input.GetKeyDown("s"))
+        if (_BeginDash == true)
         {//da o dash
             startMoveSpeed = ai_enemy_stats.Speed;
             movementRef = Enemy.position;
@@ -77,6 +77,7 @@ public class Ai_Doge : MonoBehaviour
         {
             _BeginDash = true;
             //other
+            Dash();
 
         }
     }
