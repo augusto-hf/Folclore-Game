@@ -10,7 +10,7 @@ public class flamethrower : MonoBehaviour
     {
         
     }
-
+    
     // Update is called once per frame
     void OnParticleCollision(GameObject collision)
     {
