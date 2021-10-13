@@ -186,8 +186,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee731fea654fcf48a2351abe1e65b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 35
-  dashEnd: 2
+  dashSpeed: 2
+  dashEnd: 3
+  dashTime: 0
   startDashTime: 2
   _BeginDash: 0
   Enemy: {fileID: 320639482}

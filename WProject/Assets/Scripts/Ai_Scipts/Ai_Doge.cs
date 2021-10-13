@@ -8,7 +8,7 @@ public class Ai_Doge : MonoBehaviour
     float startMoveSpeed;
     public float dashSpeed;
     public float dashEnd;
-    private float dashTime;
+    [SerializeField] private float dashTime;
     public float startDashTime;
     private int direction;
     private bool isDashing;
@@ -41,7 +41,7 @@ public class Ai_Doge : MonoBehaviour
     void Dash()
     {
         //recebe o comando de dar dash caso as variaveis do dash estejam zeradas
-        if (_BeginDash == true)
+        if (_BeginDash == true && dashTime <= 0 )
         {//da o dash
             startMoveSpeed = ai_enemy_stats.Speed;
             movementRef = Enemy.position;
@@ -49,27 +49,28 @@ public class Ai_Doge : MonoBehaviour
             ai_enemy_stats.Speed = ai_enemy_stats.Speed * dashSpeed;
             dashTime = startDashTime;
         }
-        else
+        
+    }
+
+    void Update()
+    {
+        if (dashTime > 0)
         {
-            if (dashTime > 0 || ai_enemy_stats.Speed > startMoveSpeed)
+            dashTime -= Time.deltaTime;
+
+            ai_enemy_stats.Speed -= Time.deltaTime + dashEnd;
+
+            if (ai_enemy_stats.Speed < startMoveSpeed)
             {
-                dashTime -= Time.deltaTime;
-
-                ai_enemy_stats.Speed -= Time.deltaTime + dashEnd;
-
-                if (ai_enemy_stats.Speed < startMoveSpeed)
-                {
-                    ai_enemy_stats.Speed = startMoveSpeed;
-                }
+                ai_enemy_stats.Speed = startMoveSpeed;
             }
         }
         if (dashTime <= 0 && ai_enemy_stats.Speed == startMoveSpeed)
         {//reseta indicador de dash
             isDashing = false;
-
+            _BeginDash = false;
         }
     }
-
 
     void OnTriggerEnter2D(Collider2D other)
     {
