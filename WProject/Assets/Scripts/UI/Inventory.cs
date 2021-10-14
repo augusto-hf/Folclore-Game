@@ -19,6 +19,8 @@ public class Inventory : MonoBehaviour
     }
     #endregion
 
+    public GameObject InventoryMenuUI;
+
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
 
@@ -26,6 +28,23 @@ public class Inventory : MonoBehaviour
 
     public List<Item> items = new List<Item>();
 
+    public static bool InventoryActive = false;
+    public static bool GameIsPaused = false;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (InventoryActive)
+            {
+                Resume();
+            }
+            else
+            {
+                InventoryEnable();
+            }
+        }
+    }
     public bool Add(Item item)
     {
         if (!item.isDefaultItem)
@@ -52,5 +71,19 @@ public class Inventory : MonoBehaviour
             onItemChangedCallback.Invoke();
     }
 
+    void InventoryEnable()
+    {
+        InventoryMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        InventoryActive = true;
+        GameIsPaused = true;
+    }
+
+    void Resume()
+    {
+        InventoryMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        InventoryActive = false;
+    }
 
 }
