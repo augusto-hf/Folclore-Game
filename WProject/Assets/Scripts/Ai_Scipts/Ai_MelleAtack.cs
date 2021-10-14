@@ -38,12 +38,12 @@ public class Ai_MelleAtack : MonoBehaviour
     }
 
     void danoAmdknockback()
-    {/*
+    {
         Vector2 Direcao = Ai_MelleType.Player.position - Ai_MelleType._Enemy.transform.position;
         Direcao.y = 0;
         Debug.Log(Direcao.normalized * Ai_MelleType.ai_enemy_stats.força);
         RbPlayer.AddForce(Direcao.normalized * Ai_MelleType.ai_enemy_stats.força,ForceMode2D.Force);
-        */
+        
         Healt.TakeDamage(Ai_MelleType.ai_enemy_stats.Damage);
         
 
@@ -52,14 +52,12 @@ public class Ai_MelleAtack : MonoBehaviour
 
     void reset()
     {
-        //Attack.GetComponent<SpriteRenderer>().enabled = false;
         Attack.GetComponent<BoxCollider2D>().enabled = false;
         starCoumt = false;
         Healt = null;
         time = 1f;
         waitTime = 2f;
-        //playstop
-        //combatmode
+  
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -67,7 +65,7 @@ public class Ai_MelleAtack : MonoBehaviour
         if (other.tag == "Player")
         {
             Healt = other.gameObject.GetComponentInParent<Player>();
-           //RbPlayer = other.gameObject.GetComponent<Rigidbody2D>();
+           RbPlayer = other.gameObject.GetComponentInParent<Rigidbody2D>();
             danoAmdknockback();
         }
 
@@ -75,7 +73,6 @@ public class Ai_MelleAtack : MonoBehaviour
     IEnumerator Anim()
     {
         Enemy.SetBool("MelleAttack", true);
-
         yield return new WaitForSeconds(1f);
         Enemy.SetBool("MelleAttack", false);
 

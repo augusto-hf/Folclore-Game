@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class Ai_Doge : MonoBehaviour
 {
-    //Dash
     float startMoveSpeed;
-    public float dashSpeed;
-    public float dashEnd;
-    [SerializeField] private float dashTime;
-    public float startDashTime;
     private int direction;
-    private bool isDashing;
+
+    [SerializeField] private bool isDashing;
+    [SerializeField] private float dashTime;
     [SerializeField] private bool _BeginDash;
-    Vector2 movementRef;
-    private Transform _PBullet;
-
+    [SerializeField] private Transform Doget, Doger;
     [SerializeField] internal Rigidbody2D Enemy;
-
     [SerializeField] internal Ai_Enemy_Stats ai_enemy_stats;
 
 
@@ -28,11 +22,7 @@ public class Ai_Doge : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isDashing == true)
-        {
-            Enemy.MovePosition(Enemy.position + movementRef * ai_enemy_stats.Speed * Time.fixedDeltaTime);
-
-        }
+        
 
     }
 
@@ -40,44 +30,56 @@ public class Ai_Doge : MonoBehaviour
 
     void Dash()
     {
-        //recebe o comando de dar dash caso as variaveis do dash estejam zeradas
         if (_BeginDash == true && dashTime <= 0 )
-        {//da o dash
-            startMoveSpeed = ai_enemy_stats.Speed;
-            movementRef = Enemy.position;
+        {
             isDashing = true;
-            ai_enemy_stats.Speed = ai_enemy_stats.Speed * dashSpeed;
-            dashTime = startDashTime;
+            //ai_enemy_stats.Speed = ai_enemy_stats.Speed * ai_enemy_stats.dashSpeed;
+            dashTime = ai_enemy_stats.startDashTime;
         }
         
     }
 
     void Update()
     {
+        if (isDashing == true)
+        {
+            float Ran = 0;
+            Ran = Random.Range(0, 1);
+            switch (Ran)
+            {
+                case 0:
+                    Enemy.position = Vector2.MoveTowards(Enemy.position, Doget.position, ai_enemy_stats.dashSpeed);
+                    break;
+                case 1:
+                    Enemy.position = Vector2.MoveTowards(Enemy.position, Doger.position, ai_enemy_stats.dashSpeed);
+                    break;
+
+
+                default:
+                    break;
+            }
+            //Enemy.velocity = Vector2.up * ai_enemy_stats.dashSpeed;
+            //Enemy.MovePosition(Enemy.position * ai_enemy_stats.Speed * Time.fixedDeltaTime);
+        }
         if (dashTime > 0)
         {
             dashTime -= Time.deltaTime;
-
-            ai_enemy_stats.Speed -= Time.deltaTime + dashEnd;
-
-            if (ai_enemy_stats.Speed < startMoveSpeed)
-            {
-                ai_enemy_stats.Speed = startMoveSpeed;
-            }
         }
-        if (dashTime <= 0 && ai_enemy_stats.Speed == startMoveSpeed)
-        {//reseta indicador de dash
+        if (dashTime <= 0 )
+        {
+            //dashTime = ai_enemy_stats.startDashTime;
+            //Enemy.velocity = Enemy.position * ai_enemy_stats.Speed;
             isDashing = false;
             _BeginDash = false;
+
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player_Bullet")
         {
             _BeginDash = true;
-            //other
             Dash();
 
         }

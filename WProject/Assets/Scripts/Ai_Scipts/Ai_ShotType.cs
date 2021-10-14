@@ -11,8 +11,8 @@ public class Ai_ShotType : MonoBehaviour
     [SerializeField] internal Transform _WalkBackpoint;
     [SerializeField] LayerMask mask;
     [SerializeField] Rigidbody2D _Barrel;
- 
-    
+    public Animator Enemy;
+
     Ai_ShootingAttack ai_shootingattack;
     internal float _AgroCountDown;
     float fireRate;
@@ -22,7 +22,7 @@ public class Ai_ShotType : MonoBehaviour
 
     void Start()
     {
-        fireRate = 1f;
+        fireRate = 3f;
         TimetoFire = Time.time;
         ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
         Player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -69,7 +69,9 @@ public class Ai_ShotType : MonoBehaviour
                // _Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
                 if (Time.time > TimetoFire)
                 {
+                    StartCoroutine(Anim());
                     ai_shootingattack.FireBallAttack();
+
                     TimetoFire = Time.time + fireRate;
                 }
 
@@ -83,8 +85,16 @@ public class Ai_ShotType : MonoBehaviour
         }
     }
 
-   
+    IEnumerator Anim()
+    {
+        Enemy.SetBool("MelleAttack", true);
 
-  
+        yield return new WaitForSeconds(1f);
+        Enemy.SetBool("MelleAttack", false);
+
+    }
+
+
+
 
 }

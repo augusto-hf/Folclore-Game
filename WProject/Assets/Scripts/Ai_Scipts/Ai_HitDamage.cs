@@ -14,8 +14,9 @@ public class Ai_HitDamage : MonoBehaviour
 
         if (collision.collider.tag == "Player")
         {
-            Player Healt = collision.gameObject.GetComponent<Player>();
-            ai_damage.Damage(ai_enemy_stats.Damage, Healt);
+            Player Healt = collision.gameObject.GetComponentInParent<Player>();
+            Rigidbody2D bPlayer = collision.gameObject.GetComponentInParent<Rigidbody2D>();
+            ai_damage.Damage(ai_enemy_stats.Damage, Healt, bPlayer);
         }
 
     }

@@ -15,6 +15,11 @@ public class Ai_Enemy_Stats : MonoBehaviour
     public float Speed;
     public float StopDistance;
     public float Aggro;
+    //Dash
+    public float dashSpeed;
+    public float dashEnd;
+    public float startDashTime;
+    [SerializeField] GameObject Effect;
 
     public float força;
     void Start()
@@ -29,12 +34,26 @@ public class Ai_Enemy_Stats : MonoBehaviour
         Debug.Log("Vida atual:" + Health);
         if (Health <= 0)
         {
-            Die();
+            
+            StartCoroutine(Die());
+
         }
     }
-    public void Die()
+    void Update()
     {
+        if (Input.GetKeyDown("q"))
+        {
+            TakeDamage(100);
+        }
+    }
+
+    IEnumerator Die()
+    {
+
+        GameObject effect = Instantiate(Effect, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
+        Destroy(effect, 5f);
     }
 
 

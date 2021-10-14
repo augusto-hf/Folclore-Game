@@ -52,6 +52,8 @@ public class Player : MonoBehaviour
         if (IVframe == true)
         {
             Physics2D.IgnoreLayerCollision(6, 7, true);
+            StartCoroutine(IncibleFrame());
+
         }
     }
 
@@ -72,4 +74,14 @@ public class Player : MonoBehaviour
         }
        
     }
+
+
+    IEnumerator IncibleFrame()
+    {
+        yield return new WaitForSeconds(2f);
+        IVframe = false;
+        Debug.Log("i");
+        //Healt = null;
+    }
+
 }
