@@ -19,15 +19,18 @@ public class Ai_MelleType : MonoBehaviour
     {
       EnemyBehaviorMelle();
     }
-    /*
     void Aim()
     {
+        if (Player != null)
+        {
 
-        Vector2 look = Player.position - _EnemyHead.position;
-        float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
-        _EnemyHead.rotation = Angulo;
+            //Enemy
+            Vector2 lookE = Player.position - _Enemy.position;
+            float AnguloE = Mathf.Atan2(lookE.y, lookE.x) * Mathf.Rad2Deg - 90f;
+            _Enemy.GetComponent<Rigidbody2D>().rotation = AnguloE;
+        }
+
     }
-    */
     void EnemyBehaviorMelle()
     {
         Ai_MelleAtack ai_melleatack = GetComponentInChildren<Ai_MelleAtack>();

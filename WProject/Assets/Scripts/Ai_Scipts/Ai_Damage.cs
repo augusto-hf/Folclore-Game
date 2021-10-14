@@ -1,19 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
-public class Ai_Damage : MonoBehaviour
+public class AI_Damage : MonoBehaviour
 {
-    [SerializeField]Player Healt;
-    int VidaAtual;
-    int SomaDamage;
-    int Result;
-    
-    
-    public void Damage(int Dano)
+ 
+    Player Healt;
+    [SerializeField] Transform Enemy;
+    [SerializeField] Rigidbody2D RbPlayer;
+
+
+    public void Damage(int Dano,Player healt, Rigidbody2D rPlayer)
     {
-        SomaDamage = Dano;
-        Result = SomaDamage - VidaAtual;
-        //Healt = Result;
+
+        RbPlayer = rPlayer;
+            Healt = healt;
+            Vector2 Direcao = RbPlayer.transform.position - Enemy.position;
+            Direcao.y = 0;
+            RbPlayer.AddForce(Direcao.normalized * 20, ForceMode2D.Force);
+            Healt.TakeDamage(Dano);
+            Healt.IVframe = true;
+            
+  
+
     }
+
+
+  
 }
