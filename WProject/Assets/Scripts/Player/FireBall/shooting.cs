@@ -11,7 +11,7 @@ public class shooting : MonoBehaviour
     public GameObject bulletPrefab, flamethrowerObject;
     private ParticleSystem flamethrower;
 
-    public float bulletForce = 10f;
+    public float bulletForce = 2.5f;
     public float attackSpeed = 2f;
     private float nextAttack = 0f;
     private int currentLoadout = 1;

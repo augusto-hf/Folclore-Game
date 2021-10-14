@@ -315,7 +315,7 @@ MonoBehaviour:
   - {x: -0.12072903, y: -0.39499328, z: 0}
   m_ShapePathHash: -1545650570
   m_Mesh: {fileID: 0}
-  m_InstanceId: 100720
+  m_InstanceId: 58064
 --- !u!1 &3476071296134915873
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 3476071296134915872}
-  bulletPrefab: {fileID: 1365254930756897955, guid: 478a898a6c06c944ba38d6a52e302bf3,
+  bulletPrefab: {fileID: 9109420692943409557, guid: 478a898a6c06c944ba38d6a52e302bf3,
     type: 3}
   flamethrowerObject: {fileID: 4631007332006720311}
   bulletForce: 6
@@ -898,6 +898,19 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &7886420784366840963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4631007332006720311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f14c6a2cdb4be047811bf8355f40e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1
 --- !u!1 &4818816469395498271
 GameObject:
   m_ObjectHideFlags: 0
