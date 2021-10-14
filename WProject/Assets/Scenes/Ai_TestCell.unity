@@ -833,6 +833,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: npcshoottype
       objectReference: {fileID: 0}
+    - target: {fileID: 53195360266333698, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 53195360266333700, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
       propertyPath: Player
@@ -13981,6 +13986,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: npcMelletype
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559337894521852987, guid: ce7821888bac92247828a8f08e060ce2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce7821888bac92247828a8f08e060ce2, type: 3}
