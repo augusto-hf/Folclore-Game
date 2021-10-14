@@ -84,7 +84,7 @@ SpriteRenderer:
   m_Size: {x: 2.1, y: 2.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &9109420692943409562
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 25
-  bulletLifetime: 0.5
+  bulletLifetime: 1.1
   hitEffect: {fileID: 6505338092035888528, guid: d7d0a59752dab5d4a98f2b0d5882ce3f,
     type: 3}
 --- !u!114 &9109420692943409559

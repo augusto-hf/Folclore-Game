@@ -721,7 +721,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 9109420692943409557, guid: 478a898a6c06c944ba38d6a52e302bf3,
     type: 3}
   flamethrowerObject: {fileID: 4631007332006720311}
-  bulletForce: 6
+  bulletForce: 2.5
   attackSpeed: 0.5
   isTornadoGoing: 0
 --- !u!1 &3476071297099480242
@@ -910,7 +910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f14c6a2cdb4be047811bf8355f40e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 1
+  Damage: 10
 --- !u!1 &4818816469395498271
 GameObject:
   m_ObjectHideFlags: 0
