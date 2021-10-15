@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ai_Doge : MonoBehaviour
 {
     float startMoveSpeed;
+    int DougeChance;
     private int direction;
 
     [SerializeField] private bool isDashing;
@@ -77,7 +78,10 @@ public class Ai_Doge : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player_Bullet")
+        DougeChance = Random.Range(0, 50);
+
+        Debug.Log(DougeChance == 1);
+        if (other.tag == "Player_Bullet" && DougeChance == 1)
         {
             _BeginDash = true;
             Dash();

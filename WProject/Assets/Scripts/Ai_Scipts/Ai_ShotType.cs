@@ -66,7 +66,7 @@ public class Ai_ShotType : MonoBehaviour
             if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
             {
 
-               // _Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
+                //_Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
                 if (Time.time > TimetoFire)
                 {
                     StartCoroutine(Anim());
