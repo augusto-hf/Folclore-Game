@@ -39,13 +39,7 @@ public class Ai_Enemy_Stats : MonoBehaviour
 
         }
     }
-    void Update()
-    {
-        if (Input.GetKeyDown("q"))
-        {
-            TakeDamage(100);
-        }
-    }
+   
 
     IEnumerator Die()
     {
