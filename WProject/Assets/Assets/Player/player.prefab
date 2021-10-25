@@ -315,7 +315,7 @@ MonoBehaviour:
   - {x: -0.12072903, y: -0.39499328, z: 0}
   m_ShapePathHash: -1545650570
   m_Mesh: {fileID: 0}
-  m_InstanceId: 52092
+  m_InstanceId: 35218
 --- !u!1 &3476071296134915873
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,11 +525,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5b3745adc96ca4686c397177c048f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTarget: {fileID: 3476071296134915872}
+  followTarget: {fileID: 3476071296134915873}
   moveSpeed: 1
   offSetX: 0
   offSetY: 0
   offSetZ: 0
+  rigidbodyMovement: 0
   smoothMovement: 0
 --- !u!1 &3476071296410337851
 GameObject:
@@ -685,11 +686,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5b3745adc96ca4686c397177c048f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTarget: {fileID: 3476071295735453982}
+  followTarget: {fileID: 3476071295735453953}
   moveSpeed: 1
   offSetX: 0
   offSetY: -0.08
   offSetZ: 0
+  rigidbodyMovement: 0
   smoothMovement: 0
 --- !u!114 &3476071297033012088
 MonoBehaviour:

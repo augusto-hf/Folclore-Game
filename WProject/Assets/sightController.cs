@@ -23,6 +23,6 @@ public class sightController : MonoBehaviour
         //primeiro descobre a porcentagem da visão atual em relação ao maximo
         currentSightPercent = (currentBlindness / maxBlindness);
         sight.pointLightOuterRadius = outerRadiusBase * currentSightPercent;
-        Debug.Log(currentSightPercent);
+        //Debug.Log(currentSightPercent);
     }
 }
