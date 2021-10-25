@@ -511,11 +511,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5b3745adc96ca4686c397177c048f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTarget: {fileID: 53195360266333696}
+  followTarget: {fileID: 5431449596970780737}
   moveSpeed: 1
   offSetX: 0
   offSetY: 0
   offSetZ: 0
+  rigidbody2dMovement: 0
   smoothMovement: 0
 --- !u!1 &5431449596970780737
 GameObject:
@@ -542,7 +543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5431449596970780737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018, y: 0.164, z: 0}
+  m_LocalPosition: {x: -0.017999997, y: 0.16399997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5431449596541925656}

@@ -39,14 +39,10 @@ public class Ai_ShotType : MonoBehaviour
     {
         if (Player != null)
         {
-            Vector2 look = Player.position - ai_shootingattack._GunBarrel.position;
+            Vector2 look = Player.position - _Barrel.transform.position;
             float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
             _Barrel.rotation = Angulo;
 
-            //Enemy
-            Vector2 lookE = Player.position - _Enemy.position;
-            float AnguloE = Mathf.Atan2(lookE.y, lookE.x) * Mathf.Rad2Deg - 90f;
-            _Enemy.GetComponent<Rigidbody2D>().rotation = AnguloE;
         }
      
     }
@@ -77,12 +73,10 @@ public class Ai_ShotType : MonoBehaviour
 
             }
 
-            _AgroCountDown -= Time.deltaTime;
         }
-        if (_AgroCountDown <= 0)
-        {
-            Player = null;
-        }
+      
+        Aim();
+
     }
 
     IEnumerator Anim()
