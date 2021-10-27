@@ -13,7 +13,6 @@ public class Enemy_Anim : MonoBehaviour
     {
         Debug.Log("1");
         Zvaule = Pos.eulerAngles.z;
-
         if (Zvaule >= 90 && Zvaule < 180)
         {
             Debug.Log("1");

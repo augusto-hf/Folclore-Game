@@ -38,13 +38,9 @@ public class Ai_MelleType : MonoBehaviour
 
                 ai_melleatack.MelleAttack();
             }
-            _AgroCountDown -= Time.deltaTime;
         }
 
-        if (_AgroCountDown <= 0)
-        {
-            Player = null;
-        }
+   
     }
 
 }
