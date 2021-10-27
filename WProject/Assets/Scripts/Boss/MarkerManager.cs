@@ -31,7 +31,7 @@ public class MarkerManager : MonoBehaviour
     {//adiciona marcadores na lista
         markerList.Add(new Marker(transform.position, transform.rotation));
     }
-    public void ClearMarketList()
+    public void ClearMarkerList()
     {
         markerList.Clear();
         markerList.Add(new Marker(transform.position, transform.rotation));
