@@ -8,4 +8,14 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     public bool isDefaultItem = false;
 
+    public virtual void Use()
+    {
+        Debug.Log("Using " + name);
+    }
+
+    public void RemoveFromInventory()
+    {
+        Inventory.instance.Remove(this);
+    }
+
 }
