@@ -10,10 +10,10 @@ public class snakeManager : MonoBehaviour
     List<GameObject> snakeBody = new List<GameObject>();
     Vector3 circleOrigin, snakeHeadPosition;
     RaycastHit2D hitInfo;
-    bool iFoundMyDetectors = false;
-    GameObject RightSide, LeftSide;
+    bool iFoundMyDetectors = false, playerOnRight, playerOnLeft, playerOnFront;
+    GameObject RightSide, LeftSide, FrontSide;
 
-    private float countUp = 0, distanceR, distanceL;
+    private float countUp = 0, distanceR, distanceL, distanceF;
     private GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -37,28 +37,30 @@ public class snakeManager : MonoBehaviour
         {
             CreateBodyParts();
         }
-        PlayerFinder();
+        PlayerDetector();
         SnakeMovement();
+       // AttackManager();
     }
     void SnakeMovement()
     {
         snakeBody[0].GetComponent<Rigidbody2D>().velocity = snakeBody[0].transform.right * speed * Time.deltaTime;
 
+        if (!playerOnRight && !playerOnLeft && !playerOnFront)
+        {
 
-        findPlayerDetectors();
-
-        distanceR = Vector3.Distance(player.transform.position, RightSide.transform.position);
-        distanceL = Vector3.Distance(player.transform.position, LeftSide.transform.position);
-        if (distanceR < minumumDistance)
+        }
+        else if (playerOnRight)
         {
             Debug.Log("player on my right");
             snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * 1));
         }
-        else if (distanceL < minumumDistance)
+        else if (playerOnLeft)
         {
             Debug.Log("player on my left");
             snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * -1));
         }
+
+
         for (int i = 1; i < snakeBody.Count; i++)
         {
             MarkerManager markM = snakeBody[i - 1].GetComponent<MarkerManager>();
@@ -67,9 +69,46 @@ public class snakeManager : MonoBehaviour
             markM.markerList.RemoveAt(0);
         }
     }
-    void PlayerFinder()
+    void PlayerDetector()
     {
+        if (!iFoundMyDetectors)
+        {
+            RightSide = snakeBody[0].transform.Find("RightSide").gameObject;
+            LeftSide = snakeBody[0].transform.Find("LeftSide").gameObject;
+            FrontSide = snakeBody[0].transform.Find("FrontSide").gameObject;
+            iFoundMyDetectors = true;
+        }
 
+        //achar a distancia do jogador e os detectores
+        distanceR = Vector3.Distance(player.transform.position, RightSide.transform.position);
+        distanceL = Vector3.Distance(player.transform.position, LeftSide.transform.position);
+        distanceF = Vector3.Distance(player.transform.position, FrontSide.transform.position);
+        //Detectar jogador a direita
+        if (distanceR < minumumDistance)
+        {
+            playerOnRight = true;
+        }
+        else if (distanceR > minumumDistance){
+            playerOnRight = false;
+        }
+        //Detectar jogador a esquerda
+        if (distanceL < minumumDistance)
+        {
+            playerOnLeft = true;
+        }
+        else if (distanceL > minumumDistance)
+        {
+            playerOnLeft = false;
+        }
+        //Detectar jogador a frente
+        if (distanceF < minumumDistance)
+        {
+            playerOnFront = true;
+        }
+        else if (distanceF > minumumDistance)
+        {
+            playerOnFront = false;
+        }
     }
     void CreateBodyParts()
     {
@@ -108,15 +147,6 @@ public class snakeManager : MonoBehaviour
             bodyParts.RemoveAt(0);
             temp.GetComponent<MarkerManager>().ClearMarkerList();
             countUp = 0;
-        }
-    }
-    void findPlayerDetectors()
-    {
-        if (!iFoundMyDetectors)
-        {
-            RightSide = snakeBody[0].transform.Find("RightSide").gameObject;
-            LeftSide = snakeBody[0].transform.Find("LeftSide").gameObject;
-            iFoundMyDetectors = true;
         }
     }
 }
