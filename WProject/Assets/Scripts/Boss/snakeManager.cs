@@ -5,13 +5,15 @@ using UnityEngine;
 public class snakeManager : MonoBehaviour
 {
     
-    [SerializeField] float distanceBetween = .2f , speed = 280, turnSpeed = 180, angle, snakeAngle;
+    [SerializeField] float distanceBetween = .2f , speed = 280, turnSpeed = 180, angle, snakeAngle, minumumDistance = 1.5f;
     [SerializeField] List<GameObject> bodyParts = new List<GameObject>();
     List<GameObject> snakeBody = new List<GameObject>();
-    Vector2 circleOrigin, snakeHeadPosition;
+    Vector3 circleOrigin, snakeHeadPosition;
     RaycastHit2D hitInfo;
+    bool iFoundMyDetectors = false;
+    GameObject RightSide, LeftSide;
 
-    private float countUp = 0;
+    private float countUp = 0, distanceR;
     private GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -42,10 +44,12 @@ public class snakeManager : MonoBehaviour
     {
         snakeBody[0].GetComponent<Rigidbody2D>().velocity = snakeBody[0].transform.right * speed * Time.deltaTime;
 
-        snakeHeadPosition = snakeBody[0].transform.position;
-        circleOrigin = snakeHeadPosition + new Vector2(0, 2f);
-        hitInfo = Physics2D.CircleCast(circleOrigin, 2f, Vector2.zero);
-        if (hitInfo.collider.gameObject.CompareTag("Player"))
+
+        findPlayerDetectors();
+
+        distanceR = Vector3.Distance(player.transform.position, RightSide.transform.position);
+        distanceR = Vector3.Distance(player.transform.position, RightSide.transform.position);
+        if (distanceR < 1.5f)
         {
             Debug.Log("i hit some shit");
             snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * 1));
@@ -99,6 +103,15 @@ public class snakeManager : MonoBehaviour
             bodyParts.RemoveAt(0);
             temp.GetComponent<MarkerManager>().ClearMarkerList();
             countUp = 0;
+        }
+    }
+    void findPlayerDetectors()
+    {
+        if (!iFoundMyDetectors)
+        {
+            RightSide = snakeBody[0].transform.Find("RightSide").gameObject;
+            LeftSide = snakeBody[0].transform.Find("LeftSide").gameObject;
+            iFoundMyDetectors = true;
         }
     }
 }
