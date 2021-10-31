@@ -13,7 +13,7 @@ public class snakeManager : MonoBehaviour
     bool iFoundMyDetectors = false;
     GameObject RightSide, LeftSide;
 
-    private float countUp = 0, distanceR;
+    private float countUp = 0, distanceR, distanceL;
     private GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -48,11 +48,16 @@ public class snakeManager : MonoBehaviour
         findPlayerDetectors();
 
         distanceR = Vector3.Distance(player.transform.position, RightSide.transform.position);
-        distanceR = Vector3.Distance(player.transform.position, RightSide.transform.position);
-        if (distanceR < 1.5f)
+        distanceL = Vector3.Distance(player.transform.position, LeftSide.transform.position);
+        if (distanceR < minumumDistance)
         {
-            Debug.Log("i hit some shit");
+            Debug.Log("player on my right");
             snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * 1));
+        }
+        else if (distanceL < minumumDistance)
+        {
+            Debug.Log("player on my left");
+            snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * -1));
         }
         for (int i = 1; i < snakeBody.Count; i++)
         {
