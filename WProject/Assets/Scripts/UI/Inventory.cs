@@ -68,7 +68,7 @@ public class Inventory : MonoBehaviour
         items.Remove(item);
 
         if (onItemChangedCallback != null)
-            onItemChangedCallback.Invoke();
+                onItemChangedCallback.Invoke();
     }
 
     void InventoryEnable()

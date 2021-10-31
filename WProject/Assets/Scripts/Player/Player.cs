@@ -84,4 +84,16 @@ public class Player : MonoBehaviour
         //Healt = null;
     }
 
+    public void QuestActive()
+    {
+        if (quest.isActive)
+        {
+            quest.goal.EnemyKilled();
+            if (quest.goal.IsReached())
+            {
+                quest.Complete();
+            }
+        }
+    }
+
 }
