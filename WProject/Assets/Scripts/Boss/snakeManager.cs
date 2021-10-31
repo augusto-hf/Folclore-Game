@@ -38,7 +38,7 @@ public class snakeManager : MonoBehaviour
     void SnakeMovement()
     {
 
-        snakeBody[0].GetComponent<Rigidbody2D>().velocity = (player.transform.position - snakeBody[0].transform.position).normalized * speed * Time.deltaTime;
+        snakeBody[0].GetComponent<Rigidbody2D>().velocity = snakeBody[0].transform.right * speed * Time.deltaTime;
         if (snakeBody[0].transform.position.y > player.transform.position.y)
         {
             snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * 1));
