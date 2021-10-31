@@ -8,7 +8,8 @@ public class snakeManager : MonoBehaviour
     [SerializeField] float distanceBetween = .2f , speed = 280, turnSpeed = 180, angle, snakeAngle;
     [SerializeField] List<GameObject> bodyParts = new List<GameObject>();
     List<GameObject> snakeBody = new List<GameObject>();
-    Vector3 lookDir;
+    Vector2 circleOrigin, snakeHeadPosition;
+    RaycastHit2D hitInfo;
 
     private float countUp = 0;
     private GameObject player;
@@ -19,6 +20,8 @@ public class snakeManager : MonoBehaviour
         {
             CreateBodyParts();
         }
+        player = GameObject.FindGameObjectWithTag("Player");
+
     }
     private void Awake()
     {
@@ -37,10 +40,14 @@ public class snakeManager : MonoBehaviour
     }
     void SnakeMovement()
     {
-
         snakeBody[0].GetComponent<Rigidbody2D>().velocity = snakeBody[0].transform.right * speed * Time.deltaTime;
-        if (snakeBody[0].transform.position.y > player.transform.position.y)
+
+        snakeHeadPosition = snakeBody[0].transform.position;
+        circleOrigin = snakeHeadPosition + new Vector2(0, 2f);
+        hitInfo = Physics2D.CircleCast(circleOrigin, 2f, Vector2.zero);
+        if (hitInfo.collider.gameObject.CompareTag("Player"))
         {
+            Debug.Log("i hit some shit");
             snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * 1));
         }
         for (int i = 1; i < snakeBody.Count; i++)
