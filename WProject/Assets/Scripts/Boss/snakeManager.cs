@@ -39,26 +39,20 @@ public class snakeManager : MonoBehaviour
         }
         PlayerDetector();
         SnakeMovement();
-       // AttackManager();
+        RotateTowardsTarget();
+       //AttackManager();
+    }
+    private void RotateTowardsTarget()
+    {
+        Vector2 direction = player.transform.position - snakeBody[0].transform.position;
+        direction.Normalize();
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        snakeBody[0].transform.rotation = Quaternion.Euler(Vector3.forward * angle);
     }
     void SnakeMovement()
     {
         snakeBody[0].GetComponent<Rigidbody2D>().velocity = snakeBody[0].transform.right * speed * Time.deltaTime;
 
-        if (!playerOnRight && !playerOnLeft && !playerOnFront)
-        {
-
-        }
-        else if (playerOnRight)
-        {
-            Debug.Log("player on my right");
-            snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * 1));
-        }
-        else if (playerOnLeft)
-        {
-            Debug.Log("player on my left");
-            snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * -1));
-        }
 
 
         for (int i = 1; i < snakeBody.Count; i++)
@@ -150,3 +144,23 @@ public class snakeManager : MonoBehaviour
         }
     }
 }
+
+/*
+ * 
+ * MOVIMENTOS TESTES DO BOITATA
+ * 
+if (!playerOnRight && !playerOnLeft && !playerOnFront)
+{
+
+}
+else if (playerOnRight)
+{
+    Debug.Log("player on my right");
+    snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * 1));
+}
+else if (playerOnLeft)
+{
+    Debug.Log("player on my left");
+    snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * -1));
+}
+*/
