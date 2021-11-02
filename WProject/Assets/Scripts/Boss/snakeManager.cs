@@ -52,8 +52,10 @@ public class snakeManager : MonoBehaviour
     void SnakeMovement()
     {
         snakeBody[0].GetComponent<Rigidbody2D>().velocity = snakeBody[0].transform.right * speed * Time.deltaTime;
+        if (snakeBody[0])
+        {
 
-
+        }
 
         for (int i = 1; i < snakeBody.Count; i++)
         {
@@ -74,9 +76,9 @@ public class snakeManager : MonoBehaviour
         }
 
         //achar a distancia do jogador e os detectores
-        distanceR = Vector3.Distance(player.transform.position, RightSide.transform.position);
-        distanceL = Vector3.Distance(player.transform.position, LeftSide.transform.position);
-        distanceF = Vector3.Distance(player.transform.position, FrontSide.transform.position);
+        distanceR = Vector2.Distance(player.transform.position, RightSide.transform.position);
+        distanceL = Vector2.Distance(player.transform.position, LeftSide.transform.position);
+        distanceF = Vector2.Distance(player.transform.position, FrontSide.transform.position);
         //Detectar jogador a direita
         if (distanceR < minumumDistance)
         {
