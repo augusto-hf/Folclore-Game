@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2644897078221085583}
   - component: {fileID: 2644897078221085580}
+  - component: {fileID: 6058539598243582110}
   m_Layer: 0
   m_Name: Orelhao03
   m_TagString: Untagged
@@ -83,6 +84,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &6058539598243582110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2644897078221085581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 0000000065a71651cdaaa2fc7f9a4a41ff50de55236c4c1443408565
+  m_ShapePath:
+  - {x: -0.05433154, y: -0.14349389, z: 0}
+  - {x: 0.0019602776, y: -0.18707156, z: 0}
+  - {x: 0.061879635, y: -0.14643764, z: 0}
+  - {x: 0.0031218529, y: -0.087373495, z: 0}
+  m_ShapePathHash: 1904462549
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -222878
 --- !u!1 &2644897079397396756
 GameObject:
   m_ObjectHideFlags: 0
