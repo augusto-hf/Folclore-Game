@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class Inventory : PauseMenu
 {
     #region Singleton
     public static Inventory instance;
@@ -19,8 +19,6 @@ public class Inventory : MonoBehaviour
     }
     #endregion
 
-    public GameObject InventoryMenuUI;
-
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
 
@@ -28,8 +26,6 @@ public class Inventory : MonoBehaviour
 
     public List<Item> items = new List<Item>();
 
-    public static bool InventoryActive = false;
-    public static bool GameIsPaused = false;
 
     void Update()
     {
@@ -77,13 +73,6 @@ public class Inventory : MonoBehaviour
         Time.timeScale = 0f;
         InventoryActive = true;
         GameIsPaused = true;
-    }
-
-    void Resume()
-    {
-        InventoryMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        InventoryActive = false;
     }
 
 }
