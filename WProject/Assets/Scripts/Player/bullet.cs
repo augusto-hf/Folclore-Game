@@ -8,8 +8,14 @@ public class bullet : MonoBehaviour
     public float bulletLifetime;
     public GameObject hitEffect;
 
-    private void Update()
+    private void Start()
     {
+            Physics2D.IgnoreLayerCollision(7, 8);
+    }
+
+    void Update()
+    {
+        
         bulletLifetime -= Time.deltaTime;
         if (bulletLifetime < 0)
         {
