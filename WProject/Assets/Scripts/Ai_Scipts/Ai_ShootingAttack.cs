@@ -13,37 +13,12 @@ public class Ai_ShootingAttack : MonoBehaviour
 
 
     public GameObject FireBall;
-    public GameObject FollowFireBall;
-
-
-
-    int ShootTime = 0;
-    int index;
     bool beginShoot;
 
  
    public void FireBallAttack()
     {
-
         GameObject bullet = Instantiate(FireBall, _GunBarrel.position, _GunBarrel.rotation);
-        ShootTime++;
-      
-
-        if (ShootTime >= 5)
-        {
-            Destroy(bullet);
-            bullet = Instantiate(FollowFireBall, _GunBarrel.position, _GunBarrel.rotation);
-            bullet.GetComponent<Ai_RangeAttackDamaeg>().FollwoPlayer = true;
-            ShootTime = 0;
-        }
-
-        if (Random.Range(0,20) == 0)
-        {
-            bullet.GetComponent<Ai_RangeAttackDamaeg>().FollwoPlayer = true;
-        }
- 
-
-
     }
 
 

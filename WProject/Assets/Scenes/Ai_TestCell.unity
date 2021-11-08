@@ -581,6 +581,12 @@ MonoBehaviour:
   anim: {fileID: 0}
   Pos: {fileID: 1667143055}
   Zvaule: 0
+--- !u!95 &658650291 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1420356931, guid: ce7821888bac92247828a8f08e060ce2,
+    type: 3}
+  m_PrefabInstance: {fileID: 502751796826786193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &727655085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1006,7 @@ PrefabInstance:
     - target: {fileID: 5431449596541925656, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5431449596541925656, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
@@ -1015,12 +1021,12 @@ PrefabInstance:
     - target: {fileID: 5431449596541925656, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5431449596541925656, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5431449596541925657, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
@@ -1029,8 +1035,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5431449596970780738, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.018
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431449596970780738, guid: bf264600e8100314fa8c780cc364e7d9,
+        type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1061
+      value: 0.128
       objectReference: {fileID: 0}
     - target: {fileID: 5431449596970780738, guid: bf264600e8100314fa8c780cc364e7d9,
         type: 3}
@@ -14307,6 +14318,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 502751795115450133, guid: ce7821888bac92247828a8f08e060ce2,
+        type: 3}
+      propertyPath: Enemy
+      value: 
+      objectReference: {fileID: 658650291}
     - target: {fileID: 4428349563751646844, guid: ce7821888bac92247828a8f08e060ce2,
         type: 3}
       propertyPath: RbPlayer
@@ -14465,7 +14481,6 @@ MonoBehaviour:
   _Rb_GunBarrel: {fileID: 1842607328}
   FireBall: {fileID: 5085292453515843253, guid: ae34cd6b260b0f449a45cb5f1fcf3460,
     type: 3}
-  FollowFireBall: {fileID: 0}
 --- !u!70 &4620797704522283196
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
