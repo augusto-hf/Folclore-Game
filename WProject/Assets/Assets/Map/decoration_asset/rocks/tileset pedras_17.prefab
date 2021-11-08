@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4871471938873792641}
   - component: {fileID: 4871471938873792640}
   - component: {fileID: 8325034715697778036}
-  - component: {fileID: 3620429832535200176}
   m_Layer: 0
   m_Name: tileset pedras_17
   m_TagString: Untagged
@@ -111,30 +110,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.16}
   m_EdgeRadius: 0
---- !u!114 &3620429832535200176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4871471938873792642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 0000000065a71651cdaaa2fc7f9a4a41ff50de55236c4c1443408565
-  m_ShapePath:
-  - {x: -0.17836666, y: -0.05217123, z: 0}
-  - {x: -0.028255463, y: -0.078820705, z: 0}
-  - {x: 0.16440916, y: 0.0052108765, z: 0}
-  - {x: 0.17526531, y: 0.050621033, z: 0}
-  - {x: -0.17530799, y: -0.009819746, z: 0}
-  m_ShapePathHash: 1506941151
-  m_Mesh: {fileID: 0}
-  m_InstanceId: -144122
