@@ -15,7 +15,7 @@ public class dialogueTrigger : MonoBehaviour
             //Debug.Log("Enter");
             TriggerDialogue();
             _PlayerHasEnter = false;
-            dialogue.
+            //dialogue.
         }
 
     }

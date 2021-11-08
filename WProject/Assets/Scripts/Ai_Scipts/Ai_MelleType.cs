@@ -10,9 +10,15 @@ public class Ai_MelleType : MonoBehaviour
     [SerializeField] Transform _EnemyHead;
     [SerializeField] internal Transform _Enemy;
     [SerializeField] LayerMask mask;
-
+    [SerializeField] Ai_MelleAtack ai_melleatack;
     internal float _AgroCountDown;
   
+
+    void Start()
+    {
+        _AgroCountDown = 100f;
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
 
 
     void Update()
@@ -24,7 +30,8 @@ public class Ai_MelleType : MonoBehaviour
     
     void EnemyBehaviorMelle()
     {
-        Ai_MelleAtack ai_melleatack = GetComponentInChildren<Ai_MelleAtack>();
+        ai_melleatack = GetComponentInChildren<Ai_MelleAtack>();
+        Debug.Log(ai_melleatack != null);
 
         if (_AgroCountDown > 0)
         {
