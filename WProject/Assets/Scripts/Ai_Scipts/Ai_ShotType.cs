@@ -26,7 +26,7 @@ public class Ai_ShotType : MonoBehaviour
         TimetoFire = Time.time;
         ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
         Player = GameObject.FindGameObjectWithTag("Player").transform;
-        _AgroCountDown = 100;
+
     }
 
     void Update()
@@ -52,8 +52,6 @@ public class Ai_ShotType : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(_EnemyHead.position, _EnemyHead.TransformDirection(Vector2.left), ai_enemy_stats.ViewDistance);
 
-        if (_AgroCountDown > 0)
-        {
             if (Vector2.Distance(_Enemy.position, Player.position) > ai_enemy_stats.StopDistance)
             {
                 _Enemy.position = Vector2.MoveTowards(_Enemy.position, Player.position, ai_enemy_stats.Speed * Time.deltaTime);
@@ -73,7 +71,6 @@ public class Ai_ShotType : MonoBehaviour
 
             }
 
-        }
       
         Aim();
 
