@@ -6,7 +6,6 @@ public class dialogueTrigger : MonoBehaviour
 {
 
     public Dialogue dialogue;
-
     bool _PlayerHasEnter;
     [SerializeField]GameObject _IconShow;
     void Update()
@@ -16,7 +15,9 @@ public class dialogueTrigger : MonoBehaviour
             //Debug.Log("Enter");
             TriggerDialogue();
             _PlayerHasEnter = false;
+            dialogue.
         }
+
     }
 
     public void TriggerDialogue()
@@ -27,7 +28,7 @@ public class dialogueTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log("Enter");
+        Debug.Log("Enter");
         if (other.tag == "Player")
         {
             _PlayerHasEnter = true;
@@ -39,7 +40,7 @@ public class dialogueTrigger : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        //Debug.Log("Enter");
+        Debug.Log("Exit");
         if (other.tag == "Player")
         {
             _PlayerHasEnter = false;
