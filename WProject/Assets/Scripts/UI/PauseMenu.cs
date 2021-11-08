@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+    public static bool InventoryActive = false;
 
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
+    public GameObject InventoryMenuUI;
+   
 
     // Update is called once per frame
     void Update()
@@ -17,9 +20,13 @@ public class PauseMenu : MonoBehaviour
         {
             if (GameIsPaused)
             {
-                if(optionsMenuUI == true)
+                if (optionsMenuUI == true)
                 {
                     BackOptionsMenu();
+                }
+                if(InventoryMenuUI == true)
+                {
+                    Resume();
                 }
                 
                 Resume();
@@ -34,7 +41,9 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        InventoryMenuUI.SetActive(false);
         Time.timeScale = 1f;
+        InventoryActive = false;
         GameIsPaused = false;
     }
 
