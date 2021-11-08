@@ -17,6 +17,11 @@ public class PauseMenu : MonoBehaviour
         {
             if (GameIsPaused)
             {
+                if(optionsMenuUI == true)
+                {
+                    BackOptionsMenu();
+                }
+                
                 Resume();
             }
             else
