@@ -126,7 +126,7 @@ MonoBehaviour:
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0
+  m_ShadowIntensity: 0.15
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
@@ -158,7 +158,6 @@ GameObject:
   - component: {fileID: 3476071295735453952}
   - component: {fileID: 3476071295735453980}
   - component: {fileID: 3185958891491404372}
-  - component: {fileID: 3733089864342611916}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -288,34 +287,6 @@ MonoBehaviour:
   currentSightPercent: 0
   targetSightPercent: 0
   outerRadiusBase: 12
---- !u!114 &3733089864342611916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3476071295735453953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_HasRenderer: 0
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 00000000
-  m_ShapePath:
-  - {x: -0.09670391, y: -0.43491298, z: 0}
-  - {x: 0.085956916, y: -0.43323976, z: 0}
-  - {x: 0.10351442, y: -0.3966668, z: 0}
-  - {x: 0.057508133, y: -0.35600674, z: 0}
-  - {x: -0.07327539, y: -0.35600674, z: 0}
-  - {x: -0.12072903, y: -0.39499328, z: 0}
-  m_ShapePathHash: -1545650570
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 35218
 --- !u!1 &3476071296134915873
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,7 +853,7 @@ MonoBehaviour:
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 1
+  m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360

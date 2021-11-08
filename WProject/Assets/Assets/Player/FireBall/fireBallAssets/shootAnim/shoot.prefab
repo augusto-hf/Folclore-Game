@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9109420692943409564}
   - component: {fileID: 9109420692943409563}
   - component: {fileID: 9109420692943409562}
-  - component: {fileID: 9109420692943409561}
+  - component: {fileID: 2863489789172725215}
   - component: {fileID: 9109420692943409560}
   - component: {fileID: 9109420692943409559}
   - component: {fileID: 9109420692943409558}
@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9109420692943409557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.56, y: -0.633, z: 0}
+  m_LocalPosition: {x: -2.559585, y: -0.632679, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,15 +76,15 @@ SpriteRenderer:
   m_SortingLayerID: 1440633087
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 38d5451c8ed9b50449d482a88d5f6739, type: 3}
+  m_Sprite: {fileID: 132195611702231758, guid: 377642de7d1c633428dfaa17a7856012, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.1, y: 2.6}
+  m_Size: {x: 1.5, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &9109420692943409562
@@ -108,8 +108,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &9109420692943409561
-BoxCollider2D:
+--- !u!70 &2863489789172725215
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -121,19 +121,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000024437904, y: 0.7908266}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.1, y: 2.6}
-    newSize: {x: 2.1, y: 2.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.9267458, y: 0.80998266}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.007802248, y: 0.22624217}
+  m_Size: {x: 0.6314373, y: 0.8706831}
+  m_Direction: 0
 --- !u!114 &9109420692943409560
 MonoBehaviour:
   m_ObjectHideFlags: 0

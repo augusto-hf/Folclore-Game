@@ -291,7 +291,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1017
         y: 1029
-        width: 1017.4
+        width: 1020
         height: 1029
       alignment: 9
       pivot: {x: 0.5, y: 0.75}
@@ -310,9 +310,9 @@ TextureImporter:
       name: tileset piso_7
       rect:
         serializedVersion: 2
-        x: 2034
+        x: 2045
         y: 1029
-        width: 1017.4
+        width: 1029
         height: 1029
       alignment: 9
       pivot: {x: 0.5, y: 0.75}
@@ -331,9 +331,9 @@ TextureImporter:
       name: tileset piso_8
       rect:
         serializedVersion: 2
-        x: 3051
-        y: 1029
-        width: 1017.4
+        x: 3054
+        y: 1037
+        width: 1029
         height: 1029
       alignment: 9
       pivot: {x: 0.5, y: 0.75}
@@ -353,8 +353,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4068
-        y: 1040
-        width: 1017
+        y: 1044
+        width: 1019
         height: 1029
       alignment: 9
       pivot: {x: 0.5, y: 0.75}

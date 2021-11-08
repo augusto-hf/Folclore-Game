@@ -116,7 +116,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.6
+      scalar: 0.75
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -3808,7 +3808,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minKillSpeed: 0
     maxKillSpeed: 10000
-    radiusScale: 1
+    radiusScale: 0.13
     collidesWith:
       serializedVersion: 2
       m_Bits: 4294967295

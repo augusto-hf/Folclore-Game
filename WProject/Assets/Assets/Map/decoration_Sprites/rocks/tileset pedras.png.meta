@@ -71,6 +71,12 @@ TextureImporter:
   - first:
       213: -3144661765284975203
     second: tileset pedras_22
+  - first:
+      213: -9215051636002845228
+    second: tileset pedras_23
+  - first:
+      213: -3802876730403029225
+    second: tileset pedras_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -134,7 +140,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -146,7 +152,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -158,7 +164,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -170,7 +176,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -187,12 +193,12 @@ TextureImporter:
       name: tileset pedras_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2058
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 329
+        y: 2283
+        width: 392
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,12 +214,12 @@ TextureImporter:
       name: tileset pedras_1
       rect:
         serializedVersion: 2
-        x: 1017
-        y: 2058
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 1302
+        y: 2295
+        width: 437
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,12 +235,12 @@ TextureImporter:
       name: tileset pedras_2
       rect:
         serializedVersion: 2
-        x: 2034
-        y: 2058
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 2260
+        y: 2295
+        width: 496
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,12 +256,12 @@ TextureImporter:
       name: tileset pedras_3
       rect:
         serializedVersion: 2
-        x: 3051
-        y: 2058
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 3361
+        y: 2283
+        width: 484
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,12 +277,12 @@ TextureImporter:
       name: tileset pedras_4
       rect:
         serializedVersion: 2
-        x: 4068
-        y: 2058
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 4446
+        y: 2263
+        width: 369
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -292,12 +298,12 @@ TextureImporter:
       name: tileset pedras_5
       rect:
         serializedVersion: 2
-        x: 5085
-        y: 2058
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 5511
+        y: 2342
+        width: 265
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,12 +319,12 @@ TextureImporter:
       name: tileset pedras_6
       rect:
         serializedVersion: 2
-        x: 6102
-        y: 2058
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 6481
+        y: 2295
+        width: 278
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -334,12 +340,12 @@ TextureImporter:
       name: tileset pedras_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1029
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 260
+        y: 1234
+        width: 461
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,12 +361,12 @@ TextureImporter:
       name: tileset pedras_8
       rect:
         serializedVersion: 2
-        x: 1017
-        y: 1029
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 1369
+        y: 1234
+        width: 314
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -382,12 +388,12 @@ TextureImporter:
       name: tileset pedras_9
       rect:
         serializedVersion: 2
-        x: 2034
-        y: 1029
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 2355
+        y: 1234
+        width: 401
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -409,12 +415,12 @@ TextureImporter:
       name: tileset pedras_10
       rect:
         serializedVersion: 2
-        x: 3051
-        y: 1029
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 3428
+        y: 1234
+        width: 322
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,12 +436,12 @@ TextureImporter:
       name: tileset pedras_11
       rect:
         serializedVersion: 2
-        x: 4068
-        y: 1029
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 4378
+        y: 1186
+        width: 369
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -458,12 +464,12 @@ TextureImporter:
       name: tileset pedras_12
       rect:
         serializedVersion: 2
-        x: 5085
-        y: 1029
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 5558
+        y: 1381
+        width: 88
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -479,12 +485,12 @@ TextureImporter:
       name: tileset pedras_13
       rect:
         serializedVersion: 2
-        x: 6102
-        y: 1029
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 5638
+        y: 1381
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -500,12 +506,12 @@ TextureImporter:
       name: tileset pedras_14
       rect:
         serializedVersion: 2
-        x: 7119
-        y: 1029
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 6585
+        y: 1337
+        width: 90
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -521,12 +527,12 @@ TextureImporter:
       name: tileset pedras_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 7570
+        y: 1325
+        width: 147
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -548,12 +554,12 @@ TextureImporter:
       name: tileset pedras_16
       rect:
         serializedVersion: 2
-        x: 1017
-        y: 0
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 329
+        y: 248
+        width: 289
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -574,12 +580,12 @@ TextureImporter:
       name: tileset pedras_17
       rect:
         serializedVersion: 2
-        x: 2034
-        y: 0
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 1337
+        y: 320
+        width: 378
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -595,12 +601,12 @@ TextureImporter:
       name: tileset pedras_18
       rect:
         serializedVersion: 2
-        x: 3051
-        y: 0
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 2435
+        y: 260
+        width: 170
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -621,12 +627,12 @@ TextureImporter:
       name: tileset pedras_19
       rect:
         serializedVersion: 2
-        x: 4068
-        y: 0
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 3372
+        y: 205
+        width: 378
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -648,12 +654,12 @@ TextureImporter:
       name: tileset pedras_20
       rect:
         serializedVersion: 2
-        x: 5085
-        y: 0
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 4273
+        y: 145
+        width: 578
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -669,12 +675,12 @@ TextureImporter:
       name: tileset pedras_21
       rect:
         serializedVersion: 2
-        x: 6102
-        y: 0
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 6560
+        y: 284
+        width: 92
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -690,12 +696,12 @@ TextureImporter:
       name: tileset pedras_22
       rect:
         serializedVersion: 2
-        x: 7119
-        y: 0
-        width: 1017.5
-        height: 1029
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
+        x: 7602
+        y: 284
+        width: 79
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -703,6 +709,48 @@ TextureImporter:
       bones: []
       spriteID: d9daf6d19caeb54d0800000000000000
       internalID: -3144661765284975203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset pedras_23
+      rect:
+        serializedVersion: 2
+        x: 5475
+        y: 260
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd0b294c5f8d1080800000000000000
+      internalID: -9215051636002845228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset pedras_24
+      rect:
+        serializedVersion: 2
+        x: 5547
+        y: 248
+        width: 99
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f7abf13c7793bc0800000000000000
+      internalID: -3802876730403029225
       vertices: []
       indices: 
       edges: []
