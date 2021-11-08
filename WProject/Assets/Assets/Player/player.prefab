@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 3476071295735453952}
   - component: {fileID: 3476071295735453980}
   - component: {fileID: 3185958891491404372}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1008,6 +1008,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flamethrower
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349660022276852995, guid: 22936316f2b93ca48b742e00d6e52504,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5786269165305098407, guid: 22936316f2b93ca48b742e00d6e52504,
         type: 3}
