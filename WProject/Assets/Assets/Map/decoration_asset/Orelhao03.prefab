@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2644897078221085583}
   - component: {fileID: 2644897078221085580}
   - component: {fileID: 6058539598243582110}
+  - component: {fileID: 1165533464008120747}
   m_Layer: 0
   m_Name: Orelhao03
   m_TagString: Untagged
@@ -110,6 +111,27 @@ MonoBehaviour:
   m_ShapePathHash: 1904462549
   m_Mesh: {fileID: 0}
   m_InstanceId: -222878
+--- !u!114 &1165533464008120747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2644897078221085581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4eeb0ae19e0ea4dabf32d5eafc99ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Telefone
+    sentences:
+    - oi
+    - oi
+    - ioi
+    - ioio
+    - i
+  _IconShow: {fileID: 0}
 --- !u!1 &2644897079397396756
 GameObject:
   m_ObjectHideFlags: 0
