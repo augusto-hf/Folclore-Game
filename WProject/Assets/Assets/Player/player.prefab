@@ -884,6 +884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  iAmAPlayerWeapon: 1
 --- !u!1 &4818816469395498271
 GameObject:
   m_ObjectHideFlags: 0
