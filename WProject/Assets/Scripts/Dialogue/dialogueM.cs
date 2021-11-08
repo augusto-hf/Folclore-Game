@@ -66,7 +66,7 @@ public class dialogueM : MonoBehaviour
         }
     }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
         //animator.SetBool("IsOpen", false);
         DialogBox.SetActive(false);
