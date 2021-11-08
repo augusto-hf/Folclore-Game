@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class audioFxScript : MonoBehaviour
 {
-    [SerializeField] AudioClip[] clips;
+    [SerializeField] AudioClip[] footstepClips;
     [SerializeField] float FootstepsdelayBerweenClips;
     private float footstepsTime;
     bool canPlay;
@@ -30,8 +30,8 @@ public class audioFxScript : MonoBehaviour
     }
     void PlayFootsteps()
     {
-        int clipIndex = Random.Range(0, clips.Length);
-        AudioClip clip = clips[clipIndex];
+        int clipIndex = Random.Range(0, footstepClips.Length);
+        AudioClip clip = footstepClips[clipIndex];
         footsteps.PlayOneShot(clip);
         footstepsTime = (Time.time * 1000) + FootstepsdelayBerweenClips;
     }
