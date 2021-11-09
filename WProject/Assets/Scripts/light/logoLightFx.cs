@@ -5,7 +5,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class logoLightFx : MonoBehaviour
 {
-    [SerializeField] float pulseSpeed;
+    [SerializeField] float pulseSpeed, max = 1;
     private Light2D logoLight2D;
     void Start()
     {
@@ -13,6 +13,6 @@ public class logoLightFx : MonoBehaviour
     }
     void Update()
     {
-        logoLight2D.intensity = Mathf.PingPong(Time.time * pulseSpeed, 1);
+        logoLight2D.intensity = Mathf.PingPong(Time.time * pulseSpeed, max);
     }
 }
