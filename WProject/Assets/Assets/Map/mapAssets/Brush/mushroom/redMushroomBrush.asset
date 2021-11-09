@@ -66,19 +66,5 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c2652e64bb65dc44d8a78e04ef513550, type: 2}
   - randomTiles:
     - {fileID: 11400000, guid: 8d701a91a616c0e42a77d75f9ff2b6d9, type: 2}
-  - randomTiles:
-    - {fileID: 0}
-  - randomTiles:
-    - {fileID: 0}
-  - randomTiles:
-    - {fileID: 0}
-  - randomTiles:
-    - {fileID: 0}
-  - randomTiles:
-    - {fileID: 0}
-  - randomTiles:
-    - {fileID: 0}
-  - randomTiles:
-    - {fileID: 0}
   pickRandomTiles: 0
   addToRandomTiles: 0
