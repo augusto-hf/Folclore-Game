@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80edd6caba93514eb01722041fe50b4, type: 3}
+  m_Name: redMushroomBrush
+  m_EditorClassIdentifier: 
+  m_Cells:
+  - m_Tile: {fileID: 0}
+    m_Matrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Pivot: {x: 0, y: 0, z: 0}
+  m_CanChangeZPosition: 0
+  m_FloodFillContiguousOnly: 1
+  randomTileSetSize: {x: 1, y: 1, z: 1}
+  randomTileSets:
+  - randomTiles:
+    - {fileID: 11400000, guid: ff8da758361ffe54fb7a7ac067ea77ce, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 305eae15173fdf24b9d38eeb124cebe4, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 7d07c6f0cd1dd104097a908e159c8758, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 046492a3de766474293c7fc3efe47e22, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 065a21f59e28d1845920d860920feaa8, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 855ceb02b87a6d0438c4c43c6303ed7a, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: c256c3702468bd047bfd3baa2a69cadd, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: e200d34d8ce42904abdbbab3e0a7b7ae, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: ebd0ae468a4d5c24c9bbe7f45fb7e8e7, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: a87d0e4cacfa00c488abb8ca562f9613, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 3803c210cae85bf4988b29561072ca67, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 1d0bcbf56c01c8d4baf53223894fb80e, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: c2652e64bb65dc44d8a78e04ef513550, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 8d701a91a616c0e42a77d75f9ff2b6d9, type: 2}
+  - randomTiles:
+    - {fileID: 0}
+  - randomTiles:
+    - {fileID: 0}
+  - randomTiles:
+    - {fileID: 0}
+  - randomTiles:
+    - {fileID: 0}
+  - randomTiles:
+    - {fileID: 0}
+  - randomTiles:
+    - {fileID: 0}
+  - randomTiles:
+    - {fileID: 0}
+  pickRandomTiles: 0
+  addToRandomTiles: 0
