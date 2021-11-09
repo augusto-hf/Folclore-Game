@@ -25,7 +25,7 @@ public class audioFxScript : MonoBehaviour
         {
             footstepsSource.Stop();     
         }
-
+        fxVolume();
     }
     void PlayFootsteps()
     {

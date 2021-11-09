@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: c35e1e5622729584da45a151334ceb97
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8182537022588611074
+    second: tileset de graminha_0
+  - first:
+      213: 4689084209088167656
+    second: tileset de graminha_1
+  - first:
+      213: -3733235406260377156
+    second: tileset de graminha_2
+  - first:
+      213: -2487383515084539209
+    second: tileset de graminha_3
+  - first:
+      213: 5730780354817827962
+    second: tileset de graminha_4
+  - first:
+      213: -430970468414278569
+    second: tileset de graminha_5
+  - first:
+      213: -5417329730253062510
+    second: tileset de graminha_6
+  - first:
+      213: 2834172196471827622
+    second: tileset de graminha_7
+  - first:
+      213: -3881618163948215987
+    second: tileset de graminha_8
+  - first:
+      213: -7281553873064541224
+    second: tileset de graminha_9
+  - first:
+      213: -8844037937632933695
+    second: tileset de graminha_10
+  - first:
+      213: -2416522805035749832
+    second: tileset de graminha_11
+  - first:
+      213: 3206470278229923200
+    second: tileset de graminha_12
+  - first:
+      213: -2122507052925774364
+    second: tileset de graminha_13
+  - first:
+      213: 3408526125400705911
+    second: tileset de graminha_14
+  - first:
+      213: 4124542826508014537
+    second: tileset de graminha_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +89,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1024
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +116,43 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +161,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: tileset de graminha_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a60e0b1163e8170800000000000000
+      internalID: 8182537022588611074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_1
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eef79c8e39f21140800000000000000
+      internalID: 4689084209088167656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_2
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb960f27d22e03cc0800000000000000
+      internalID: -3733235406260377156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_3
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba393b2fd90b7dd0800000000000000
+      internalID: -2487383515084539209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7424b6ae52d78f40800000000000000
+      internalID: 5730780354817827962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_5
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754bb7174a2e40af0800000000000000
+      internalID: -430970468414278569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_6
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e7a150057c1d4b0800000000000000
+      internalID: -5417329730253062510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_7
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6acedfab890055720800000000000000
+      internalID: 2834172196471827622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41a92878d8b12ac0800000000000000
+      internalID: -3881618163948215987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_9
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d34e1fe459b2fa90800000000000000
+      internalID: -7281553873064541224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_10
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c88f4b7a5aa34580800000000000000
+      internalID: -8844037937632933695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_11
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ea636ef49c67ed0800000000000000
+      internalID: -2416522805035749832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0851ebcbabbaf7c20800000000000000
+      internalID: 3206470278229923200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_13
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e51915b4175b82e0800000000000000
+      internalID: -2122507052925774364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_14
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bc520b3748d4f20800000000000000
+      internalID: 3408526125400705911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de graminha_15
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c355e219d15d3930800000000000000
+      internalID: 4124542826508014537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
