@@ -1,15 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class QuestGiver : MonoBehaviour
+public class QuestGiver : PauseMenu
 {
     public Quest quest;
 
     public Player player;
 
     public GameObject questWindow;
+
     public Text titleText;
     public Text descriptionText;
     public Text goldText;
@@ -17,6 +16,8 @@ public class QuestGiver : MonoBehaviour
 
     public void OpenQuestWindow()
     {
+        GameIsPaused = true;
+        Time.timeScale = 0f;
         questWindow.SetActive(true);
         titleText.text = quest.title;
         descriptionText.text = quest.description;
@@ -29,5 +30,15 @@ public class QuestGiver : MonoBehaviour
         questWindow.SetActive(false);
         quest.isActive = true;
         player.quest = quest;
+        GameIsPaused = false;
+        Time.timeScale = 1f;
+    }
+
+    public void DeclineQuest()
+    {
+        questWindow.SetActive(false);
+        quest.isActive = false;
+        GameIsPaused = false;
+        Time.timeScale = 1f;
     }
 }
