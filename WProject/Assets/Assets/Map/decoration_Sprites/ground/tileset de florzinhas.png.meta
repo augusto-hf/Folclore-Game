@@ -1,0 +1,900 @@
+fileFormatVersion: 2
+guid: 70a114911704a654f92c0653078cf589
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2406497152979344043
+    second: tileset de florzinhas_0
+  - first:
+      213: 7740319137729778815
+    second: tileset de florzinhas_1
+  - first:
+      213: -905134549434458342
+    second: tileset de florzinhas_2
+  - first:
+      213: 7462318574645865999
+    second: tileset de florzinhas_3
+  - first:
+      213: 8070201124766045633
+    second: tileset de florzinhas_4
+  - first:
+      213: -650304350905463027
+    second: tileset de florzinhas_5
+  - first:
+      213: -5829099515351179275
+    second: tileset de florzinhas_6
+  - first:
+      213: -4854499922418769123
+    second: tileset de florzinhas_7
+  - first:
+      213: -650103198778524718
+    second: tileset de florzinhas_8
+  - first:
+      213: 1409088452393358259
+    second: tileset de florzinhas_9
+  - first:
+      213: 8012164306618357136
+    second: tileset de florzinhas_10
+  - first:
+      213: -6818655698459844372
+    second: tileset de florzinhas_11
+  - first:
+      213: 5742701073751500728
+    second: tileset de florzinhas_12
+  - first:
+      213: -9108801603870042480
+    second: tileset de florzinhas_13
+  - first:
+      213: -1693275570790171188
+    second: tileset de florzinhas_14
+  - first:
+      213: -4912540528240933770
+    second: tileset de florzinhas_15
+  - first:
+      213: -5741646263100765696
+    second: tileset de florzinhas_16
+  - first:
+      213: -4619721617153962448
+    second: tileset de florzinhas_17
+  - first:
+      213: -3808821643963311056
+    second: tileset de florzinhas_18
+  - first:
+      213: 2365763370707912496
+    second: tileset de florzinhas_19
+  - first:
+      213: 7755296584959551915
+    second: tileset de florzinhas_20
+  - first:
+      213: -196290471447141951
+    second: tileset de florzinhas_21
+  - first:
+      213: 3731388709923667038
+    second: tileset de florzinhas_22
+  - first:
+      213: -7745258374914721688
+    second: tileset de florzinhas_23
+  - first:
+      213: 7573103809116616024
+    second: tileset de florzinhas_24
+  - first:
+      213: 6968482540664238557
+    second: tileset de florzinhas_25
+  - first:
+      213: -2389108206778594118
+    second: tileset de florzinhas_26
+  - first:
+      213: 772898748248346968
+    second: tileset de florzinhas_27
+  - first:
+      213: 820374315271332575
+    second: tileset de florzinhas_28
+  - first:
+      213: -1238978700883187558
+    second: tileset de florzinhas_29
+  - first:
+      213: 3310665087169304038
+    second: tileset de florzinhas_30
+  - first:
+      213: 631363446501602196
+    second: tileset de florzinhas_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tileset de florzinhas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa92541968956120800000000000000
+      internalID: 2406497152979344043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_1
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f749a8cee332b6b60800000000000000
+      internalID: 7740319137729778815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_2
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f96034ce05073f0800000000000000
+      internalID: -905134549434458342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_3
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ee092e43b7f8760800000000000000
+      internalID: 7462318574645865999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_4
+      rect:
+        serializedVersion: 2
+        x: 4116
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c553ab4a2d1fff60800000000000000
+      internalID: 8070201124766045633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_5
+      rect:
+        serializedVersion: 2
+        x: 5145
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f836863a7a9f6f0800000000000000
+      internalID: -650304350905463027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_6
+      rect:
+        serializedVersion: 2
+        x: 6174
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff571befd0ea1fa0800000000000000
+      internalID: -5829099515351179275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_7
+      rect:
+        serializedVersion: 2
+        x: 7203
+        y: 3122.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1361127a0a51acb0800000000000000
+      internalID: -4854499922418769123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbf579c59e5af6f0800000000000000
+      internalID: -650103198778524718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_9
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3d2065b761e8310800000000000000
+      internalID: 1409088452393358259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_10
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0951d029cfce03f60800000000000000
+      internalID: 8012164306618357136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_11
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0ab9fd4c44f51a0800000000000000
+      internalID: -6818655698459844372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_12
+      rect:
+        serializedVersion: 2
+        x: 4116
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b76630533c22bf40800000000000000
+      internalID: 5742701073751500728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_13
+      rect:
+        serializedVersion: 2
+        x: 5145
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09651d7a339079180800000000000000
+      internalID: -9108801603870042480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_14
+      rect:
+        serializedVersion: 2
+        x: 6174
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd7438f6d64088e0800000000000000
+      internalID: -1693275570790171188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_15
+      rect:
+        serializedVersion: 2
+        x: 7203
+        y: 2082.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6744d75da6623dbb0800000000000000
+      internalID: -4912540528240933770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a0eede4239150b0800000000000000
+      internalID: -5741646263100765696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_17
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e48506aa373efb0800000000000000
+      internalID: -4619721617153962448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_18
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c5fb215e8542bc0800000000000000
+      internalID: -3808821643963311056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_19
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0370da55041e4d020800000000000000
+      internalID: 2365763370707912496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_20
+      rect:
+        serializedVersion: 2
+        x: 4116
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9605a972950ab60800000000000000
+      internalID: 7755296584959551915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_21
+      rect:
+        serializedVersion: 2
+        x: 5145
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c169903bd2a64df0800000000000000
+      internalID: -196290471447141951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_22
+      rect:
+        serializedVersion: 2
+        x: 6174
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c37ed034e88c330800000000000000
+      internalID: 3731388709923667038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_23
+      rect:
+        serializedVersion: 2
+        x: 7203
+        y: 1042.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868b69d4b80538490800000000000000
+      internalID: -7745258374914721688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855bd855ac1191960800000000000000
+      internalID: 7573103809116616024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_25
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1bdcb33f505b060800000000000000
+      internalID: 6968482540664238557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_26
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abccdf47ebe28ded0800000000000000
+      internalID: -2389108206778594118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_27
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851dfa80153e9ba00800000000000000
+      internalID: 772898748248346968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_28
+      rect:
+        serializedVersion: 2
+        x: 4116
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd22a9cd71e826b00800000000000000
+      internalID: 820374315271332575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_29
+      rect:
+        serializedVersion: 2
+        x: 5145
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9825999f634ecee0800000000000000
+      internalID: -1238978700883187558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_30
+      rect:
+        serializedVersion: 2
+        x: 6174
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5930b2b58d1fd20800000000000000
+      internalID: 3310665087169304038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset de florzinhas_31
+      rect:
+        serializedVersion: 2
+        x: 7203
+        y: 2.25
+        width: 1029
+        height: 1040.75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493f4e0a5bd03c800800000000000000
+      internalID: 631363446501602196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
