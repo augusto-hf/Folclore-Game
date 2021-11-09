@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: rockBrush
   m_EditorClassIdentifier: 
   m_Cells:
-  - m_Tile: {fileID: 0}
+  - m_Tile: {fileID: 11400000, guid: 69da40cec56600744ba03b410d198892, type: 2}
     m_Matrix:
       e00: 1
       e01: 0
