@@ -9,7 +9,7 @@ public class audioFxScript : MonoBehaviour
     public float footstepsVolume = 1.0f;
     private float footstepsTime;
     bool footstepsHavePlayed;
-    public AudioSource footstepsSource;
+    AudioSource footstepsSource;
 
     private void Start()
     {
@@ -35,6 +35,6 @@ public class audioFxScript : MonoBehaviour
     }
     void fxVolume()
     {
-        footstepsSource.volume = footstepsVolume;
+        footstepsSource.volume = footstepsVolume;   
     }
 }
