@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public int gold = 0;
 
     public Quest quest;
+
     public bool IVframe;
 
     // Start is called before the first frame update
@@ -33,6 +34,8 @@ public class Player : MonoBehaviour
             if (quest.goal.IsReached())
             {
                 gold += quest.goldReward;
+                //ganhar o item
+
                 quest.Complete();
             }
         }
@@ -82,18 +85,6 @@ public class Player : MonoBehaviour
         IVframe = false;
         Debug.Log("i");
         //Healt = null;
-    }
-
-    public void QuestActive()
-    {
-        if (quest.isActive)
-        {
-            quest.goal.EnemyKilled();
-            if (quest.goal.IsReached())
-            {
-                quest.Complete();
-            }
-        }
     }
 
 }
