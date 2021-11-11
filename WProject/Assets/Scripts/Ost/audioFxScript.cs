@@ -14,7 +14,7 @@ public class audioFxScript : MonoBehaviour
     private void Start()
     {
         footstepsSource = transform.Find("footsteps").GetComponent<AudioSource>();
-        BGM = ransform.Find("BGM").GetComponent<AudioSource>();
+        BGM = transform.Find("BGM").GetComponent<AudioSource>();
     }
     void Update()
     {
