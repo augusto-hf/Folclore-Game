@@ -9,7 +9,7 @@ public class audioFxScript : MonoBehaviour
     public float footstepsVolume = 1.0f, inventoryVolume = 1.0f;
     private float footstepsTime;
     bool footstepsHavePlayed, inventoryState;
-    AudioSource BGM, ambience, footstepsSource, InventorySounds, PressButton;
+    [SerializeField] AudioSource BGM, ambience, footstepsSource, InventorySounds, PressButton;
 
     private void Start()
     {
@@ -33,6 +33,7 @@ public class audioFxScript : MonoBehaviour
     }
     void BGMControl()
     {
+        Debug.Log("Tentando achar um bug");
         BGM.Play();
     }
     void ambienceControl()
