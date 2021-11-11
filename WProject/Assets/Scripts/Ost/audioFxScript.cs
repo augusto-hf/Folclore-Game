@@ -9,11 +9,12 @@ public class audioFxScript : MonoBehaviour
     public float footstepsVolume = 1.0f;
     private float footstepsTime;
     bool footstepsHavePlayed;
-    AudioSource footstepsSource;
+    AudioSource BGM, footstepsSource;
 
     private void Start()
     {
         footstepsSource = transform.Find("footsteps").GetComponent<AudioSource>();
+        BGM = ransform.Find("BGM").GetComponent<AudioSource>();
     }
     void Update()
     {
