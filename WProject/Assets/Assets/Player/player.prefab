@@ -82,7 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6164605322583256519}
   - component: {fileID: 7746124133467531084}
-  - component: {fileID: 3750957162819449480}
+  - component: {fileID: 2868468248450701950}
   m_Layer: 0
   m_Name: HitBox
   m_TagString: PlayerHitboc
@@ -130,7 +130,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28772977, y: 0.3416896}
   m_EdgeRadius: 0
---- !u!114 &3750957162819449480
+--- !u!114 &2868468248450701950
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
