@@ -29,7 +29,7 @@ public class Inventory : PauseMenu
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetButtonDown("Inventory"))
         {
             if (InventoryActive)
             {
