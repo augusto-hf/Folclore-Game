@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public int currentBlindness;
     public int currentHealth;
 
+    public GameObject gameOverUI;
+
     public HealthBar healthBar;
     public BlindnessBar blindnessBar;
 
@@ -51,7 +53,9 @@ public class Player : MonoBehaviour
         }
         if (currentHealth <=0)
         {
+            Time.timeScale = 0f;
             Debug.Log("Morri");
+            gameOverUI.SetActive(true);
         }
         if (IVframe == true)
         {

@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
     public GameObject InventoryMenuUI;
+    public GameObject gameOverUI;
    
 
     // Update is called once per frame
@@ -74,6 +75,15 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+    }
+
+    public void ReloadGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
+        //Application.LoadLevel("Application.loadedLevel");
+        gameOverUI.SetActive(false);
+
     }
     
     public void QuitGame()
