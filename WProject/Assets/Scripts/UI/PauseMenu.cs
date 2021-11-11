@@ -79,7 +79,9 @@ public class PauseMenu : MonoBehaviour
 
     public void ReloadGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
+        //Application.LoadLevel("Application.loadedLevel");
         gameOverUI.SetActive(false);
 
     }
