@@ -15,6 +15,7 @@ public class snakeManager : MonoBehaviour
 
     private float countUp = 0, distanceR, distanceL, distanceF;
     private GameObject player;
+    public ParticleSystem flamethrower;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +41,7 @@ public class snakeManager : MonoBehaviour
         PlayerDetector();
         SnakeMovement();
         RotateTowardsTarget();
-       //AttackManager();
+        AttackManager();
     }
     private void RotateTowardsTarget()
     {
@@ -143,6 +144,17 @@ public class snakeManager : MonoBehaviour
             bodyParts.RemoveAt(0);
             temp.GetComponent<MarkerManager>().ClearMarkerList();
             countUp = 0;
+        }
+    }
+    void AttackManager()
+    {
+        if (playerOnFront)
+        {
+            flamethrower.Play();
+        }
+        if (!playerOnFront)
+        {
+            flamethrower.Stop();
         }
     }
 }
