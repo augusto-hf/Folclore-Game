@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 8584487395116000449}
   - component: {fileID: 8584487395116000450}
   - component: {fileID: 8584487395116000451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: beeParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3912,7 +3912,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 1791
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -4946,6 +4946,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beeParticles
       objectReference: {fileID: 0}
+    - target: {fileID: 2872089030616961746, guid: f4308a4a5d471cc41ba47c373ca18a2f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4421774856233695094, guid: f4308a4a5d471cc41ba47c373ca18a2f,
         type: 3}
       propertyPath: ForceModule.enabled
@@ -5005,6 +5010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421774856233695094, guid: f4308a4a5d471cc41ba47c373ca18a2f,
+        type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 1791
       objectReference: {fileID: 0}
     - target: {fileID: 4421774856233695094, guid: f4308a4a5d471cc41ba47c373ca18a2f,
         type: 3}

@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589b8ae3a4d389943b06f878f7eeff8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGM_Clip: {fileID: 8300000, guid: 3a2bf982b56cf484f93173a837346f26, type: 3}
+  BGM_Clip: {fileID: 8300000, guid: d7f6dea12c4eb2e459e03b1a0d28bb97, type: 3}
   ambience_Clip: {fileID: 8300000, guid: 784091552939c7e4ba8ee94f93b61f84, type: 3}
   footstep_Clip: {fileID: 8300000, guid: e24b82f54953016498775b7cbbe6ef44, type: 3}
   InventoryOpen_Clip: {fileID: 8300000, guid: 061f46058e336f34cbebc8e5773f3156, type: 3}
@@ -454,7 +454,16 @@ MonoBehaviour:
   PressButton_Clip: {fileID: 8300000, guid: e33751386413ca346b1fdb09151e5f46, type: 3}
   footstepsdelayBetweenClips: 350
   footstepsVolume: 0.025
-  inventoryVolume: 1
+  inventoryVolume: 0.25
+  FxVolueme: 1
+  BGMVolume: 0.2
+  ambienceVolume: 0.05
+  musicVolume: 1
+  BGM: {fileID: 0}
+  ambience: {fileID: 0}
+  footstepsSource: {fileID: 0}
+  InventorySounds: {fileID: 0}
+  PressButton: {fileID: 0}
 --- !u!1 &3290356322685578283
 GameObject:
   m_ObjectHideFlags: 0

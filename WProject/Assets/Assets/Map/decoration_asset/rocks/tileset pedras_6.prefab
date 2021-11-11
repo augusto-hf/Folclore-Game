@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2843659404202318864}
   - component: {fileID: 5669444880762417379}
   - component: {fileID: 5714297205953019993}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset pedras_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}

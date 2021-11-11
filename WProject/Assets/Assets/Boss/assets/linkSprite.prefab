@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5273338404132165372}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FrontSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 6647114899970005885}
   - component: {fileID: 6647114899970005874}
   - component: {fileID: -2550207701054712610}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: linkSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

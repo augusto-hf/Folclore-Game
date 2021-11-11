@@ -6,7 +6,8 @@ public class audioFxScript : MonoBehaviour
 {
     [SerializeField] AudioClip BGM_Clip, ambience_Clip, footstep_Clip, InventoryOpen_Clip, InventoryClose_Clip, PressButton_Clip;
     [SerializeField] float footstepsdelayBetweenClips;
-    public float footstepsVolume = 1.0f, inventoryVolume = 1.0f;
+    [SerializeField] float footstepsVolume = 1.0f, inventoryVolume = 1.0f, FxVolueme = 1.0f;
+    [SerializeField] float BGMVolume = 1.0f, ambienceVolume = 1.0f, musicVolume = 1.0f;
     private float footstepsTime;
     bool footstepsHavePlayed, inventoryState;
     [SerializeField] AudioSource BGM, ambience, footstepsSource, InventorySounds, PressButton;
@@ -22,23 +23,14 @@ public class audioFxScript : MonoBehaviour
 
         BGM.clip = BGM_Clip;
         ambience.clip = ambience_Clip;
+        BGM.Play();
+        ambience.Play();
     }
     void Update()
     {
-        BGMControl();
-        ambienceControl();
         playFootstepsControl();
         playInventoryControl();
-        fxVolume();
-    }
-    void BGMControl()
-    {
-        Debug.Log("Tentando achar um bug");
-        BGM.Play();
-    }
-    void ambienceControl()
-    {
-        ambience.Play();       
+        Volume();
     }
     void playFootstepsControl()
     {
@@ -66,10 +58,15 @@ public class audioFxScript : MonoBehaviour
             inventoryState = false;
         }
     }
-    void fxVolume()
+    void Volume()
     {
-        footstepsSource.volume = footstepsVolume;
-        InventorySounds.volume = inventoryVolume;
+        //trilha sonora e ambientação
+        BGM.volume = BGMVolume * musicVolume;
+        ambience.volume = ambienceVolume * musicVolume;
+
+        // efeitos sonoros
+        footstepsSource.volume = footstepsVolume * FxVolueme;
+        InventorySounds.volume = inventoryVolume * FxVolueme;
     }
     
 }

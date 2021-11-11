@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 3f8202de8fc28de4d84dc35de164ee68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4171564360692960483
+    second: augustos definitivos tileset_0
+  - first:
+      213: -6143937418202227709
+    second: augustos definitivos tileset_1
+  - first:
+      213: -4437558969563464519
+    second: augustos definitivos tileset_2
+  - first:
+      213: 1373972778848439439
+    second: augustos definitivos tileset_3
+  - first:
+      213: -2387639881382890987
+    second: augustos definitivos tileset_4
+  - first:
+      213: 6264265217596734022
+    second: augustos definitivos tileset_5
+  - first:
+      213: -7900856930159950286
+    second: augustos definitivos tileset_6
+  - first:
+      213: -152155770726511378
+    second: augustos definitivos tileset_7
+  - first:
+      213: -2357250270326852270
+    second: augustos definitivos tileset_8
+  - first:
+      213: -848149794695944390
+    second: augustos definitivos tileset_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: augustos definitivos tileset_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 2241
+        width: 769
+        height: 606
+      alignment: 9
+      pivot: {x: 0.6055934, y: 0.28560707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13773bd050ab16c0800000000000000
+      internalID: -4171564360692960483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: augustos definitivos tileset_1
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 2241
+        width: 766
+        height: 606
+      alignment: 9
+      pivot: {x: 0.37279174, y: 0.27667418}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c53d958795cbaa0800000000000000
+      internalID: -6143937418202227709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: augustos definitivos tileset_2
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 2208
+        width: 1504
+        height: 915
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc325dd0af9a62c0800000000000000
+      internalID: -4437558969563464519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: augustos definitivos tileset_3
+      rect:
+        serializedVersion: 2
+        x: 4383
+        y: 2210
+        width: 1793
+        height: 913
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c415676f4511310800000000000000
+      internalID: 1373972778848439439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: augustos definitivos tileset_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1165
+        width: 884
+        height: 675
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512fd9a9d266dded0800000000000000
+      internalID: -2387639881382890987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: augustos definitivos tileset_5
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1165
+        width: 884
+        height: 675
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a30b1a6042fe650800000000000000
+      internalID: 6264265217596734022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: augustos definitivos tileset_6
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 1177
+        width: 883
+        height: 675
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23602a88b748a5290800000000000000
+      internalID: -7900856930159950286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: augustos definitivos tileset_7
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 1177
+        width: 884
+        height: 675
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec0257f12f63edf0800000000000000
+      internalID: -152155770726511378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: augustos definitivos tileset_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 1500
+        height: 919
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255797e4e5d594fd0800000000000000
+      internalID: -2357250270326852270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: augustos definitivos tileset_9
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 128
+        width: 1505
+        height: 916
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37e3d26144ca34f0800000000000000
+      internalID: -848149794695944390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
