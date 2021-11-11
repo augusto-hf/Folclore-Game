@@ -20,7 +20,6 @@ public class Ai_MelleAtack : MonoBehaviour
         waitTime -= Time.deltaTime;
         if (waitTime <= 0)
         {
-            //Attack.GetComponent<SpriteRenderer>().enabled = true;
             Attack.GetComponent<BoxCollider2D>().enabled = true;
             StartCoroutine(Anim());
         }
@@ -62,7 +61,7 @@ public class Ai_MelleAtack : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "PlayerHitboc")
         {
             Healt = other.gameObject.GetComponentInParent<Player>();
            RbPlayer = other.gameObject.GetComponentInParent<Rigidbody2D>();

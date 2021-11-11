@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 502751795115450135}
   - component: {fileID: 502751795115450132}
   - component: {fileID: 502751795115450133}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502751795115450131}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.07, y: 0.04, z: 0}
+  m_LocalPosition: {x: -0.07, y: -0.0073, z: 0}
   m_LocalScale: {x: 0.08406509, y: 0.032016344, z: 1}
   m_Children: []
   m_Father: {fileID: 5559337894521852985}
@@ -289,8 +289,8 @@ MonoBehaviour:
   Healt: {fileID: 0}
   Attack: {fileID: 502751795115450131}
   time: 1
-  waitTime: 2
-  Enemy: {fileID: 0}
+  waitTime: 1.5
+  Enemy: {fileID: 1420356931}
 --- !u!1 &502751796578462281
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +519,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8
+  ai_melleatack: {fileID: 0}
 --- !u!114 &5559337894521852988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,7 +537,7 @@ MonoBehaviour:
   TypeOfEnemy: 0
   ViewDistance: 200
   Speed: 2
-  StopDistance: 0.5
+  StopDistance: 0.7
   Aggro: 50
   dashSpeed: 0
   dashEnd: 0

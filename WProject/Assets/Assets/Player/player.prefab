@@ -72,6 +72,76 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &862501372993283132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6164605322583256519}
+  - component: {fileID: 7746124133467531084}
+  - component: {fileID: 3750957162819449480}
+  m_Layer: 0
+  m_Name: HitBox
+  m_TagString: PlayerHitboc
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6164605322583256519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862501372993283132}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.3333334, y: 1.3333334, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3476071295735453982}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &7746124133467531084
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862501372993283132}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.000000044703484, y: -0.15108764}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.28772977, y: 0.3416896}
+  m_EdgeRadius: 0
+--- !u!114 &3750957162819449480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862501372993283132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae9146ff9bd15504ca933788e154b5b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1221693834799641854
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &286073190264208473
 Transform:
   m_ObjectHideFlags: 0
@@ -178,6 +248,7 @@ Transform:
   m_Children:
   - {fileID: 286073190264208473}
   - {fileID: 3476071297099480241}
+  - {fileID: 6164605322583256519}
   - {fileID: 3476071296356200955}
   - {fileID: 3476071297033012089}
   - {fileID: 3476071296410337850}
@@ -265,6 +336,7 @@ MonoBehaviour:
     itemName: 
     goldReward: 0
     itemReward: {fileID: 0}
+    imageItem: {fileID: 0}
     goal:
       goalType: 0
       requiredAmount: 0
@@ -417,7 +489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3476071296356200955
 Transform:
   m_ObjectHideFlags: 0
@@ -431,7 +503,7 @@ Transform:
   m_Children:
   - {fileID: 652010022245557870}
   m_Father: {fileID: 3476071295735453982}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3476071296356200954
 SpriteRenderer:
@@ -532,7 +604,7 @@ Transform:
   m_Children:
   - {fileID: 3476071296338737838}
   m_Father: {fileID: 3476071295735453982}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3476071297033012090
 GameObject:
@@ -554,7 +626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3476071297033012089
 Transform:
   m_ObjectHideFlags: 0
@@ -571,7 +643,7 @@ Transform:
   - {fileID: 3476071296134915872}
   - {fileID: 927543836665147018}
   m_Father: {fileID: 3476071295735453982}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3476071297033012085
 SpriteRenderer:
