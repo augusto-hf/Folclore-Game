@@ -75,6 +75,11 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
+    public void ReloadGame()
+    {
+        SceneManager.LoadScene("Fase_1");
+    }
     
     public void QuitGame()
     {
