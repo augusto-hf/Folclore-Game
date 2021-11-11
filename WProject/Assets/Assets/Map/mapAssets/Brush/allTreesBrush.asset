@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: allTreesBrush
   m_EditorClassIdentifier: 
   m_Cells:
-  - m_Tile: {fileID: 0}
+  - m_Tile: {fileID: 11400000, guid: c7317872858e82241b70aa6e20ea338b, type: 2}
     m_Matrix:
       e00: 1
       e01: 0
@@ -38,19 +38,15 @@ MonoBehaviour:
   m_FloodFillContiguousOnly: 1
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
   m_Prefabs:
-  - {fileID: 8117190689250044729, guid: 469794610d773a442a6f60223de8df29, type: 3}
-  - {fileID: 4026560814485601113, guid: cfbc08e192f53344cb6e5875769317e7, type: 3}
+  - {fileID: 8446574432952961010, guid: 4997f0a281208cd42865c6233f56098b, type: 3}
   - {fileID: 5023790282390386642, guid: fb6ec75c6c813074e8cb145c9e493e46, type: 3}
-  - {fileID: 3164192375421501989, guid: b8a3d245aba5e2b41b0bc607f5de3c16, type: 3}
   - {fileID: 3096280910071998208, guid: 2c4e2ce63e4d4b240a39473a6e24241e, type: 3}
   - {fileID: 3840903680692729901, guid: d0e3235b6df1034469d726e353a48e87, type: 3}
-  - {fileID: 6296273312167185812, guid: 70e66d24f1c6eca4e94b95ed7b491af8, type: 3}
-  - {fileID: 1910031976549877710, guid: 00dd10fcf31cd7e4a93f9eb90b625b4a, type: 3}
-  - {fileID: 1335865851516860285, guid: 742a681419dcd35438491d674890a6a6, type: 3}
-  - {fileID: 4059603498340796970, guid: 7a772f328472ac94aa87e97459673172, type: 3}
-  - {fileID: 2211395011332948334, guid: e0ea176d123ed744cabada71ccecbe18, type: 3}
-  - {fileID: 5993588164782358715, guid: 76d1f6d7a54f1214e991cfb667af2d74, type: 3}
-  - {fileID: 8446574432952961010, guid: 4997f0a281208cd42865c6233f56098b, type: 3}
   - {fileID: 1542697208585457932, guid: 66ccb554e7e0a734dab50bc9282d2b56, type: 3}
-  - {fileID: 3783440716335814950, guid: 09f291b10e6fcac428443bcd076cf74e, type: 3}
-  m_PerlinScale: 0.5
+  - {fileID: 6296273312167185812, guid: 70e66d24f1c6eca4e94b95ed7b491af8, type: 3}
+  - {fileID: 1335865851516860285, guid: 742a681419dcd35438491d674890a6a6, type: 3}
+  - {fileID: 8446574432952961010, guid: 4997f0a281208cd42865c6233f56098b, type: 3}
+  - {fileID: 5993588164782358715, guid: 76d1f6d7a54f1214e991cfb667af2d74, type: 3}
+  - {fileID: 3096280910071998208, guid: 2c4e2ce63e4d4b240a39473a6e24241e, type: 3}
+  - {fileID: 3096280910071998208, guid: 2c4e2ce63e4d4b240a39473a6e24241e, type: 3}
+  m_PerlinScale: 0.301

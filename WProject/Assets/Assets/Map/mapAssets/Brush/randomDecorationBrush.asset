@@ -72,5 +72,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 722fe4bb8be068448bc546b14d48211f, type: 2}
   - randomTiles:
     - {fileID: 11400000, guid: 7934bbce98dc2674f8470e0f5477396c, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 50845b4048fc71e4a8072347136b472a, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 9e75ab08edcd6084189ca5aa810bb261, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 934316758fa6d8345b8048874add5260, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 000a41cde57582140b31906ec84bb113, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 7934bbce98dc2674f8470e0f5477396c, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: a4db560858bec4f42842d305f3405cce, type: 2}
+  - randomTiles:
+    - {fileID: 11400000, guid: 73bd599798cb146499fa43ef10ad2c9a, type: 2}
   pickRandomTiles: 0
   addToRandomTiles: 1
