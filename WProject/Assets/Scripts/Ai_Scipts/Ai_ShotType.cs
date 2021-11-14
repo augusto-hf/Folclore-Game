@@ -43,6 +43,7 @@ public class Ai_ShotType : MonoBehaviour
             Vector2 look = Player.position - _Barrel.transform.position;
             float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
             _Barrel.rotation = Angulo;
+            //_Barrel.transform.Rotate(0, 0, Angulo);
             Debug.Log(Angulo);
             Debug.Log(look);
 
