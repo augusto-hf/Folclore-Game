@@ -15,7 +15,7 @@ public class maedouroteste : MonoBehaviour
             {
                 troço1.SetActive(true);
                 troço2.SetActive(true);
-                troço3.SetActive(true);
+                //troço3.SetActive(true);
                 boitata.SetActive(false);
             }
         }
