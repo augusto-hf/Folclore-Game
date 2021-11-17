@@ -69,9 +69,10 @@ public class dialogueM : MonoBehaviour
     public void EndDialogue()
     {
         //animator.SetBool("IsOpen", false);
+
+
         DialogBox.SetActive(false);
         FindObjectOfType<shooting>()._PlayerStardDialogue = false;
-
     }
 
 }
