@@ -51,6 +51,7 @@ public class dialogueTrigger : MonoBehaviour
         if (other.tag == "Player")
         {
             playerHasEnter = false;
+            dialogHasStarted = false;
             _IconShow.SetActive(false);
 
             dialogM_script.EndDialogue();

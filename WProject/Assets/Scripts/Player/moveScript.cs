@@ -5,27 +5,21 @@ using UnityEngine;
 public class moveScript : MonoBehaviour
 {   //general variables
     public float moveSpeed = 5f;
-    private float startMoveSpeed;
+    private float startMoveSpeed, LastMove;
     public Rigidbody2D rb;
     public Animator anim;
     Vector2 movement;
 
     //dash variables
-    public float dashSpeed;
-    public float dashEnd;
-    private float dashTime;
-    public float startDashTime;
+    public float dashSpeed, dashEnd, dashTime, startDashTime;
     private int direction;
     private bool isDashing;
     Vector2 movementRef;
 
-    // Start is called before the first frame update
     void Start()
     {
         startMoveSpeed = moveSpeed;
     }
-
-    // Update is called once per frame
     void Update()
     {
         move();
@@ -35,11 +29,27 @@ public class moveScript : MonoBehaviour
 
         if (isDashing == false)
         {
+            verifyLastMove();
+
+            anim.SetFloat("LastMove", LastMove);
             anim.SetFloat("Horizontal", movement.x);
             anim.SetFloat("Vertical", movement.y);
             anim.SetFloat("Speed", movement.sqrMagnitude);
         }
     }
+
+    private void verifyLastMove()
+    {
+        if (movement.x > 0.1)
+        {
+            LastMove = 1;
+        }
+        else if (movement.x < -0.1)
+        {
+            LastMove = -1;
+        }
+    }
+
     void FixedUpdate()
     {       
         if (isDashing == false)//movimento sem dash
