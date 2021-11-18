@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class dialogueTrigger : MonoBehaviour
 {
-    public dialogueM dialogM_script;
+    [SerializeField] dialogueM dialogM_script;
     public Dialogue dialogue;
     bool playerHasEnter, dialogHasStarted;
     [SerializeField]GameObject _IconShow;
 
     private void Start()
     {
-        dialogM_script = GameObject.FindGameObjectWithTag("scriptObject").GetComponent<dialogueM>();
     }
     void Update()
     {
@@ -30,7 +29,7 @@ public class dialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        FindObjectOfType<dialogueM>().StartDialogue(dialogue);
+        dialogM_script.StartDialogue(dialogue);
     }
 
 
@@ -54,7 +53,7 @@ public class dialogueTrigger : MonoBehaviour
             playerHasEnter = false;
             _IconShow.SetActive(false);
 
-            FindObjectOfType<dialogueM>().EndDialogue();
+            dialogM_script.EndDialogue();
         }
 
     }

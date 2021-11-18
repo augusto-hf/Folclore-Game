@@ -9,23 +9,21 @@ public class dialogueM : MonoBehaviour
     public Text nameText;
     [SerializeField] Text dialogueText;
     [SerializeField] GameObject DialogBox;
-    
 
     public Animator animator;
 
-    private Queue<string> sentences;
+    [SerializeField] private Queue<string> sentences;
 
 
     // Use this for initialization
     void Start()
     {
-  
         sentences = new Queue<string>();
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-        FindObjectOfType<shooting>()._PlayerStardDialogue = true;
+        //FindObjectOfType<shooting>()._PlayerStardDialogue = true;
         //animator.SetBool("IsOpen", true);
         DialogBox.SetActive(true);
 
@@ -70,9 +68,9 @@ public class dialogueM : MonoBehaviour
     {
         //animator.SetBool("IsOpen", false);
 
-
+        sentences.Clear();
         DialogBox.SetActive(false);
-        FindObjectOfType<shooting>()._PlayerStardDialogue = false;
+        //FindObjectOfType<shooting>()._PlayerStardDialogue = false;
     }
 
 }

@@ -14,13 +14,7 @@ public class audioFxScript : MonoBehaviour
 
     private void Start()
     {
-        BGM = transform.Find("BGM").GetComponent<AudioSource>();
-        ambience = transform.Find("ambience").GetComponent<AudioSource>();
-        footstepsSource = transform.Find("footsteps").GetComponent<AudioSource>();
-        InventorySounds = transform.Find("InventorySounds").GetComponent<AudioSource>();
-
-        PressButton = transform.Find("PressButton").GetComponent<AudioSource>();
-
+    
         BGM.clip = BGM_Clip;
         ambience.clip = ambience_Clip;
         BGM.Play();
