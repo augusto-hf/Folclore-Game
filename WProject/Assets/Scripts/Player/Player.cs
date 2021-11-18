@@ -76,9 +76,11 @@ public class Player : MonoBehaviour
                 currentBlindness = 0;
             }
 
-
+     
             healthBar.SetHealth(currentHealth);
             blindnessBar.SetBlindness(currentBlindness);
+            IVframe = true;
+            Debug.Log(IVframe);
         }
        
     }

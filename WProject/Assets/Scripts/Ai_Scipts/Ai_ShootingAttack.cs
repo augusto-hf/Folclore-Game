@@ -19,6 +19,9 @@ public class Ai_ShootingAttack : MonoBehaviour
    public void FireBallAttack()
     {
         GameObject bullet = Instantiate(FireBall, _GunBarrel.position, _GunBarrel.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+
+        rb.AddForce(_GunBarrel.up * ai_shottype.ai_enemy_stats.força, ForceMode2D.Impulse);
     }
 
 

@@ -17,7 +17,6 @@ public class Ai_ShotType : MonoBehaviour
     internal float _AgroCountDown;
     float fireRate;
     float TimetoFire;
-    // fazer um sistema para que o inimigo se aveste do jogador quando ele esta muito dele e que ele ande em zique sague
 
 
     void Start()
@@ -25,7 +24,9 @@ public class Ai_ShotType : MonoBehaviour
         fireRate = 3f;
         TimetoFire = Time.time;
         ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
+        ai_enemy_stats = GetComponent<Ai_Enemy_Stats>();
         Player = GameObject.FindGameObjectWithTag("Player").transform;
+        //_Barrel = GetComponentInChildren<Rigidbody2D>();
 
     }
 
@@ -43,9 +44,7 @@ public class Ai_ShotType : MonoBehaviour
             Vector2 look = Player.position - _Barrel.transform.position;
             float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
             _Barrel.rotation = Angulo;
-            //_Barrel.transform.Rotate(0, 0, Angulo);
-            Debug.Log(Angulo);
-            Debug.Log(look);
+         
 
 
         }

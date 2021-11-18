@@ -83,7 +83,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &53195360266333696
 Transform:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab118dd23f780984b95e1e5fcf2cc60c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ai_enemy_stats: {fileID: 53195360266333701}
+  ai_enemy_stats: {fileID: 0}
   Player: {fileID: 0}
   _EnemyHead: {fileID: 5431449597865611377}
   _Enemy: {fileID: 53195360266333696}

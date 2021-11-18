@@ -9,6 +9,7 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
     [SerializeField] internal Ai_ShootingAttack ai_shootingattack;
     [SerializeField] Player Healt;
     [SerializeField] Rigidbody2D Bullet;
+    [SerializeField] Transform _gunBarrel;
 
     GameObject Enemy;
     
@@ -19,7 +20,8 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
         Ai_shotType = Enemy.GetComponent<Ai_ShotType>();
         ai_shootingattack = Enemy.GetComponent<Ai_ShootingAttack>();
         Bullet = gameObject.GetComponent<Rigidbody2D>();
-        Bullet.AddForce(ai_shootingattack._GunBarrel.transform.up * Ai_shotType.ai_enemy_stats.força, ForceMode2D.Impulse);
+        _gunBarrel = ai_shootingattack._GunBarrel;
+        //Bullet.AddForce(_gunBarrel.up * Ai_shotType.ai_enemy_stats.força, ForceMode2D.Impulse);
 
     }
 
