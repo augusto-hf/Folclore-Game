@@ -181,9 +181,9 @@ TextureImporter:
       name: tileset piso (1)_2
       rect:
         serializedVersion: 2
-        x: 2034
+        x: 2037
         y: 2058
-        width: 1017.4
+        width: 1014
         height: 1029
       alignment: 9
       pivot: {x: 0.5, y: 0.75}
