@@ -1267,6 +1267,16 @@ PrefabInstance:
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 8093487229817969188, guid: 22936316f2b93ca48b742e00d6e52504,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093487229817969188, guid: 22936316f2b93ca48b742e00d6e52504,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1703231555
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22936316f2b93ca48b742e00d6e52504, type: 3}
 --- !u!1 &4631007332006720311 stripped

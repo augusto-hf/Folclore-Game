@@ -5,7 +5,7 @@ using UnityEngine;
 public class moveScript : MonoBehaviour
 {   //general variables
     public float moveSpeed = 5f;
-    private float startMoveSpeed, LastMove;
+    private float startMoveSpeed, LastMove = 1;
     public Rigidbody2D rb;
     public Animator anim;
     Vector2 movement;
@@ -30,7 +30,6 @@ public class moveScript : MonoBehaviour
         if (isDashing == false)
         {
             verifyLastMove();
-
             anim.SetFloat("LastMove", LastMove);
             anim.SetFloat("Horizontal", movement.x);
             anim.SetFloat("Vertical", movement.y);

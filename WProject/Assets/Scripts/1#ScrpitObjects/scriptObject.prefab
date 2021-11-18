@@ -186,7 +186,7 @@ MonoBehaviour:
   footstepsVolume: 0.025
   inventoryVolume: 0.25
   FxVolueme: 1
-  BGMVolume: 0.2
+  BGMVolume: 0.08
   ambienceVolume: 0.05
   musicVolume: 1
   BGM: {fileID: 5957595365373127377}
