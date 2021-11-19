@@ -15,6 +15,8 @@ public class dialogueM : MonoBehaviour
 
     private Queue<string> sentences;
     private Queue<AudioClip> voiceLines;
+    private Queue<bool> isNpcLines;
+    private string npcName;
     private bool haveAudio;
 
     // Use this for initialization
@@ -22,6 +24,7 @@ public class dialogueM : MonoBehaviour
     {
         sentences = new Queue<string>();
         voiceLines = new Queue<AudioClip>();
+        isNpcLines = new Queue<bool>();
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -34,14 +37,18 @@ public class dialogueM : MonoBehaviour
 
         DialogBox.SetActive(true);
 
-
-        nameText.text = dialogue.name;
+        npcName = dialogue.name;
 
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
+        }
+
+        foreach (bool isNpcLine in dialogue.isNpcLines)
+        {
+            isNpcLines.Enqueue(isNpcLine);
         }
 
         if (haveAudio)
@@ -64,7 +71,19 @@ public class dialogueM : MonoBehaviour
             return;
         }
 
+        //verificar se é npc ou jogador falando
+        bool isNpcLine = isNpcLines.Dequeue();
+        if (isNpcLine)
+        {
+            nameText.text = npcName;
+        }
+        else
+        {
+            nameText.text = "Aiyra";
+        }
 
+
+        //escrever a mensagem
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -100,5 +119,4 @@ public class dialogueM : MonoBehaviour
         DialogBox.SetActive(false);
         //FindObjectOfType<shooting>()._PlayerStardDialogue = false;
     }
-
 }
