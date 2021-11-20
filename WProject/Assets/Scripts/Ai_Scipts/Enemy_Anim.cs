@@ -17,13 +17,19 @@ public class Enemy_Anim : MonoBehaviour
         {
             Debug.Log("1");
             i = 0;
+            x = 1;
+        }
+        if (Zvaule >= 45 && Zvaule < 90)
+        {
+            Debug.Log("3");
+            i = -1;
             x = 0;
         }
         else if (Zvaule >= 180 && Zvaule < 270)
         {
             Debug.Log("2");
-            i = -1;
-            x = 0;
+            i = 0;
+            x = 1;
 
 
         }
@@ -35,7 +41,7 @@ public class Enemy_Anim : MonoBehaviour
 
 
         }
-        else if (Zvaule >= 0 && Zvaule < 90)
+        else if (Zvaule >= 0 && Zvaule < 45)
         {
             Debug.Log("4");
             i = 0;
@@ -46,6 +52,6 @@ public class Enemy_Anim : MonoBehaviour
 
         anim.SetFloat("Horizontal", i);
         anim.SetFloat("Vertical", x);
-        //anim.SetFloat("Speed", movement.sqrMagnitude);
+        anim.SetFloat("Vel", 1f);
     }
 }

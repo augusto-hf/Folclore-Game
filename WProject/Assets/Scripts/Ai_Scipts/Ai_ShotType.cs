@@ -67,8 +67,8 @@ public class Ai_ShotType : MonoBehaviour
                 //_Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
                 if (Time.time > TimetoFire)
                 {
-                    StartCoroutine(Anim());
-                    ai_shootingattack.FireBallAttack();
+                    //StartCoroutine(Anim());
+                    //ai_shootingattack.FireBallAttack();
 
                     TimetoFire = Time.time + fireRate;
                 }
