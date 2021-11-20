@@ -33,7 +33,7 @@ public class Enemy_Anim : MonoBehaviour
 
 
         }
-        else if (Zvaule >= 270 && Zvaule < 360)
+        else if (Zvaule >= 270 && Zvaule < 320)
         {
             Debug.Log("3");
             i = 1;
@@ -41,7 +41,7 @@ public class Enemy_Anim : MonoBehaviour
 
 
         }
-        else if (Zvaule >= 0 && Zvaule < 45)
+        else if (Zvaule >= 0 && Zvaule < 45 || Zvaule > 320)
         {
             Debug.Log("4");
             i = 0;
