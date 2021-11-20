@@ -8,7 +8,7 @@ public class dialogueM : MonoBehaviour
 
     public Text nameText;
     [SerializeField] Text dialogueText;
-    [SerializeField] GameObject DialogBox;
+    [SerializeField] GameObject DialogBox, playerImage, NpcImage, playerImageBack, NpcImageBack;
     [SerializeField] AudioSource voiceLinesSource;
 
     public Animator animator;
@@ -19,7 +19,6 @@ public class dialogueM : MonoBehaviour
     private string npcName;
     private bool haveAudio;
 
-    // Use this for initialization
     void Start()
     {
         sentences = new Queue<string>();
@@ -37,7 +36,12 @@ public class dialogueM : MonoBehaviour
 
         DialogBox.SetActive(true);
 
+        //defini nome do npc
         npcName = dialogue.name;
+
+        //define imagem do npc
+        NpcImageBack.GetComponent<Image>().sprite = dialogue.NpcImage;
+        NpcImage.GetComponent<Image>().sprite = dialogue.NpcImage;
 
         sentences.Clear();
 
@@ -76,10 +80,14 @@ public class dialogueM : MonoBehaviour
         if (isNpcLine)
         {
             nameText.text = npcName;
+            NpcImage.SetActive(true);
+            playerImage.SetActive(false);
         }
         else
         {
             nameText.text = "Aiyra";
+            NpcImage.SetActive(false);
+            playerImage.SetActive(true);
         }
 
 
