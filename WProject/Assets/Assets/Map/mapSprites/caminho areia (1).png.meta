@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 91e297c1b30f9134393656a456ef0c86
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -153429177131801203
+    second: caminho areia (1)_0
+  - first:
+      213: -2924425108830961958
+    second: caminho areia (1)_1
+  - first:
+      213: -4768705051396511330
+    second: caminho areia (1)_2
+  - first:
+      213: 2102411395396473592
+    second: caminho areia (1)_3
+  - first:
+      213: 2778408690950322116
+    second: caminho areia (1)_4
+  - first:
+      213: 976327841219931200
+    second: caminho areia (1)_5
+  - first:
+      213: -6040889605629454884
+    second: caminho areia (1)_6
+  - first:
+      213: 6513041410648484571
+    second: caminho areia (1)_7
+  - first:
+      213: -8145720657494433569
+    second: caminho areia (1)_8
+  - first:
+      213: -8330542755884505832
+    second: caminho areia (1)_9
+  - first:
+      213: 6194990579194924588
+    second: caminho areia (1)_10
+  - first:
+      213: 972197893541172680
+    second: caminho areia (1)_11
+  - first:
+      213: -8424409094040467516
+    second: caminho areia (1)_12
+  - first:
+      213: 8491524403171907960
+    second: caminho areia (1)_13
+  - first:
+      213: 3317249922969169935
+    second: caminho areia (1)_14
+  - first:
+      213: 4421099172834838473
+    second: caminho areia (1)_15
+  - first:
+      213: -7898431248603831400
+    second: caminho areia (1)_16
+  - first:
+      213: 350315793957626116
+    second: caminho areia (1)_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caminho areia (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85e0eee9f8eeddf0800000000000000
+      internalID: -153429177131801203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_1
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adeb5e79bda5a67d0800000000000000
+      internalID: -2924425108830961958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_2
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9966ec750822ddb0800000000000000
+      internalID: -4768705051396511330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_3
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2175a66044d2d10800000000000000
+      internalID: 2102411395396473592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_4
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7b3f8dbf3ee8620800000000000000
+      internalID: 2778408690950322116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_5
+      rect:
+        serializedVersion: 2
+        x: 5085
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cec30bffc9c8d00800000000000000
+      internalID: 976327841219931200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd55b11e8e27a2ca0800000000000000
+      internalID: -6040889605629454884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdaac19c7a8f26a50800000000000000
+      internalID: 6513041410648484571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_8
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0ab7a483694fe80800000000000000
+      internalID: -8145720657494433569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_9
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815ec492087f36c80800000000000000
+      internalID: -8330542755884505832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_10
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e0ecbfb1709f550800000000000000
+      internalID: 6194990579194924588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_11
+      rect:
+        serializedVersion: 2
+        x: 5085
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c597ef45d0fd7d00800000000000000
+      internalID: 972197893541172680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7c52b309c761b80800000000000000
+      internalID: -8424409094040467516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_13
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8795f946474f7d570800000000000000
+      internalID: 8491524403171907960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_14
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00f4c9ba3d390e20800000000000000
+      internalID: 3317249922969169935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_15
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c708911646ea5d30800000000000000
+      internalID: 4421099172834838473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_16
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893af1880a2236290800000000000000
+      internalID: -7898431248603831400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho areia (1)_17
+      rect:
+        serializedVersion: 2
+        x: 5085
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401ad0acb529cd400800000000000000
+      internalID: 350315793957626116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
