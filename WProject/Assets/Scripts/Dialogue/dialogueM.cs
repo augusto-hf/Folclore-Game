@@ -12,6 +12,7 @@ public class dialogueM : MonoBehaviour
     [SerializeField] AudioSource voiceLinesSource;
     [SerializeField] Animator NpcImageAnimator, NpcImageBackAnimator;
 
+
     public Animator animator;
 
     private Queue<string> sentences;
@@ -130,6 +131,10 @@ public class dialogueM : MonoBehaviour
         {
             voiceLinesSource.Stop();
         }
+        NpcImage.SetActive(true);
+        NpcImageAnimator.SetBool("hasEnter", false);
+        NpcImageBackAnimator.SetBool("hasEnter", false);
+
         DialogBox.SetActive(false);
         //FindObjectOfType<shooting>()._PlayerStardDialogue = false;
     }

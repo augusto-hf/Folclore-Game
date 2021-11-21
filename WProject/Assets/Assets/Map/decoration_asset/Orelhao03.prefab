@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9156651129907069226}
   - component: {fileID: 1504936215941120708}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2204527159108015916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.037, y: 0.997, z: 0}
+  m_LocalPosition: {x: 0.05099994, y: 1.1560004, z: 0}
   m_LocalScale: {x: 0.22545758, y: 0.22545758, z: 0.22545758}
   m_Children: []
   m_Father: {fileID: 2644897078221085583}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2644897078221085583}
   - component: {fileID: 2644897078221085580}
   - component: {fileID: 6058539598243582110}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Orelhao03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,8 @@ SpriteRenderer:
   m_SortingLayerID: 340552739
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cebedb4e1d034cd4cb1d52aaef347e6b, type: 3}
+  m_Sprite: {fileID: -2643758869631777185, guid: a0be7edc76c99bc4498cf380e23169b4,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -188,13 +189,13 @@ MonoBehaviour:
   m_SelfShadows: 0
   m_ApplyToSortingLayers: 0000000065a71651cdaaa2fc7f9a4a41ff50de55236c4c1443408565
   m_ShapePath:
-  - {x: -0.05433154, y: -0.14349389, z: 0}
-  - {x: 0.0019602776, y: -0.18707156, z: 0}
-  - {x: 0.061879635, y: -0.14643764, z: 0}
-  - {x: 0.0031218529, y: -0.087373495, z: 0}
-  m_ShapePathHash: 1904462549
+  - {x: -0.028959274, y: 0.008747101, z: 0}
+  - {x: 0.016460419, y: -0.029396057, z: 0}
+  - {x: 0.067316055, y: 0.007610321, z: 0}
+  - {x: 0.015810013, y: 0.04855728, z: 0}
+  m_ShapePathHash: -262345195
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1026300
+  m_InstanceId: -266194
 --- !u!1 &2644897079397396756
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2644897079397396759}
   - component: {fileID: 2644897079397396758}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2644897079397396756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.014, y: 0.159, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2644897078221085583}
@@ -253,7 +254,7 @@ GameObject:
   - component: {fileID: 386784057396472468}
   - component: {fileID: 225613054738350198}
   - component: {fileID: 3811413326469685816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DialogueComponent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2951079484168658327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.013999939, y: 0.1590004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2644897078221085583}
@@ -298,7 +299,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5127683, y: 0.4955492}
+  m_Size: {x: 0.6976881, y: 0.4955492}
   m_EdgeRadius: 0
 --- !u!114 &3811413326469685816
 MonoBehaviour:
@@ -312,10 +313,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf4eeb0ae19e0ea4dabf32d5eafc99ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogM_script: {fileID: 0}
   dialogue:
-    name: Pessoa Desconhecida
+    name: Desenvolvedores
+    NpcImage: {fileID: 21300000, guid: cebedb4e1d034cd4cb1d52aaef347e6b, type: 3}
     sentences:
-    - "N\xC3O TENHO TEMPO PARA EXPLICAR... APENAS CORRA!!!"
-    - "O MAIS R\xC1PIDO QUE PUDER E ATIRE EM TUDO."
-    - "Sucumba, Pere\xE7a"
+    - "Koe irm\xE3o, espero que tenha curtido namoralzinha at\xE9 aqui, foi braba
+      a viagem, mas ainda te muito por vir TESTE 1"
+    - "Garanto que ser\xE1 uma aventura e tanto at\xE9 o lan\xE7amento TESTE 2"
+    - "Mas s\xF3 qnd esse momento chegar a verdadeira odisseia vai come\xE7ar TESTE
+      3"
+    - TESTE 4
+    isNpcLines: 01010101
+    voiceLines:
+    - {fileID: 8300000, guid: e0372cfc09093f1489b068725934f7cd, type: 3}
+    - {fileID: 8300000, guid: e4409aa6630c8624fb0d2b0e43daebfa, type: 3}
+    - {fileID: 8300000, guid: 3f9002d932520534fa805f8a0aa59c9b, type: 3}
+    - {fileID: 8300000, guid: fefc9171af927bd40804e5f80f227ea7, type: 3}
   _IconShow: {fileID: 2204527159108015916}

@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 708495672c3c8ff409cc3dd82621aa26
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3811705264929002146
+    second: caminho cinza_0
+  - first:
+      213: -6237467141678196392
+    second: caminho cinza_1
+  - first:
+      213: -6448028561307462535
+    second: caminho cinza_2
+  - first:
+      213: 8700276417157627088
+    second: caminho cinza_3
+  - first:
+      213: 5727160557002289590
+    second: caminho cinza_4
+  - first:
+      213: -7292554647830178065
+    second: caminho cinza_5
+  - first:
+      213: 8378538877650012815
+    second: caminho cinza_6
+  - first:
+      213: -41267977474596241
+    second: caminho cinza_7
+  - first:
+      213: 7620432739910451470
+    second: caminho cinza_8
+  - first:
+      213: -4306441796671965313
+    second: caminho cinza_9
+  - first:
+      213: -797974399496298944
+    second: caminho cinza_10
+  - first:
+      213: 3949955357924519494
+    second: caminho cinza_11
+  - first:
+      213: -8157802858605805996
+    second: caminho cinza_12
+  - first:
+      213: -2404695659366030105
+    second: caminho cinza_13
+  - first:
+      213: -4138092579215350110
+    second: caminho cinza_14
+  - first:
+      213: 1438981214020110206
+    second: caminho cinza_15
+  - first:
+      213: 8680853692914755060
+    second: caminho cinza_16
+  - first:
+      213: 4684322578809410479
+    second: caminho cinza_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caminho cinza_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dab6fb14a1a1bc0800000000000000
+      internalID: -3811705264929002146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_1
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8599912aea01079a0800000000000000
+      internalID: -6237467141678196392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_2
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97412b5cf200486a0800000000000000
+      internalID: -6448028561307462535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_3
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc736c2e479db870800000000000000
+      internalID: 8700276417157627088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_4
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1ffbbce26fa7f40800000000000000
+      internalID: 5727160557002289590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_5
+      rect:
+        serializedVersion: 2
+        x: 5085
+        y: 2058
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe655f67f24abca90800000000000000
+      internalID: -7292554647830178065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a0123c7bc864470800000000000000
+      internalID: 8378538877650012815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_7
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62270e3ef26d6ff0800000000000000
+      internalID: -41267977474596241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_8
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e018e11c33731c960800000000000000
+      internalID: 7620432739910451470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_9
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77f87f90027c34c0800000000000000
+      internalID: -4306441796671965313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_10
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04eda22f2860de4f0800000000000000
+      internalID: -797974399496298944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_11
+      rect:
+        serializedVersion: 2
+        x: 5085
+        y: 1029
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64eedb3687f01d630800000000000000
+      internalID: 3949955357924519494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e7221a589a9ce80800000000000000
+      internalID: -8157802858605805996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_13
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e46096d90ec0aed0800000000000000
+      internalID: -2404695659366030105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_14
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6603849ba8296c0800000000000000
+      internalID: -4138092579215350110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_15
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7701244ac948f310800000000000000
+      internalID: 1438981214020110206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_16
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f56259c076987870800000000000000
+      internalID: 8680853692914755060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caminho cinza_17
+      rect:
+        serializedVersion: 2
+        x: 5085
+        y: 0
+        width: 1017.5
+        height: 1029
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3d64b119e020140800000000000000
+      internalID: 4684322578809410479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
