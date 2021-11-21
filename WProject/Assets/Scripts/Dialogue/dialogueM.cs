@@ -10,6 +10,7 @@ public class dialogueM : MonoBehaviour
     [SerializeField] Text dialogueText;
     [SerializeField] GameObject DialogBox, playerImage, NpcImage, playerImageBack, NpcImageBack;
     [SerializeField] AudioSource voiceLinesSource;
+    [SerializeField] Animator NpcImageAnimator, NpcImageBackAnimator;
 
     public Animator animator;
 
@@ -24,6 +25,8 @@ public class dialogueM : MonoBehaviour
         sentences = new Queue<string>();
         voiceLines = new Queue<AudioClip>();
         isNpcLines = new Queue<bool>();
+        NpcImageAnimator = NpcImage.GetComponent<Animator>();
+        NpcImageBackAnimator = NpcImageBack.GetComponent<Animator>();
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -39,9 +42,12 @@ public class dialogueM : MonoBehaviour
         //defini nome do npc
         npcName = dialogue.name;
 
-        //define imagem do npc
-        NpcImageBack.GetComponent<Image>().sprite = dialogue.NpcImage;
+        //define imagem e animaçao do npc
         NpcImage.GetComponent<Image>().sprite = dialogue.NpcImage;
+        NpcImageAnimator.SetBool("hasEnter", true);
+        
+        NpcImageBack.GetComponent<Image>().sprite = dialogue.NpcImage;
+        NpcImageBackAnimator.SetBool("hasEnter", true);
 
         sentences.Clear();
 
