@@ -21,6 +21,10 @@ public class dialogueM : MonoBehaviour
     private string npcName;
     private bool haveAudio;
 
+    //Tentando Fazer o CD do dialogo
+    public float dialogueSpeed = 10f;
+    public float nextDialogue = 0f;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -34,6 +38,7 @@ public class dialogueM : MonoBehaviour
     {
         //FindObjectOfType<shooting>()._PlayerStardDialogue = true;
         //animator.SetBool("IsOpen", true);
+
 
         //JEITO SIMPLES DE SABER SE TEM AUDIO (If simplificado ao maximo)
         haveAudio = dialogue.voiceLines.Length == 0 ? false : true;

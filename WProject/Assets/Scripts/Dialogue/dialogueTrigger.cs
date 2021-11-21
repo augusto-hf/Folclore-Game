@@ -9,6 +9,8 @@ public class dialogueTrigger : MonoBehaviour
     bool playerHasEnter, dialogHasStarted;
     [SerializeField]GameObject _IconShow;
 
+    
+
     private void Start()
     {
     }
