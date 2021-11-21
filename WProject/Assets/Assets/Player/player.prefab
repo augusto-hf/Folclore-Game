@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0.8945801, b: 0.3443396, a: 1}
   m_Intensity: 0.5
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 0000000065a71651cdaaa2fc7f9a4a41ff50de55236c4c1443408565814b058a
+  m_ApplyToSortingLayers: 0000000065a71651cdaaa2fc7f9a4a41ff50de55236c4c1443408565814b058ac1c1ce68f95e87daf12f27f0618b047c1f9a5e2bab114945ed7a8238
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.75
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 0000000065a71651cdaaa2fc7f9a4a41ff50de55236c4c1443408565814b058a
+  m_ApplyToSortingLayers: 0000000065a71651cdaaa2fc7f9a4a41ff50de55236c4c1443408565814b058ac1c1ce68f95e87daf12f27f0618b047c1f9a5e2bab114945ed7a8238
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -545,8 +545,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1440633087
-  m_SortingLayer: 4
+  m_SortingLayerID: 340552739
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1f0ebba655244964a9b0ffe84d1aa078, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -943,7 +943,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0.77220356, b: 0, a: 1}
   m_Intensity: 0.5
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 0000000065a71651cdaaa2fc7f9a4a41ff50de55236c4c1443408565814b058a
+  m_ApplyToSortingLayers: 0000000065a71651cdaaa2fc7f9a4a41ff50de55236c4c1443408565814b058ac1c1ce68f95e87daf12f27f0618b047c1f9a5e2bab114945ed7a8238
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0

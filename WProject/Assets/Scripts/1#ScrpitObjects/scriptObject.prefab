@@ -907,5 +907,11 @@ MonoBehaviour:
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
   DialogBox: {fileID: 0}
-  voiceLinesSource: {fileID: 0}
+  playerImage: {fileID: 0}
+  NpcImage: {fileID: 0}
+  playerImageBack: {fileID: 0}
+  NpcImageBack: {fileID: 0}
+  voiceLinesSource: {fileID: 3839622993065747746}
+  NpcImageAnimator: {fileID: 0}
+  NpcImageBackAnimator: {fileID: 0}
   animator: {fileID: 0}
