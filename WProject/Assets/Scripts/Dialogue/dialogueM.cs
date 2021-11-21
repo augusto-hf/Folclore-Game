@@ -50,7 +50,9 @@ public class dialogueM : MonoBehaviour
         NpcImageBack.GetComponent<Image>().sprite = dialogue.NpcImage;
         NpcImageBackAnimator.SetBool("hasEnter", true);
 
+        //limpa as queue antigas pra evitar bugs
         sentences.Clear();
+        isNpcLines.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
@@ -64,6 +66,7 @@ public class dialogueM : MonoBehaviour
 
         if (haveAudio)
         {
+            voiceLines.Clear();
             foreach (AudioClip voiceLine in dialogue.voiceLines)
             {
                 voiceLines.Enqueue(voiceLine);
