@@ -60,8 +60,8 @@ public class Ai_ShotType : MonoBehaviour
             {
                 _Enemy.position = Vector2.MoveTowards(_Enemy.position, Player.position, ai_enemy_stats.Speed * Time.deltaTime);
             }
-           
-            if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
+
+        if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
             {
 
                 //_Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
@@ -75,7 +75,13 @@ public class Ai_ShotType : MonoBehaviour
 
             }
 
-      
+        if (Time.time > TimetoFire)
+        {
+            //StartCoroutine(Anim());
+            //ai_shootingattack.FireBallAttack();
+
+            TimetoFire = Time.time + fireRate;
+        }
 
 
     }
