@@ -55,6 +55,9 @@ TagManager:
   - name: 1f
     uniqueID: 1095408255
     locked: 0
+  - name: Collider
+    uniqueID: 1528311571
+    locked: 0
   - name: 1.5f
     uniqueID: 1440633087
     locked: 0
