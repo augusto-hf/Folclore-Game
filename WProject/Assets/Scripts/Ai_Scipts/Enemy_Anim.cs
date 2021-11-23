@@ -19,7 +19,7 @@ public class Enemy_Anim : MonoBehaviour
         }
         if (Zvaule >= 45 && Zvaule < 65)
         {
-            i = -1;
+            i = 1;
             x = 1;
         }
         if (Zvaule >= 65 && Zvaule < 90)
@@ -57,8 +57,8 @@ public class Enemy_Anim : MonoBehaviour
         }
         else if (Zvaule >= 315 && Zvaule < 350)
         {
-            i = 1;
-            x = -1;
+            i = -1;
+            x = 1;
 
 
         }
