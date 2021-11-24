@@ -379,7 +379,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _Barrel: {fileID: 5431449596541925639}
-  Enemy: {fileID: 1160297161184009048}
+  anim: {fileID: 1160297161184009048}
+  Pos: {fileID: 5431449596541925656}
+  Zvaule: 0
 --- !u!114 &1987565754909392620
 MonoBehaviour:
   m_ObjectHideFlags: 0

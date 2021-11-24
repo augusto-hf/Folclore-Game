@@ -59,8 +59,8 @@ public class Ai_ShotType : MonoBehaviour
         }
         else if (Zvaule >= 91 && Zvaule < 140)
         {
-            i = -1;
-            x = -1;
+            //i = -1;
+            //x = -1;
 
 
         }
@@ -73,8 +73,8 @@ public class Ai_ShotType : MonoBehaviour
         }
         else if (Zvaule >= 225 && Zvaule < 270)
         {
-            i = 1;
-            x = -1;
+           // i = 1;
+           // x = -1;
 
 
         }
