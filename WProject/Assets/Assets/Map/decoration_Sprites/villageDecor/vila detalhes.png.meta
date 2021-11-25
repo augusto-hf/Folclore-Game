@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: 60382d7c53e303f43a52969eb1d6ecac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2838749817078238150
+    second: vila detalhes_0
+  - first:
+      213: -1032995730552339004
+    second: vila detalhes_1
+  - first:
+      213: -3628383559024440362
+    second: vila detalhes_2
+  - first:
+      213: -2616990139406636923
+    second: vila detalhes_3
+  - first:
+      213: -4866325461571087338
+    second: vila detalhes_4
+  - first:
+      213: -153070591367010604
+    second: vila detalhes_5
+  - first:
+      213: 6251763246529202279
+    second: vila detalhes_6
+  - first:
+      213: -8161393324939839530
+    second: vila detalhes_7
+  - first:
+      213: -7819002436463763464
+    second: vila detalhes_8
+  - first:
+      213: 3878436508290132252
+    second: vila detalhes_9
+  - first:
+      213: 4206674919499441006
+    second: vila detalhes_10
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vila detalhes_0
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 2773
+        width: 110
+        height: 1102
+      alignment: 9
+      pivot: {x: 0.48724255, y: 0.06532733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb47251be3456720800000000000000
+      internalID: 2838749817078238150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vila detalhes_1
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 2781
+        width: 112
+        height: 1058
+      alignment: 9
+      pivot: {x: 0.42574093, y: 0.059778225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5cee92bdf0aa1f0800000000000000
+      internalID: -1032995730552339004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vila detalhes_2
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 3530
+        width: 122
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db0b77806465adc0800000000000000
+      internalID: -3628383559024440362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vila detalhes_3
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 2359
+        width: 134
+        height: 228
+      alignment: 9
+      pivot: {x: 0.20891559, y: 0.10896917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588a7f765559eabd0800000000000000
+      internalID: -2616990139406636923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vila detalhes_4
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 2359
+        width: 77
+        height: 217
+      alignment: 9
+      pivot: {x: 0.4276345, y: 0.06346869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614dd9d86c6577cb0800000000000000
+      internalID: -4866325461571087338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vila detalhes_5
+      rect:
+        serializedVersion: 2
+        x: 2546
+        y: 2406
+        width: 124
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6a200bb1f20edf0800000000000000
+      internalID: -153070591367010604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vila detalhes_6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1365
+        width: 275
+        height: 311
+      alignment: 9
+      pivot: {x: 0.43921208, y: 0.14165965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7684739ac89b2c650800000000000000
+      internalID: 6251763246529202279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vila detalhes_7
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 1259
+        width: 274
+        height: 311
+      alignment: 9
+      pivot: {x: 0.47966415, y: 0.17749377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d777ba0308ecbe80800000000000000
+      internalID: -8161393324939839530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vila detalhes_8
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 1178
+        width: 1153
+        height: 789
+      alignment: 9
+      pivot: {x: 0.40334424, y: 0.04094724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffd9acf5b25d7390800000000000000
+      internalID: -7819002436463763464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vila detalhes_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 239
+        width: 276
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c192a889479f2d530800000000000000
+      internalID: 3878436508290132252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vila detalhes_10
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 231
+        width: 274
+        height: 309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e632f462d8c116a30800000000000000
+      internalID: 4206674919499441006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

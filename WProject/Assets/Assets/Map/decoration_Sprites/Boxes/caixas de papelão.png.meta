@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: df86d62cd5edfb040a09f32e8d93b596
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1594371233399755095
+    second: "caixas de papel\xE3o_0"
+  - first:
+      213: -2185966154205592324
+    second: "caixas de papel\xE3o_1"
+  - first:
+      213: -1946440910247458783
+    second: "caixas de papel\xE3o_2"
+  - first:
+      213: -6134091413998983888
+    second: "caixas de papel\xE3o_3"
+  - first:
+      213: 6089439719037001733
+    second: "caixas de papel\xE3o_4"
+  - first:
+      213: 4705888611683207713
+    second: "caixas de papel\xE3o_5"
+  - first:
+      213: -8401910304897465521
+    second: "caixas de papel\xE3o_6"
+  - first:
+      213: 3672551373603460110
+    second: "caixas de papel\xE3o_7"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "caixas de papel\xE3o_0"
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1107
+        width: 630
+        height: 733
+      alignment: 9
+      pivot: {x: 0.5, y: 0.18365987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751d4ee7038502610800000000000000
+      internalID: 1594371233399755095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "caixas de papel\xE3o_1"
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1111
+        width: 745
+        height: 733
+      alignment: 9
+      pivot: {x: 0.586191, y: 0.17392622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf48c8f4d53e9a1e0800000000000000
+      internalID: -2185966154205592324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "caixas de papel\xE3o_2"
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 1107
+        width: 781
+        height: 815
+      alignment: 9
+      pivot: {x: 0.4086467, y: 0.15858552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12889680e4adcf4e0800000000000000
+      internalID: -1946440910247458783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "caixas de papel\xE3o_3"
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 1103
+        width: 896
+        height: 815
+      alignment: 9
+      pivot: {x: 0.48407444, y: 0.15858552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03521d8db545fdaa0800000000000000
+      internalID: -6134091413998983888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "caixas de papel\xE3o_4"
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 90
+        width: 630
+        height: 733
+      alignment: 9
+      pivot: {x: 0.5056625, y: 0.17392617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500ea564929028450800000000000000
+      internalID: 6089439719037001733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "caixas de papel\xE3o_5"
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 90
+        width: 745
+        height: 733
+      alignment: 9
+      pivot: {x: 0.58140254, y: 0.17879295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a0feb62ccae4140800000000000000
+      internalID: 4705888611683207713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "caixas de papel\xE3o_6"
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 90
+        width: 781
+        height: 813
+      alignment: 9
+      pivot: {x: 0.404079, y: 0.14897005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4384e9c71b666b80800000000000000
+      internalID: -8401910304897465521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "caixas de papel\xE3o_7"
+      rect:
+        serializedVersion: 2
+        x: 3131
+        y: 90
+        width: 896
+        height: 813
+      alignment: 9
+      pivot: {x: 0.47721863, y: 0.13056593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04d10b240687f230800000000000000
+      internalID: 3672551373603460110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

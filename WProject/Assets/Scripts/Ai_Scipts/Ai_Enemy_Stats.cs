@@ -27,6 +27,8 @@ public class Ai_Enemy_Stats : MonoBehaviour
         VidaAtual = Health;
     }
 
+ 
+
     public void TakeDamage(int Dano)
     {
         VidaAtual -= Dano;
