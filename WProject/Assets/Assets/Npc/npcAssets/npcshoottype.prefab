@@ -378,7 +378,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8
-  _Barrel: {fileID: 5431449596541925639}
+  _Barrel: {fileID: 0}
   anim: {fileID: 1160297161184009048}
   Pos: {fileID: 5431449596541925656}
   Zvaule: 0
@@ -791,7 +791,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5431449596541925656}
-  - component: {fileID: 5431449596541925639}
   m_Layer: 6
   m_Name: Bullet_Barrel (1)
   m_TagString: Untagged
@@ -814,27 +813,6 @@ Transform:
   m_Father: {fileID: 53195360266333696}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &5431449596541925639
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5431449596541925638}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 3
 --- !u!1 &5431449596970780737
 GameObject:
   m_ObjectHideFlags: 0

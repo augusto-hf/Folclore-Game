@@ -29,7 +29,6 @@ public class Ai_ShotType : MonoBehaviour
         ai_shootingattack = GetComponentInChildren<Ai_ShootingAttack>();
         ai_enemy_stats = GetComponent<Ai_Enemy_Stats>();
         Player = GameObject.FindGameObjectWithTag("Player").transform;
-        //_Barrel = GetComponentInChildren<Rigidbody2D>();
 
     }
 
@@ -109,10 +108,9 @@ public class Ai_ShotType : MonoBehaviour
             Vector2 look = Player.position - _Barrel.transform.position;
             float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
             _Barrel.rotation = Angulo;
-         
-
-
+            
         }
+       
 
     }
 
@@ -124,26 +122,27 @@ public class Ai_ShotType : MonoBehaviour
             if (Vector2.Distance(_Enemy.position, Player.position) > ai_enemy_stats.StopDistance)
             {
                 _Enemy.position = Vector2.MoveTowards(_Enemy.position, Player.position, ai_enemy_stats.Speed * Time.deltaTime);
+            if (Time.time > TimetoFire)
+            {
+                //StartCoroutine(Anim());
+                ai_shootingattack.FireBallAttack();
+
+                TimetoFire = Time.time + fireRate;
             }
+        }
 
         if (Vector2.Distance(_Enemy.position, Player.position) <= ai_enemy_stats.StopDistance)
             {
 
-                _Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
-                if (Time.time > TimetoFire)
-                {
-                    //StartCoroutine(Anim());
-                    //ai_shootingattack.FireBallAttack();
-
-                    TimetoFire = Time.time + fireRate;
-                }
+               // _Enemy.position = Vector2.MoveTowards(_Enemy.position, _WalkBackpoint.position, ai_enemy_stats.Speed * Time.deltaTime);
+       
 
             }
 
         if (Time.time > TimetoFire)
         {
             //StartCoroutine(Anim());
-            ai_shootingattack.FireBallAttack();
+            //ai_shootingattack.FireBallAttack();
 
             TimetoFire = Time.time + fireRate;
         }
