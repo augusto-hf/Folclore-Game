@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
 
     IEnumerator IncibleFrame()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         IVframe = false;
         Debug.Log("i");
         //Healt = null;

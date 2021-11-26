@@ -18,9 +18,8 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
     {
         Enemy = GameObject.FindGameObjectWithTag("Enemy");
         Ai_shotType = Enemy.GetComponent<Ai_ShotType>();
-        ai_shootingattack = Enemy.GetComponent<Ai_ShootingAttack>();
         Bullet = gameObject.GetComponent<Rigidbody2D>();
-        _gunBarrel = ai_shootingattack._GunBarrel;
+        _gunBarrel = Ai_shotType._Barrel.transform;
         //Bullet.AddForce(_gunBarrel.up * Ai_shotType.ai_enemy_stats.força, ForceMode2D.Impulse);
 
     }

@@ -10,7 +10,10 @@ public class Ai_ShotType : MonoBehaviour
     [SerializeField] internal Transform _Enemy;
     [SerializeField] internal Transform _WalkBackpoint;
     [SerializeField] LayerMask mask;
-    [SerializeField] Rigidbody2D _Barrel;
+    [SerializeField] internal Rigidbody2D _Barrel;
+    [SerializeField] internal Ai_RangeAttackDamaeg ai_rangeAttackDamaeg;
+
+
     public Animator anim;
     public Transform Pos;
     public float Zvaule;
@@ -38,6 +41,21 @@ public class Ai_ShotType : MonoBehaviour
         EnemyBehaviorRange();
         Animation();
     }
+
+    public GameObject FireBall;
+    bool beginShoot;
+
+
+    public void FireBallAttack()
+    {
+        GameObject bullet = Instantiate(FireBall, _Barrel.transform.position, _Barrel.transform.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        ai_rangeAttackDamaeg = bullet.GetComponent<Ai_RangeAttackDamaeg>();
+
+        rb.AddForce(_Barrel.transform.up * ai_enemy_stats.força, ForceMode2D.Impulse);
+    }
+
+
 
     void Animation()
     {
@@ -124,8 +142,7 @@ public class Ai_ShotType : MonoBehaviour
                 _Enemy.position = Vector2.MoveTowards(_Enemy.position, Player.position, ai_enemy_stats.Speed * Time.deltaTime);
             if (Time.time > TimetoFire)
             {
-                //StartCoroutine(Anim());
-                ai_shootingattack.FireBallAttack();
+                FireBallAttack();
 
                 TimetoFire = Time.time + fireRate;
             }
@@ -139,25 +156,11 @@ public class Ai_ShotType : MonoBehaviour
 
             }
 
-        if (Time.time > TimetoFire)
-        {
-            //StartCoroutine(Anim());
-            //ai_shootingattack.FireBallAttack();
-
-            TimetoFire = Time.time + fireRate;
-        }
+       
 
 
     }
 
-    IEnumerator Anim()
-    {
-        //Enemy.SetBool("MelleAttack", true);
-
-        yield return new WaitForSeconds(1f);
-        //Enemy.SetBool("MelleAttack", false);
-
-    }
 
 
 

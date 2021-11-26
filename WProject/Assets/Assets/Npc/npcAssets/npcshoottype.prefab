@@ -290,7 +290,6 @@ GameObject:
   m_Component:
   - component: {fileID: 53195360266333696}
   - component: {fileID: 53195360266333697}
-  - component: {fileID: 53195360266333702}
   - component: {fileID: 53195360266333700}
   - component: {fileID: 1987565754909392620}
   - component: {fileID: 53195360266333701}
@@ -339,25 +338,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.0040283203}
   m_Size: {x: 0.012584908, y: 0.06860025}
   m_Direction: 0
---- !u!114 &53195360266333702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53195360266333698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f2c2bb846b6eae48a70854b2ead680d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ai_shottype: {fileID: 53195360266333700}
-  ai_rangeAttackDamaeg: {fileID: 0}
-  _ParentItem: {fileID: 0}
-  _GunBarrel: {fileID: 5431449596970780738}
-  _Rb_GunBarrel: {fileID: 5431449596970780739}
-  FireBall: {fileID: 5085292453515843253, guid: ae34cd6b260b0f449a45cb5f1fcf3460,
-    type: 3}
 --- !u!114 &53195360266333700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,10 +358,13 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8
-  _Barrel: {fileID: 0}
+  _Barrel: {fileID: 5431449596970780739}
+  ai_rangeAttackDamaeg: {fileID: 0}
   anim: {fileID: 1160297161184009048}
   Pos: {fileID: 5431449596541925656}
   Zvaule: 0
+  FireBall: {fileID: 5085292453515843253, guid: ae34cd6b260b0f449a45cb5f1fcf3460,
+    type: 3}
 --- !u!114 &1987565754909392620
 MonoBehaviour:
   m_ObjectHideFlags: 0
