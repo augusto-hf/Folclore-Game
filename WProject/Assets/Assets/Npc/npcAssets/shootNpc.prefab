@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2350786472717503583}
   - component: {fileID: 5085292453515843248}
   - component: {fileID: 2165329471443004088}
-  m_Layer: 7
+  m_Layer: 13
   m_Name: shootNpc
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -23,10 +23,10 @@ TagManager:
   - AttackHItbox
   - IgnoreMaps
   - map2?
-  - 
+  - enemyBullet
   - abelhas
   - LifeHitbox
-  - 
+  - playerFinder
   - 
   - 
   - 
