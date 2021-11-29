@@ -98,6 +98,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playerIsNear: 0
 --- !u!61 &34375377295222445
 BoxCollider2D:
@@ -150,7 +152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7667492201907591164}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.006, y: 0.244, z: 999.21796}
+  m_LocalPosition: {x: -0.006, y: 0.244, z: 0}
   m_LocalScale: {x: 0.11039, y: 0.11039, z: 0.11039}
   m_Children: []
   m_Father: {fileID: 34375377295222444}
