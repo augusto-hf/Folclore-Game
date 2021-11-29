@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class audioFxScript : MonoBehaviour
+public class audioFxScript : Skill
 {
-    [SerializeField] AudioClip BGM_Clip, ambience_Clip, footstep_Clip, InventoryOpen_Clip, InventoryClose_Clip, PressButton_Clip;
+    [SerializeField] AudioClip BGM_Clip, ambience_Clip, footstep_Clip, InventoryOpen_Clip, InventoryClose_Clip, PressButton_Clip, Fire_Clip, Tornado_Clip, LancaChamas_Clip;
     [SerializeField] float footstepsdelayBetweenClips;
-    [SerializeField] float footstepsVolume = 1.0f, inventoryVolume = 1.0f, FxVolueme = 1.0f;
-    [SerializeField] float BGMVolume = 1.0f, ambienceVolume = 1.0f, musicVolume = 1.0f;
+    [SerializeField] float footstepsVolume = 1.0f, inventoryVolume = 1.0f, FxVolueme = 1.0f, AbilityVolume = 1.0f;
+    [SerializeField] float BGMVolume = 1.0f, ambienceVolume = 1.0f, musicVolume = 1.0f, fireVolume = 1.0f, tornadoVolume = 1.0f, lanchaChamasVolume = 1.0f;
     private float footstepsTime;
     bool footstepsHavePlayed, inventoryState;
-    [SerializeField] AudioSource BGM, ambience, footstepsSource, InventorySounds, PressButton;
+    [SerializeField] AudioSource BGM, ambience, footstepsSource, InventorySounds, PressButton, Fire, Tornado, LancaChamas;
 
     private void Start()
     {
-    
+
         BGM.clip = BGM_Clip;
         ambience.clip = ambience_Clip;
         BGM.Play();
@@ -22,9 +22,13 @@ public class audioFxScript : MonoBehaviour
     }
     void Update()
     {
+        Volume();
         playFootstepsControl();
         playInventoryControl();
-        Volume();
+        playFireControl();
+        playTornadoControl();
+        playLancaChamasControl();
+        
     }
     void playFootstepsControl()
     {
@@ -61,6 +65,35 @@ public class audioFxScript : MonoBehaviour
         // efeitos sonoros
         footstepsSource.volume = footstepsVolume * FxVolueme;
         InventorySounds.volume = inventoryVolume * FxVolueme;
+
+        //Ataques
+        Fire.volume = fireVolume * AbilityVolume;
+        Tornado.volume = tornadoVolume * AbilityVolume;
+        LancaChamas.volume = lanchaChamasVolume * AbilityVolume;
     }
-    
+
+    void playFireControl()
+    {
+        if (Input.GetButtonDown("Fire") && currentLoadout == 1 && _PlayerStardDialogue == false && Time.time > nextSkill)
+        {
+            Fire.PlayOneShot(Fire_Clip);
+        }
+    }
+
+    void playTornadoControl()
+    {
+        if (Input.GetButtonDown("Power") && currentLoadout == 2 && _PlayerStardDialogue == false && Time.time > nextSkill)
+        {
+            Fire.PlayOneShot(Tornado_Clip);
+        }
+    }
+
+    void playLancaChamasControl()
+    {
+        if (Input.GetButtonDown("Fire") && currentLoadout == 2 && _PlayerStardDialogue == false && Time.time > nextSkill)
+        {
+            Fire.PlayOneShot(LancaChamas_Clip);
+        }
+    }
+
 }

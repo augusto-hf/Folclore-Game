@@ -14,7 +14,7 @@ public class Skill : MonoBehaviour
     public tornado tornado;
     public GameObject skillTornado;
     public float skillSpeed = 8f, tornadoForce = 0.6f;
-    private float nextSkill = 0f, tornadoTimer;
+    public float nextSkill = 0f, tornadoTimer;
     public bool isTornadoGoing = false;
 
     [Header("FireBall Ability")]
@@ -30,7 +30,7 @@ public class Skill : MonoBehaviour
     public float cooldown = 8;
     bool isCooldown = false;
     public KeyCode abilityBW;
-    private int currentLoadout;
+    public int currentLoadout;
 
     // Start is called before the first frame update
     void Start()
@@ -108,7 +108,7 @@ public class Skill : MonoBehaviour
             Shield.SetActive(false);
         }
     }
-    void tornadoShoot()
+    public void tornadoShoot()
     {
         if (Input.GetButtonDown("Power") && _PlayerStardDialogue == false && Time.time > nextSkill)
         {
