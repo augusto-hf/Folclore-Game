@@ -37,7 +37,7 @@ public class dialogueTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Enter");
+        //Debug.Log("Enter");
         if (other.tag == "Player")
         {
             playerHasEnter = true;
@@ -49,7 +49,7 @@ public class dialogueTrigger : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Exit");
+       //Debug.Log("Exit");
         if (other.tag == "Player")
         {
             playerHasEnter = false;

@@ -6,29 +6,33 @@ public class followPathWithPlayer : MonoBehaviour
 {
     public float npcSpeed = 1;
     public Transform[] moveSpots;
-    public bool playerIsNear;
+    public bool playerIsNear, pathEnded;
     private int currentObjective = 0, randomSpot, currentDirectionH, currentDirectionV;
     public int[] directionH, directionV;
 
-    // Start is called before the first frame update
     void Start()
     {
         //randomSpot = Random.Range(0, moveSpots.Length);
         currentDirectionH = directionH[currentObjective];
         currentDirectionV = directionV[currentObjective];
+
     }
-    // Update is called once per frame
+
     void Update()
     {
         if (playerIsNear)
         {
             transform.position = Vector2.MoveTowards(transform.position, moveSpots[currentObjective].position, npcSpeed * Time.deltaTime);
         }
-        if(Vector2.Distance(transform.position, moveSpots[currentObjective].position) < 0.2f && currentObjective < (moveSpots.Length - 1))
+        if(Vector2.Distance(transform.position, moveSpots[currentObjective].position) < 0.2f && currentObjective <= (moveSpots.Length - 1))
         {
             currentObjective++;
             currentDirectionH = directionH[currentObjective];
             currentDirectionV = directionV[currentObjective];
+        }
+        if (currentObjective == moveSpots.Length)
+        {
+            
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
