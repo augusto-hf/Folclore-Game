@@ -5,13 +5,12 @@ using UnityEngine;
 public class beeHive : MonoBehaviour
 {
     public GameObject bees;
-    public Collider2D playerFinder;
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Debug.Log("entro");
         bees.active = true;
     }
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         bees.active = false;
     }
