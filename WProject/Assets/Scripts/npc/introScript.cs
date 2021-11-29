@@ -28,10 +28,11 @@ public class introScript : MonoBehaviour
         {
             blackScreen.active = false;
             followScript.enabled = true;
+            zeIntro.enabled = false;
         }
-        else if (blackScreen.active == false)
+        if (followScript.pathEnded)
         {
-
+            zeForest.enabled = true;
         }
     }
 }

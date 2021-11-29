@@ -32,7 +32,7 @@ public class followPathWithPlayer : MonoBehaviour
         }
         if (currentObjective == moveSpots.Length)
         {
-            
+            pathEnded = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
