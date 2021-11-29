@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 34375377295222444}
   - component: {fileID: 34375377295222443}
   - component: {fileID: 34375377295222445}
+  - component: {fileID: 120890501872322039}
   m_Layer: 16
   m_Name: ze
   m_TagString: Untagged
@@ -93,14 +94,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3a074902a086c644adfa8c170ff785e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcSpeed: 0
+  npcSpeed: 0.5
   moveSpots:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playerIsNear: 0
+  directionH: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  directionV: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!61 &34375377295222445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,6 +140,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.5359273, y: 2.4511223}
   m_EdgeRadius: 0
+--- !u!114 &120890501872322039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34375377295222446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4eeb0ae19e0ea4dabf32d5eafc99ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogM_script: {fileID: 0}
+  dialogue:
+    name: "Seu Z\xE9"
+    NpcImage: {fileID: 0}
+    sentences:
+    - "Voc\xEA faz sempre essa viagem Z\xE9?"
+    - "Vez ou outra, n\xE3o s\xE3o muitos os que conhecem essa ilha sabe? Os mitos
+      e lendas espantam muita gente.\r"
+    - "Ai para Z\xE9! Essa gente \xE9 muito ing\xE9nua para se deixar levar por essas
+      historias.\r"
+    - "Bom, estamos quase chegando menina. Voc\xEA vai poder tirar suas pr\xF3prias
+      conclus\xF5es. Mas acredite, n\xE3o \xE9 por acaso que a fauna e flora daquele
+      lugar est\xE1 preservados desde tempos antigos."
+    isNpcLines: 00010001
+    voiceLines:
+    - {fileID: 8300000, guid: 94b5e97f748174845ad40a6078ec9517, type: 3}
+    - {fileID: 8300000, guid: 79337aa2c91306641af988ccc892334b, type: 3}
+    - {fileID: 8300000, guid: cce2f9f45db0d284aa4e99fe20172b2d, type: 3}
+    - {fileID: 8300000, guid: fdd97e6ee9dbf754aa954d570b1b41a6, type: 3}
+  _IconShow: {fileID: 0}
 --- !u!1 &7667492201907591164
 GameObject:
   m_ObjectHideFlags: 0
