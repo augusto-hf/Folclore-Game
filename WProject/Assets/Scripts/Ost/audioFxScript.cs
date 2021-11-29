@@ -74,7 +74,7 @@ public class audioFxScript : Skill
 
     void playFireControl()
     {
-        if (Input.GetButtonDown("Fire") && currentLoadout == 1 && _PlayerStardDialogue == false && Time.time > nextSkill)
+        if (Input.GetButtonDown("Fire") && _PlayerStardDialogue == false && Time.time > nextSkill)
         {
             Fire.PlayOneShot(Fire_Clip);
         }
@@ -82,7 +82,7 @@ public class audioFxScript : Skill
 
     void playTornadoControl()
     {
-        if (Input.GetButtonDown("Power") && currentLoadout == 2 && _PlayerStardDialogue == false && Time.time > nextSkill)
+        if (Input.GetButtonDown("Power") && _PlayerStardDialogue == false && Time.time > nextSkill && IsInvoking("tornadoShoot"))
         {
             Fire.PlayOneShot(Tornado_Clip);
         }

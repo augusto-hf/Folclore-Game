@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-  
+
     public void PlayGame()
     {
-        SceneManager.LoadScene("Fase_1");
+        SceneManager.LoadScene("Video");
+        
     }
 
     public void QuitGame()
