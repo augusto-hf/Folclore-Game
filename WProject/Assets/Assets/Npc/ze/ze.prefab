@@ -299,9 +299,29 @@ MonoBehaviour:
   dialogue:
     name: "Seu Z\xE9"
     NpcImage: {fileID: 21300000, guid: a938ae5ba4773b94aa7447459cf3f37f, type: 3}
-    sentences: []
-    isNpcLines: 
-    voiceLines: []
+    sentences:
+    - Nossa! Que lugar bonito.
+    - "Nossa, se fosse na cidade eu duvido que tudo isso estaria preservado\r assim
+      hahaha."
+    - "Muitos das cidades n\xE3o sabem apreciar a natureza sem\r\nagredi-la."
+    - "Voc\xEA tem certeza que \xE9 por aqui mesmo? J\xE1 passamos por essa \xE1rvore!"
+    - "J\xE1 cansei de fazer essa trilha, tenho certeza de que n\xE3o errei. Que
+      estranho.\r"
+    - "O que foi isso Z\xE9? Voc\xEA me falou que essa trilha era segura!"
+    - "E-Eu n-n\xE3...o...\r"
+    - "Z\xC9!? T-tudo bem?"
+    - "E-e-u...n\xE3..o consigo enxergar, d\xF3i muito!!"
+    isNpcLines: 000001000100010000
+    voiceLines:
+    - {fileID: 8300000, guid: 2515aa2f66263434abe8bc52ee702549, type: 3}
+    - {fileID: 8300000, guid: 1246f06dd08115e40a46c355fdb5b502, type: 3}
+    - {fileID: 8300000, guid: 260641e83d5d3594cae0d8c8ecb24665, type: 3}
+    - {fileID: 8300000, guid: 8ba376665a81f0b4180e71edb4059b83, type: 3}
+    - {fileID: 8300000, guid: 0898bdacf35728b4fa1adae00d059a51, type: 3}
+    - {fileID: 8300000, guid: 87956bcfda435454cbc5cf60b5870189, type: 3}
+    - {fileID: 8300000, guid: dcfb44545868e8b4c89bfa8ec33bb8a4, type: 3}
+    - {fileID: 8300000, guid: 76f7d5fdfb83a484688a989feeefbd59, type: 3}
+    - {fileID: 8300000, guid: 231e594840f1b48448ac4a519690840b, type: 3}
   _IconShow: {fileID: 290588340476617967}
 --- !u!1 &5562935252913937003
 GameObject:
@@ -475,4 +495,4 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1

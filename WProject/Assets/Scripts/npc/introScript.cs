@@ -13,7 +13,7 @@ public class introScript : MonoBehaviour
     void Start()
     {
         zeIntro.TriggerDialogue();
-        blackScreen.active = true;
+        blackScreen.SetActive(true);
         followScript = ze.GetComponent<followPathWithPlayer>();
     }
 
@@ -26,7 +26,7 @@ public class introScript : MonoBehaviour
         }
         if (dialogueManager.dialogueHasEnded == true)
         {
-            blackScreen.active = false;
+            blackScreen.SetActive(false);
             followScript.enabled = true;
             zeIntro.enabled = false;
         }
