@@ -20,13 +20,21 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
         Ai_shotType = Enemy.GetComponent<Ai_ShotType>();
         Bullet = gameObject.GetComponent<Rigidbody2D>();
         _gunBarrel = Ai_shotType._Barrel.transform;
-        //Bullet.AddForce(_gunBarrel.up * Ai_shotType.ai_enemy_stats.força, ForceMode2D.Impulse);
+        //Bullet.AddForce(_gunBarrel.up * Ai_shotType.ai_enemy_stats.forï¿½a, ForceMode2D.Impulse);
 
     }
 
-    void FixedUpdate()
+ 
+
+    void Update()
     {
+        colIgnore();
         Physics2D.IgnoreLayerCollision(6, 7, true);
+    }
+
+    void colIgnore()
+    {
+        Physics2D.IgnoreCollision(Enemy.GetComponent<Collider2D>(), Bullet.GetComponent<Collider2D>(), true);
     }
 
     void danoAndknockback(Rigidbody2D RbPlayer)
@@ -34,7 +42,7 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
 
         Vector2 Direcao = Ai_shotType.Player.position - Ai_shotType._Enemy.transform.position;
         Direcao.y = 0;
-        RbPlayer.AddForce(Direcao.normalized * Ai_shotType.ai_enemy_stats.força, ForceMode2D.Force);
+        RbPlayer.AddForce(Direcao.normalized * Ai_shotType.ai_enemy_stats.forca, ForceMode2D.Force);
         Healt.TakeDamage(Ai_shotType.ai_enemy_stats.Damage);
         Healt = null;
     }

@@ -52,7 +52,7 @@ public class Ai_ShotType : MonoBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         ai_rangeAttackDamaeg = bullet.GetComponent<Ai_RangeAttackDamaeg>();
 
-        rb.AddForce(_Barrel.transform.up * ai_enemy_stats.força, ForceMode2D.Impulse);
+        rb.AddForce(_Barrel.transform.up * ai_enemy_stats.forca, ForceMode2D.Impulse);
     }
 
 

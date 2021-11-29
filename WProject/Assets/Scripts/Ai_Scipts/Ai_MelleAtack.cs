@@ -40,8 +40,8 @@ public class Ai_MelleAtack : MonoBehaviour
     {
         Vector2 Direcao = Ai_MelleType.Player.position - Ai_MelleType._Enemy.transform.position;
         Direcao.y = 0;
-        Debug.Log(Direcao.normalized * Ai_MelleType.ai_enemy_stats.força);
-        RbPlayer.AddForce(Direcao.normalized * Ai_MelleType.ai_enemy_stats.força,ForceMode2D.Force);
+        Debug.Log(Direcao.normalized * Ai_MelleType.ai_enemy_stats.forca);
+        RbPlayer.AddForce(Direcao.normalized * Ai_MelleType.ai_enemy_stats.forca,ForceMode2D.Force);
         
         Healt.TakeDamage(Ai_MelleType.ai_enemy_stats.Damage);
         

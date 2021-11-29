@@ -21,7 +21,7 @@ public class Ai_Enemy_Stats : MonoBehaviour
     public float startDashTime;
     [SerializeField] GameObject Effect;
 
-    public float força;
+    public float forca;
     void Start()
     {
         VidaAtual = Health;
