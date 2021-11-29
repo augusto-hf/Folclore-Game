@@ -20,8 +20,6 @@ public class dialogueTrigger : MonoBehaviour
         {
             //Debug.Log("Enter");
             TriggerDialogue();
-            playerHasEnter = false;
-            dialogHasStarted = true;
         }
         else if (Input.GetButtonDown("Interact") && dialogHasStarted == true)
         {
@@ -32,6 +30,8 @@ public class dialogueTrigger : MonoBehaviour
     public void TriggerDialogue()
     {
         dialogM_script.StartDialogue(dialogue);
+        playerHasEnter = false;
+        dialogHasStarted = true;
     }
 
 

@@ -24,6 +24,7 @@ public class dialogueM : MonoBehaviour
     //Tentando Fazer o CD do dialogo
     public float dialogueSpeed = 10f;
     public float nextDialogue = 0f;
+    public bool dialogueHasEnded;
 
     void Start()
     {
@@ -134,7 +135,8 @@ public class dialogueM : MonoBehaviour
     public void EndDialogue()
     {
         //animator.SetBool("IsOpen", false);
-        Debug.Log("Fechei");
+        //Debug.Log("Fechei");
+        dialogueHasEnded = true;
         if (haveAudio)
         {
             voiceLinesSource.Stop();
