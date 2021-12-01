@@ -358,7 +358,8 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8
-  _Barrel: {fileID: 1563900983}
+  _Barrel: {fileID: 8451387685783391860}
+  _pBarrel: {fileID: 1563900983}
   ai_rangeAttackDamaeg: {fileID: 0}
   anim: {fileID: 1160297161184009048}
   Pos: {fileID: 5431449596541925656}
@@ -402,7 +403,7 @@ MonoBehaviour:
   dashEnd: 0
   startDashTime: 1
   Effect: {fileID: 6505338092035888528, guid: 53b8d8f0adbf6464b9359d2de5496569, type: 3}
-  "for\xE7a": 5
+  forca: 0
 --- !u!50 &320639482
 Rigidbody2D:
   serializedVersion: 4
@@ -885,7 +886,7 @@ MonoBehaviour:
   offSetX: 0
   offSetY: 0
   offSetZ: 0
-  rigidbody2dMovement: 1
+  rigidbody2dMovement: 0
   smoothMovement: 0
 --- !u!1 &5431449596970780737
 GameObject:
@@ -896,6 +897,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5431449596970780738}
+  - component: {fileID: 8451387685783391860}
+  - component: {fileID: 8900932758518092248}
   m_Layer: 6
   m_Name: Bullet_Barrel
   m_TagString: Untagged
@@ -910,13 +913,53 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5431449596970780737}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.09, z: 0}
-  m_LocalScale: {x: 0.48, y: 0.48, z: 1}
+  m_LocalScale: {x: 0.47999996, y: 0.47999996, z: 1}
   m_Children: []
   m_Father: {fileID: 5431449596541925656}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &8451387685783391860
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5431449596970780737}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 3
+--- !u!114 &8900932758518092248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5431449596970780737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5b3745adc96ca4686c397177c048f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followTarget: {fileID: 5431449596541925638}
+  moveSpeed: 1
+  offSetX: 0
+  offSetY: 0
+  offSetZ: 0
+  rigidbody2dMovement: 0
+  smoothMovement: 0
 --- !u!1 &5431449597865611376
 GameObject:
   m_ObjectHideFlags: 0

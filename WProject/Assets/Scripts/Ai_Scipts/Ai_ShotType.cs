@@ -11,6 +11,7 @@ public class Ai_ShotType : MonoBehaviour
     [SerializeField] internal Transform _WalkBackpoint;
     [SerializeField] LayerMask mask;
     [SerializeField] internal Rigidbody2D _Barrel;
+    [SerializeField] internal Rigidbody2D _pBarrel;
     [SerializeField] internal Ai_RangeAttackDamaeg ai_rangeAttackDamaeg;
 
 
@@ -123,14 +124,17 @@ public class Ai_ShotType : MonoBehaviour
     {
         if (Player != null)
         {
-            Vector2 look = Player.position - _Barrel.transform.position;
-            float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
-            _Barrel.rotation = Angulo;
             
+            Vector2 look = Player.position - _pBarrel.transform.position;
+            float Angulo = Mathf.Atan2(look.y, look.x) * Mathf.Rad2Deg - 90f;
+            _pBarrel.rotation = Angulo;
+            _Barrel.rotation = Angulo;
+
         }
-       
+
 
     }
+
 
     void EnemyBehaviorRange()
     {
