@@ -9,6 +9,7 @@ TagManager:
   - scriptObject
   - PlayerHitboc
   - playerWeapon
+  - EnemyHitbox
   layers:
   - Default
   - TransparentFX

@@ -12,11 +12,14 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
     [SerializeField] Transform _gunBarrel;
 
     GameObject Enemy;
-    
+    GameObject EnemyHit;
+
 
     void Start()
     {
         Enemy = GameObject.FindGameObjectWithTag("Enemy");
+        EnemyHit = GameObject.FindGameObjectWithTag("EnemyHitbox");
+
         Ai_shotType = Enemy.GetComponent<Ai_ShotType>();
         Bullet = gameObject.GetComponent<Rigidbody2D>();
         _gunBarrel = Ai_shotType._Barrel.transform;
@@ -35,6 +38,8 @@ public class Ai_RangeAttackDamaeg : MonoBehaviour
     void colIgnore()
     {
         Physics2D.IgnoreCollision(Enemy.GetComponent<Collider2D>(), Bullet.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(EnemyHit.GetComponent<Collider2D>(), Bullet.GetComponent<Collider2D>());
+
     }
 
     void danoAndknockback(Rigidbody2D RbPlayer)
