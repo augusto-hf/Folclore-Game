@@ -10,18 +10,18 @@ public class maedouroteste : MonoBehaviour
 
     void Update()
     {
-            if (playerNear && dialogManager.sentences.Count == 0)
+            if (dialogManager.dialogueHasEnded == true && playerNear && dialogManager.sentences.Count == 0)
             {
                 troço1.SetActive(true);
                 troço2.SetActive(true);
                 troço4.SetActive(false);
             }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         playerNear = true;
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         playerNear = false;
     }
