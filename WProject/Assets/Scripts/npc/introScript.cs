@@ -11,12 +11,13 @@ public class introScript : MonoBehaviour
 
     public int enemyCount;
     public bool hasTeleported = false;
-    
+
     void Start()
     {
-        //blackScreen.SetActive(true);
-        //F.SetActive(true);
-        //followScript = ze.GetComponent<followPathWithPlayer>();
+        zeIntro.TriggerDialogue();
+        blackScreen.SetActive(true);
+        F.SetActive(true);
+        followScript = ze.GetComponent<followPathWithPlayer>();
     }
 
     void Update()
@@ -34,20 +35,24 @@ public class introScript : MonoBehaviour
                 dialogueManager.dialogueHasEnded = false;
                 zeIntro.enabled = false;
             }
-            if (zeForest.enabled == true)
+            if (Input.GetButtonDown("Interact") && zeForest.enabled == true)
             {
-                blackScreen.SetActive(false);
+                blackScreen.SetActive(true);
             }
         }
         if (followScript.pathEnded)
         {
             zeForest.enabled = true;
             followScript.enabled = false;
+
+            if (zeForest.enabled == true && dialogueManager.sentences.Count == 0)
+            {
+                blackScreen.SetActive(false);
+                player.transform.position = teleportPoint.transform.position;
+            }
         }
-        if (Input.GetButtonDown("Interact") && dialogueManager.dialogueHasStarted == true && zeForest.enabled == true)
-        {
-            blackScreen.SetActive(true);
-            player.transform.position = teleportPoint.transform.position;
-        }
+
+
+
     }
 }

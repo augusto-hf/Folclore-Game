@@ -15,7 +15,7 @@ public class dialogueM : MonoBehaviour
 
     public Animator animator;
 
-    private Queue<string> sentences;
+    public Queue<string> sentences;
     private Queue<AudioClip> voiceLines;
     private Queue<bool> isNpcLines;
     private string npcName;
