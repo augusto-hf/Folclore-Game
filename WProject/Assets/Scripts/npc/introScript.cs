@@ -14,10 +14,9 @@ public class introScript : MonoBehaviour
     
     void Start()
     {
-        zeIntro.TriggerDialogue();
-        blackScreen.SetActive(true);
-        F.SetActive(true);
-        followScript = ze.GetComponent<followPathWithPlayer>();
+        //blackScreen.SetActive(true);
+        //F.SetActive(true);
+        //followScript = ze.GetComponent<followPathWithPlayer>();
     }
 
     void Update()
