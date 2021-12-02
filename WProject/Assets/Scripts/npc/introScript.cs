@@ -10,7 +10,7 @@ public class introScript : MonoBehaviour
     public followPathWithPlayer followScript;
 
     public int enemyCount;
-
+    public bool hasTeleported = false;
     
     void Start()
     {
@@ -33,14 +33,22 @@ public class introScript : MonoBehaviour
             followScript.enabled = true;
             zeIntro.enabled = false;
         }
-        if (followScript.pathEnded)
+        if (followScript.pathEnded && hasTeleported == false)
         {
+            hasTeleported = true;
             blackScreen.SetActive(true);
+            player.transform.position = teleportPoint.transform.position + new Vector3(2,0,0);
+            ze.transform.position = teleportPoint.transform.position + new Vector3(-2, 0, 0);
+            F.SetActive(true);
             zeForest.enabled = true;
-            if (Input.GetButtonDown("Interact"))
-            {
-                blackScreen.SetActive(false);
-            }
+        }
+        if (Input.GetButtonDown("Interact") && hasTeleported == true)
+        {
+            blackScreen.SetActive(false);
+        }
+        if (Input.GetButtonDown("Interact"))
+        {
+            F.SetActive(false);
         }
     }
 }
