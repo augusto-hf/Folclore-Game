@@ -292,7 +292,7 @@ MonoBehaviour:
   dialogM_script: {fileID: 0}
   dialogue:
     name: "Seu Z\xE9"
-    NpcImage: {fileID: 21300000, guid: a938ae5ba4773b94aa7447459cf3f37f, type: 3}
+    NpcImage: {fileID: 21300000, guid: 0d267582c44dc674c9acfee21d558492, type: 3}
     sentences:
     - Nossa! Que lugar bonito.
     - "Nossa, se fosse na cidade eu duvido que tudo isso estaria preservado\r assim
@@ -390,8 +390,7 @@ MonoBehaviour:
   dialogM_script: {fileID: 0}
   dialogue:
     name: "Seu Z\xE9"
-    NpcImage: {fileID: 5402858217496383560, guid: 03a43bb66f0f487469c34144e98c3cce,
-      type: 3}
+    NpcImage: {fileID: 21300000, guid: 0d267582c44dc674c9acfee21d558492, type: 3}
     sentences:
     - "Voc\xEA faz sempre essa viagem Z\xE9?"
     - "Vez ou outra, n\xE3o s\xE3o muitos os que conhecem essa ilha sabe? Os mitos
