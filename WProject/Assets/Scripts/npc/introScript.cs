@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class introScript : MonoBehaviour
 {
-    public GameObject blackScreen, ze;
+    public GameObject blackScreen, F, ze, player, teleportPoint;
     public dialogueTrigger zeIntro, zeForest;
     public dialogueM dialogueManager;
     public followPathWithPlayer followScript;
 
-    // Start is called before the first frame update
+    public int enemyCount;
+
+    
     void Start()
     {
         zeIntro.TriggerDialogue();
         blackScreen.SetActive(true);
+        F.SetActive(true);
         followScript = ze.GetComponent<followPathWithPlayer>();
     }
 
@@ -24,7 +27,7 @@ public class introScript : MonoBehaviour
         {
             followScript = ze.GetComponent<followPathWithPlayer>();
         }
-        if (dialogueManager.dialogueHasEnded == true)
+        if (dialogueManager.dialogueHasEnded == true && zeIntro.enabled == true)
         {
             blackScreen.SetActive(false);
             followScript.enabled = true;
@@ -32,7 +35,12 @@ public class introScript : MonoBehaviour
         }
         if (followScript.pathEnded)
         {
+            blackScreen.SetActive(true);
             zeForest.enabled = true;
+            if (Input.GetButtonDown("Interact"))
+            {
+                blackScreen.SetActive(false);
+            }
         }
     }
 }

@@ -223,52 +223,6 @@ MonoBehaviour:
   Fire: {fileID: 7331888890577123545}
   Tornado: {fileID: 3188187044219930037}
   LancaChamas: {fileID: 9065346348181591721}
---- !u!1 &1538604425790894954
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5789484859219319915}
-  - component: {fileID: 8547599105238550211}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5789484859219319915
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538604425790894954}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.53, y: 37.88, z: -6725.733}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2574961292898769698}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8547599105238550211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1538604425790894954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3be36a5e2f6c857499812da036ac89b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 53195360266333698, guid: bf264600e8100314fa8c780cc364e7d9, type: 3}
-  "tro\xE7o1": {fileID: 0}
-  spawnRate: 10
 --- !u!1 &1771090662655837758
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +664,6 @@ Transform:
   - {fileID: 2447852809597433159}
   - {fileID: 8678775923991914753}
   - {fileID: 1058187487530791698}
-  - {fileID: 5789484859219319915}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -892,6 +845,7 @@ MonoBehaviour:
   zeIntro: {fileID: 0}
   zeForest: {fileID: 0}
   dialogueManager: {fileID: 256167279780559243}
+  followScript: {fileID: 0}
 --- !u!1 &3290356322685578283
 GameObject:
   m_ObjectHideFlags: 0
