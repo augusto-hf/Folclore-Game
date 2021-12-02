@@ -14,9 +14,9 @@ public class introScript : MonoBehaviour
 
     void Start()
     {
-        zeIntro.TriggerDialogue();
-        blackScreen.SetActive(true);
-        F.SetActive(true);
+        //zeIntro.TriggerDialogue();
+        //blackScreen.SetActive(true);
+        //F.SetActive(true);
         followScript = ze.GetComponent<followPathWithPlayer>();
     }
 
@@ -47,9 +47,16 @@ public class introScript : MonoBehaviour
 
             if (Input.GetButtonDown("Interact") && dialogueManager.dialogueHasStarted == true && zeForest.enabled == true && dialogueManager.sentences.Count == 0)
             {
+
                 blackScreen.SetActive(false);
+                Wait();
                 player.transform.position = teleportPoint.transform.position;
             }
+        }
+
+        IEnumerator Wait()
+        {
+            yield return new WaitForSecondsRealtime(5);
         }
 
 
