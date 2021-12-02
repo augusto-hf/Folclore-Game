@@ -10,7 +10,7 @@ public class maedouroteste : MonoBehaviour
 
     void Update()
     {
-            if (playerNear && dialogManager.sentences.Count)
+            if (playerNear)
             {
                 troço1.SetActive(true);
                 troço2.SetActive(true);
