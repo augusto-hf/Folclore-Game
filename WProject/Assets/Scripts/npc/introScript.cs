@@ -5,7 +5,7 @@ using UnityEngine;
 public class introScript : MonoBehaviour
 {
     public GameObject blackScreen, F, ze, player, teleportPoint;
-    public dialogueTrigger zeIntro, zeForest;
+    public dialogueTrigger zeIntro, zeEnterForest, zeForest;
     public dialogueM dialogueManager;
     public followPathWithPlayer followScript;
 
@@ -20,35 +20,42 @@ public class introScript : MonoBehaviour
         followScript = ze.GetComponent<followPathWithPlayer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (followScript == null)
         {
             followScript = ze.GetComponent<followPathWithPlayer>();
         }
-        if (dialogueManager.dialogueHasEnded == true && zeIntro.enabled == true)
-        {
-            blackScreen.SetActive(false);
-            followScript.enabled = true;
-            zeIntro.enabled = false;
+        if (dialogueManager.dialogueHasEnded == true)
+        {           
+            if (zeIntro.enabled == true)
+            {
+                blackScreen.SetActive(false);
+                followScript.enabled = true;
+                dialogueManager.dialogueHasEnded = false;
+                zeIntro.enabled = false;                
+            }
+            if (zeEnterForest.enabled == true)
+            {                
+                blackScreen.SetActive(true);
+                F.SetActive(true);
+
+                player.transform.position = teleportPoint.transform.position + new Vector3(0.5f, 0, 0);
+                ze.transform.position = teleportPoint.transform.position + new Vector3(-0.5f, 0, 0);
+
+                zeEnterForest.enabled = false;
+                dialogueManager.dialogueHasEnded = false;
+                zeForest.enabled = true;
+            }
+            if (zeForest.enabled == true)
+            {
+                blackScreen.SetActive(false);
+            }
         }
-        if (followScript.pathEnded && hasTeleported == false)
+        if (followScript.pathEnded)
         {
-            hasTeleported = true;
-            blackScreen.SetActive(true);
-            player.transform.position = teleportPoint.transform.position + new Vector3(2,0,0);
-            ze.transform.position = teleportPoint.transform.position + new Vector3(-2, 0, 0);
-            F.SetActive(true);
-            zeForest.enabled = true;
-        }
-        if (Input.GetButtonDown("Interact") && hasTeleported == true)
-        {
-            blackScreen.SetActive(false);
-        }
-        if (Input.GetButtonDown("Interact"))
-        {
-            F.SetActive(false);
+            zeEnterForest.enabled = true;
+            
         }
     }
 }
