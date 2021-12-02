@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 1868a8b739f455148bee445b3de7a708
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8928987003931473602
+    second: tileset placas musgo_0
+  - first:
+      213: 1788743512060277966
+    second: tileset placas musgo_1
+  - first:
+      213: 7446144289980635582
+    second: tileset placas musgo_2
+  - first:
+      213: -944642895386555321
+    second: tileset placas musgo_3
+  - first:
+      213: 6715577680857288737
+    second: tileset placas musgo_4
+  - first:
+      213: 5150051826398643836
+    second: tileset placas musgo_5
+  - first:
+      213: 5947568510805148587
+    second: tileset placas musgo_6
+  - first:
+      213: -350872054952429820
+    second: tileset placas musgo_7
+  - first:
+      213: 8259996556813267031
+    second: tileset placas musgo_8
+  - first:
+      213: -9174266578262539351
+    second: tileset placas musgo_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tileset placas musgo_0
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1141
+        width: 387
+        height: 874
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02809759}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c63a6d4f522aeb70800000000000000
+      internalID: 8928987003931473602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset placas musgo_1
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1141
+        width: 423
+        height: 874
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02809759}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec433ae3fb4e2d810800000000000000
+      internalID: 1788743512060277966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset placas musgo_2
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 1084
+        width: 388
+        height: 953
+      alignment: 9
+      pivot: {x: 0.5919416, y: 0.028097436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb95996c7c4065760800000000000000
+      internalID: 7446144289980635582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset placas musgo_3
+      rect:
+        serializedVersion: 2
+        x: 3385
+        y: 1131
+        width: 422
+        height: 884
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02809759}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c43e4aa44f3e2f0800000000000000
+      internalID: -944642895386555321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset placas musgo_4
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 82
+        width: 340
+        height: 908
+      alignment: 9
+      pivot: {x: 0.5944297, y: 0.032026283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1205a01f156823d50800000000000000
+      internalID: 6715577680857288737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset placas musgo_5
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 611
+        width: 51
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02809759}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76c75799d8a87740800000000000000
+      internalID: 5150051826398643836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset placas musgo_6
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 114
+        width: 362
+        height: 872
+      alignment: 9
+      pivot: {x: 0.41316247, y: 0.024091966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba307db8c020a8250800000000000000
+      internalID: 5947568510805148587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset placas musgo_7
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 55
+        width: 364
+        height: 931
+      alignment: 9
+      pivot: {x: 0.5575743, y: 0.039352458}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407f2fa99b3712bf0800000000000000
+      internalID: -350872054952429820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset placas musgo_8
+      rect:
+        serializedVersion: 2
+        x: 3373
+        y: 114
+        width: 388
+        height: 872
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02809759}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750fdc6ea1761a270800000000000000
+      internalID: 8259996556813267031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset placas musgo_9
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 438
+        width: 28
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02809759}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a34ce787257ea080800000000000000
+      internalID: -9174266578262539351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

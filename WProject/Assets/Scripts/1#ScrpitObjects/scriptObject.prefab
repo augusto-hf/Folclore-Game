@@ -841,11 +841,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackScreen: {fileID: 0}
+  F: {fileID: 0}
   ze: {fileID: 0}
+  player: {fileID: 0}
+  teleportPoint: {fileID: 7608445103321619191}
   zeIntro: {fileID: 0}
   zeForest: {fileID: 0}
   dialogueManager: {fileID: 256167279780559243}
   followScript: {fileID: 0}
+  enemyCount: 0
+  hasTeleported: 0
 --- !u!1 &3290356322685578283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,6 +1319,7 @@ MonoBehaviour:
   dialogueSpeed: 10
   nextDialogue: 0
   dialogueHasEnded: 0
+  dialogueHasStarted: 0
 --- !u!1 &7335293214499505817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,7 +1457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5308046972735607435}
   m_Layer: 0
-  m_Name: collider1
+  m_Name: teleportPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1465,7 +1471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7608445103321619191}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.38, y: 0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1058187487530791698}
