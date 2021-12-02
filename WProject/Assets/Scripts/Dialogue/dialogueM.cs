@@ -24,7 +24,7 @@ public class dialogueM : MonoBehaviour
     //Tentando Fazer o CD do dialogo
     public float dialogueSpeed = 10f;
     public float nextDialogue = 0f;
-    public bool dialogueHasEnded;
+    public bool dialogueHasEnded, dialogueHasStarted;
 
     void Start()
     {
@@ -43,6 +43,7 @@ public class dialogueM : MonoBehaviour
 
         //JEITO SIMPLES DE SABER SE TEM AUDIO (If simplificado ao maximo)
         haveAudio = dialogue.voiceLines.Length == 0 ? false : true;
+        dialogueHasStarted = true;
 
         DialogBox.SetActive(true);
 
@@ -136,6 +137,7 @@ public class dialogueM : MonoBehaviour
     {
         //animator.SetBool("IsOpen", false);
         //Debug.Log("Fechei");
+        dialogueHasStarted = false;
         dialogueHasEnded = true;
         if (haveAudio)
         {

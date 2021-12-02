@@ -24,13 +24,13 @@ public class followPathWithPlayer : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, moveSpots[currentObjective].position, npcSpeed * Time.deltaTime);
         }
-        if(Vector2.Distance(transform.position, moveSpots[currentObjective].position) < 0.2f && currentObjective < (moveSpots.Length - 1))
+        if(Vector2.Distance(transform.position, moveSpots[currentObjective].position) < 0.2f && currentObjective < (moveSpots.Length + 1))
         {
             currentObjective++;
             currentDirectionH = directionH[currentObjective];
             currentDirectionV = directionV[currentObjective];
         }
-        if (currentObjective == (moveSpots.Length - 1))
+        if (currentObjective == (moveSpots.Length))
         {
             pathEnded = true;
         }

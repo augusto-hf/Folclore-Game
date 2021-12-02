@@ -10,10 +10,6 @@ public class dialogueTrigger : MonoBehaviour
     [SerializeField]GameObject _IconShow;
 
     
-
-    private void Start()
-    {
-    }
     void Update()
     {
         if (Input.GetButtonDown("Interact") && playerHasEnter == true)
@@ -38,6 +34,7 @@ public class dialogueTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //Debug.Log("Enter");
+        
         if (other.tag == "Player")
         {
             playerHasEnter = true;

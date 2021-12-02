@@ -5,7 +5,7 @@ using UnityEngine;
 public class introScript : MonoBehaviour
 {
     public GameObject blackScreen, F, ze, player, teleportPoint;
-    public dialogueTrigger zeIntro, zeEnterForest, zeForest;
+    public dialogueTrigger zeIntro, zeForest;
     public dialogueM dialogueManager;
     public followPathWithPlayer followScript;
 
@@ -27,35 +27,29 @@ public class introScript : MonoBehaviour
             followScript = ze.GetComponent<followPathWithPlayer>();
         }
         if (dialogueManager.dialogueHasEnded == true)
-        {           
+        {
             if (zeIntro.enabled == true)
             {
                 blackScreen.SetActive(false);
                 followScript.enabled = true;
                 dialogueManager.dialogueHasEnded = false;
-                zeIntro.enabled = false;                
-            }
-            if (zeEnterForest.enabled == true)
-            {                
-                blackScreen.SetActive(true);
-                F.SetActive(true);
-
-                player.transform.position = teleportPoint.transform.position + new Vector3(0.5f, 0, 0);
-                ze.transform.position = teleportPoint.transform.position + new Vector3(-0.5f, 0, 0);
-
-                zeEnterForest.enabled = false;
-                dialogueManager.dialogueHasEnded = false;
-                zeForest.enabled = true;
+                zeIntro.enabled = false;
             }
             if (zeForest.enabled == true)
             {
                 blackScreen.SetActive(false);
+                zeForest.enabled = false;
             }
         }
         if (followScript.pathEnded)
         {
-            zeEnterForest.enabled = true;
-            
+            zeForest.enabled = true;
+            followScript.enabled = false;
+        }
+        if (Input.GetButtonDown("Interact") && dialogueManager.dialogueHasStarted == true && zeForest.enabled == true)
+        {
+            blackScreen.SetActive(true);
+            player.transform.position = teleportPoint.transform.position;
         }
     }
 }
