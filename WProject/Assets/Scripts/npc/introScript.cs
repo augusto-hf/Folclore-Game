@@ -38,7 +38,6 @@ public class introScript : MonoBehaviour
             if (zeForest.enabled == true)
             {
                 blackScreen.SetActive(false);
-                zeForest.enabled = false;
             }
         }
         if (followScript.pathEnded)
