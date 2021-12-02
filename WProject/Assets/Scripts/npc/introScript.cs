@@ -45,7 +45,7 @@ public class introScript : MonoBehaviour
             zeForest.enabled = true;
             followScript.enabled = false;
 
-            if (zeForest.enabled == true && dialogueManager.sentences.Count == 0)
+            if (Input.GetButtonDown("Interact") && dialogueManager.dialogueHasStarted == true && zeForest.enabled == true && dialogueManager.sentences.Count == 0)
             {
                 blackScreen.SetActive(false);
                 player.transform.position = teleportPoint.transform.position;
